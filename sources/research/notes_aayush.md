@@ -8,7 +8,7 @@ Collected 2026-10-16 IST. Sources: vidIQ IG profile/reels (public), vidIQ YT cha
 - YouTube channel UCCAs9a7E7eXM70svaABfh_g: Shorts cross-posts, ~1-2.5K views each (IG is the real platform). Oldest Shorts found: Nov 2025. Batch-uploads (e.g., 14 shorts on 1-2 Oct 2026).
 - LinkedIn headline: "Helping Business Owners Build Personal Brands | 500M+ Views • 3M+ Followers Generated • $30M Revenue"
 - Posting: YT shows 3-6 uploads/day in batches; IG 9 reels posted 15 Oct 2026 all with same "if you're new here, i'm Aayush" caption (fresh, low plays at fetch time — likely a batch/trial test; unknown).
-- Data gap: IG reels older than Nov 2025 not reachable tonight (no browser). Aryan will connect browser tomorrow.
+- Data gap (closed 2026-10-16): IG reels older than Nov 2025 were not reachable without a browser. Six of them, Dec 2024 to Sep 2025, are now studied; see "Old reels" at the end of this file.
 
 ## IG reels with public numbers (vidIQ)
 | shortcode | date | plays | likes | comments | len | note |
@@ -97,3 +97,29 @@ Baseline: unknown median for IG (only pinned + fresh reels visible). Pinned thre
 - 778K plays / 235 comments (0.03%) — no ONYX CTA (ended "do this for 90 days...").
 - 163K / 1.1K (0.67%) and 103K / 739 (0.72%) — both end "comment ONYX".
 - Inference: keyword-CTA reels get ~20x more comments per view; the breakout that reached most people carried no sales CTA. Reach reels and lead reels are different jobs.
+
+## Old reels, Dec 2024 to Sep 2025 (added 2026-10-16, Claude Code session)
+Closes the "1.5-year-old reels" gap. Found through web search (Firecrawl, Exa) of instagram.com/reel pages, then watched with vidIQ watch_shortform. Dates come from the search snippets ("iamaayushswamy on March 13, 2025"); DDxW2zVSJ5u has no dated snippet, but its caption says "it's 2025" and its shortcode places it around Dec 2024 to Jan 2025. Likes from snippets; views not visible.
+
+| shortcode | date | len | likes | format |
+|---|---|---|---|---|
+| DDxW2zVSJ5u | ~Dec 2024 / Jan 2025 | 42s | n/a | talking head at a podcast desk, "LAST SHOT" neon |
+| DHKBTBHS3na | 2025-03-13 | 12s | 35 | music-only montage, no speech |
+| DHr0Mc2vvhk | 2025-03-26 | not watched | 24 | "Steal my exact cinematic camera settings" (gym content) |
+| DJtCFqMqwFj | 2025-05-15 | 48s | n/a | Nikon Z50 II camera walkthrough, cinematic b-roll |
+| DK7nVlEAQbH | 2025-06-15 | 14s | 24 | desk talking head with picture-in-picture example clips |
+| DMA_-JqpfxX | 2025-07-12 | 69s | n/a | two-character skit, one creator playing both |
+| DOxIdPWkR9B | 2025-09-18 | 35s | 65 | desk talking head + screen recording |
+
+### The arc
+- Early 2025 he was a filmmaker teaching gym creators how to film ("How to film in the gym alone part 2", camera settings, a Nikon walkthrough). Engagement: 24-35 likes. No spoken story, no stakes, no CTA beyond "see you in the next".
+- By mid-2025 he moved to content marketing for coaches and business owners, and the story tools arrive: contrarian truths, conflict in a skit, loops, proof on screen. By Sep 2026 the same account runs 100K-778K-play reels (see table above).
+- His old filmmaker era is now lore he reuses ("10 years of creating content in 60 sec", carousel "untold story of Aayush Swamy over the last decade").
+
+### Per reel
+- DDxW2zVSJ5u (fitness-coach niche). Hook: "Here is the truth. Likes aren't going to sign you any fitness coaching clients. Relationships do." Body: belief dismantled, then the fix (build an engaged community at 100 or 100,000 followers), then a hard-truth close: "If you can't sign 30 clients with 1,000 followers, it's not going to get any better when you get to 100,000 followers." Proof: client-win story screenshots, client texts, footage of him interviewing at a fitness expo. Caption hook is harsher than the spoken one: "Makes sense why you're still broke… Obsessing over your follower count is keeping you broke." So the spoken hook attacks a belief while the caption attacks the viewer.
+- DHKBTBHS3na. On-screen labels only ("Foreground shot", "Side shot", "Wide shot", "Medium shot", "Detailed shot") over a hip-hop track, cuts every 1-2s, "Part 2" in the title. Teaching by pure demonstration; no conflict, no voice.
+- DJtCFqMqwFj. Spoken hook: "When you're filming, every second counts." Feature contrast: "no more random yellow boxes just jumping around. You decide what's in focus and when." Ends "SEE YOU IN THE NEXT!". Product walkthrough; the only tension is the old-way vs new-way contrast.
+- DK7nVlEAQbH. "This is a shock value hook. [clip] This is a demonstration hook. [clip] This is a challenge hook. [clip] Turn one idea into three viral videos just by changing the format of your hook. Follow for more value." The earliest version of his "one idea, 7 hooks" (Apr 2026): 3 hook formats in mid-2025, 7 by 2026. Each type is named on screen while a real example plays.
+- DMA_-JqpfxX. Skit: A (glasses) "What are you smiling about?" B "I just finished all my content for the week." A "I feel like I need a million ideas just to stay consistent." B "That's your problem. You don't need a million ideas. You just need six really good ones at a time." Then the method: keyword search in the Reels tab, save videos over 1M views to Notion, take the angle, question and problem (not the video), script and film all six in one sitting. Close: "I just learned it from Aayush. Go follow him." The same six-viral-videos method returns 15 months later as a talking head (xC1ZKA43W4Q, Oct 2026). Same lesson, new packaging.
+- DOxIdPWkR9B. Hook: "You shouldn't post on Instagram again till you know the right time to post." Steps on a screen recording, then "But, and I mean a BIG but, this will only give you a small boost... Till then..." and the last words cut straight back into the hook, so the reel loops. A year later he says posting time is "not important" (DjWzU-Buqf0); this reel already called it a small boost.

@@ -2,7 +2,7 @@
   "meta": {
     "schema": 1,
     "updated": "2026-10-16",
-    "next_id": 19,
+    "next_id": 28,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -272,14 +272,15 @@
       "layer": "framework",
       "parent": "p1",
       "name": "Old things, new people",
-      "desc": "Repackage fundamental truths with new framing instead of chasing brand-new ideas.",
+      "desc": "Repackage fundamental truths with new framing instead of chasing brand-new ideas. Aayush taught the same six-viral-videos method as a skit in 2025 and as a talking head in 2026.",
       "creators": [
-        "s"
+        "s",
+        "a"
       ],
       "links": [
         "p7"
       ],
-      "source": "storytelling-playbook.md + creator research notes",
+      "source": "storytelling-playbook.md + creator research notes; sources/research/notes_aayush.md §Old reels (Dec 2024 to Sep 2025), DMA_-JqpfxX",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -463,7 +464,10 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p1a",
+        "p3i"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -478,7 +482,11 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p3d",
+        "p3j",
+        "p2a"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -510,7 +518,10 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p3b",
+        "p5f"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -542,7 +553,10 @@
       "creators": [
         "c"
       ],
-      "links": [],
+      "links": [
+        "p3c",
+        "p3h"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -570,12 +584,16 @@
       "layer": "framework",
       "parent": "p3",
       "name": "1 idea, 7 hooks",
-      "desc": "Negative spin, positive spin, a question, an experience, a call-out, 'here's how', social proof.",
+      "desc": "Negative spin, positive spin, a question, an experience, a call-out, 'here's how', social proof. In mid-2025 it was three formats: shock value, demonstration, challenge.",
       "creators": [
         "a"
       ],
-      "links": [],
-      "source": "storytelling-playbook.md + creator research notes",
+      "links": [
+        "p3g",
+        "p2d",
+        "p3f"
+      ],
+      "source": "storytelling-playbook.md + creator research notes; sources/research/notes_aayush.md §Old reels (Dec 2024 to Sep 2025), DK7nVlEAQbH",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -607,7 +625,10 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p3b",
+        "p1e"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -622,7 +643,10 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p4b",
+        "p1c"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -637,7 +661,9 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p4a"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -669,7 +695,10 @@
       "creators": [
         "c"
       ],
-      "links": [],
+      "links": [
+        "p4c",
+        "p4e"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -701,7 +730,10 @@
       "creators": [
         "s"
       ],
-      "links": [],
+      "links": [
+        "p4e",
+        "p5j"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -750,7 +782,10 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p5b",
+        "p5d"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -799,7 +834,9 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p5e"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -814,7 +851,10 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p5d",
+        "p1i"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -846,7 +886,10 @@
       "creators": [
         "s"
       ],
-      "links": [],
+      "links": [
+        "p5i",
+        "p5h"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -929,7 +972,9 @@
       "creators": [
         "s"
       ],
-      "links": [],
+      "links": [
+        "p6e"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -944,7 +989,9 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p6a"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1078,7 +1125,10 @@
       "creators": [
         "s"
       ],
-      "links": [],
+      "links": [
+        "p7f",
+        "p1g"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1093,7 +1143,10 @@
       "creators": [
         "s"
       ],
-      "links": [],
+      "links": [
+        "p7c",
+        "p7a"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1142,7 +1195,10 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p7d",
+        "p7j"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1170,14 +1226,15 @@
       "layer": "framework",
       "parent": "p7",
       "name": "The last dab",
-      "desc": "Write the last line first. Make it worth repeating; in a short it loops back to the hook.",
+      "desc": "Write the last line first. Make it worth repeating; in a short it loops back to the hook. Aayush ends mid-line ('Till then…') so his last words run straight into his first.",
       "creators": [
-        "k"
+        "k",
+        "a"
       ],
       "links": [
         "p5"
       ],
-      "source": "storytelling-playbook.md + creator research notes",
+      "source": "storytelling-playbook.md + creator research notes; sources/research/notes_aayush.md §Old reels (Dec 2024 to Sep 2025), DOxIdPWkR9B",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1242,7 +1299,10 @@
       "creators": [
         "c"
       ],
-      "links": [],
+      "links": [
+        "p8d",
+        "p3e"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1257,7 +1317,10 @@
       "creators": [
         "c"
       ],
-      "links": [],
+      "links": [
+        "p8a",
+        "p8e"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1290,7 +1353,9 @@
       "creators": [
         "s"
       ],
-      "links": [],
+      "links": [
+        "p8a"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1305,7 +1370,10 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p8b",
+        "p1f"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1388,7 +1456,9 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p9b"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1403,7 +1473,10 @@
       "creators": [
         "s"
       ],
-      "links": [],
+      "links": [
+        "p9a",
+        "p6j"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1418,7 +1491,10 @@
       "creators": [
         "c"
       ],
-      "links": [],
+      "links": [
+        "p9e",
+        "p9g"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1450,7 +1526,9 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p9c"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1482,7 +1560,10 @@
       "creators": [
         "a"
       ],
-      "links": [],
+      "links": [
+        "p9c",
+        "p3i"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1515,7 +1596,10 @@
         "s",
         "k"
       ],
-      "links": [],
+      "links": [
+        "p9h",
+        "p9j"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1526,13 +1610,14 @@
       "layer": "framework",
       "parent": "p9",
       "name": "Reps beat talent",
-      "desc": "Get on more stages and review your own game tape. Volume negates luck.",
+      "desc": "Get on more stages and review your own game tape. Volume negates luck. Aayush: your first 30 videos will suck, push through anyway.",
       "creators": [
         "s",
-        "c"
+        "c",
+        "a"
       ],
       "links": [],
-      "source": "storytelling-playbook.md + creator research notes",
+      "source": "storytelling-playbook.md + creator research notes; sources/research/notes_aayush.md (DePGd1Nsugv, FEfeRjrHHmc)",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1546,7 +1631,10 @@
       "creators": [
         "k"
       ],
-      "links": [],
+      "links": [
+        "p1a",
+        "p10h"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1561,7 +1649,12 @@
       "creators": [
         "c"
       ],
-      "links": [],
+      "links": [
+        "p10c",
+        "p10d",
+        "p10e",
+        "p7d"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1577,7 +1670,9 @@
         "c",
         "a"
       ],
-      "links": [],
+      "links": [
+        "p10g"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1592,7 +1687,9 @@
       "creators": [
         "c"
       ],
-      "links": [],
+      "links": [
+        "p10g"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1675,7 +1772,11 @@
       "creators": [
         "a"
       ],
-      "links": [],
+      "links": [
+        "p7j",
+        "p4g",
+        "p10e"
+      ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
       "status": "active"
@@ -1977,6 +2078,189 @@
       "source": "chat 2026-10-16",
       "added": "2026-10-16",
       "status": "active"
+    },
+    {
+      "id": "x019",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Rule: Code keeps the network, chat teaches",
+      "desc": "Aryan, 2026-10-16: Claude Code sessions do not teach. Their job is to keep the network easy to reach, string everything together and run tests (validation, relink and pattern passes, mix tests). Lessons happen in the claude.ai Personal Brand chat.",
+      "creators": [],
+      "links": [
+        "x018",
+        "x014",
+        "core"
+      ],
+      "source": "chat 2026-10-16 (Claude Code)",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x020",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p2",
+      "name": "Argue it out: two-character skit",
+      "desc": "Play both sides. One character has the problem, the other has the fix, so the conflict is built into the format and a plain tutorial becomes a scene.",
+      "creators": [
+        "a"
+      ],
+      "links": [
+        "p1b",
+        "p2j",
+        "p10c"
+      ],
+      "source": "sources/research/notes_aayush.md §Old reels (Dec 2024 to Sep 2025), DMA_-JqpfxX",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x021",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "Demonstrate it inside the reel",
+      "desc": "Use the technique while you teach it, then point it out: 'I bet you didn't notice I used both.' The viewer gets the lesson and the proof in the same seconds.",
+      "creators": [
+        "a"
+      ],
+      "links": [
+        "p4g",
+        "p6d",
+        "p3i"
+      ],
+      "source": "sources/research/notes_aayush.md §Old reels (Dec 2024 to Sep 2025), DK7nVlEAQbH; notes_aayush.md O-GXIw8YWvY, tGYh79FnOq8",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x022",
+      "type": "pattern",
+      "layer": "pattern",
+      "parent": "p7",
+      "name": "Name it so they can say it back",
+      "desc": "All four creators turn advice into a named thing: Kallaway's term branding, Caleb's named concepts, Sam's shared language, Aayush's named systems. A name makes an idea easy to remember, repeat and credit to you.",
+      "creators": [
+        "k",
+        "c",
+        "s",
+        "a"
+      ],
+      "links": [
+        "p7e",
+        "p7d",
+        "p7h",
+        "p7j"
+      ],
+      "source": "pattern pass 2026-10-16 over p7e, p7d, p7h, p7j",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x023",
+      "type": "pattern",
+      "layer": "pattern",
+      "parent": "p8",
+      "name": "Take a side you'd defend",
+      "desc": "All four push a genuine opposing view: Caleb's contrarian belief, Sam's one hill to die on, Kallaway's take vault, Aayush's die-on-this-hill hooks. Aim it at a belief, not a person, and keep only sides you'd still hold in a year.",
+      "creators": [
+        "c",
+        "s",
+        "k",
+        "a"
+      ],
+      "links": [
+        "p8a",
+        "p8d",
+        "p8e",
+        "p8i",
+        "p8c"
+      ],
+      "source": "pattern pass 2026-10-16 over p8a, p8d, p8e, p8i, p8c",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x024",
+      "type": "pattern",
+      "layer": "pattern",
+      "parent": "p4",
+      "name": "Prove it before they doubt it",
+      "desc": "All four put proof right after the hook: Kallaway's bullseye proof, Caleb's contextual credibility, Sam's Triple P, Aayush's proof on screen. The proof must fit this claim and this viewer, and land before the trust check ends.",
+      "creators": [
+        "k",
+        "c",
+        "s",
+        "a"
+      ],
+      "links": [
+        "p4c",
+        "p4d",
+        "p4f",
+        "p4g"
+      ],
+      "source": "pattern pass 2026-10-16 over p4c, p4d, p4f, p4g",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x025",
+      "type": "pattern",
+      "layer": "pattern",
+      "parent": "p6",
+      "name": "Admit the miss",
+      "desc": "Kallaway's admission lines, Sam's losses beat wins and Caleb's shared weaknesses agree: a real flaw or failure, said plainly, buys more trust than another win.",
+      "creators": [
+        "k",
+        "s",
+        "c"
+      ],
+      "links": [
+        "p6f",
+        "p6g",
+        "p6h"
+      ],
+      "source": "pattern pass 2026-10-16 over p6f, p6g, p6h",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x026",
+      "type": "pattern",
+      "layer": "pattern",
+      "parent": "p10",
+      "name": "People follow characters",
+      "desc": "Caleb's characters and settings, Aayush's 'build your characters' and Sam's character diamond agree: viewers follow a recognisable person with recurring places, objects, quirks and limits, not a topic.",
+      "creators": [
+        "c",
+        "a",
+        "s"
+      ],
+      "links": [
+        "p10c",
+        "p10g"
+      ],
+      "source": "pattern pass 2026-10-16 over p10c, p10g",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x027",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Sync: chat writes to GitHub, Code watches",
+      "desc": "Aryan, 2026-10-16: the Personal Brand chat has a project instruction to write every new thing to GitHub, either into a markdown file or as direct changes. No Google Doc. The Claude Code session checks the repo twice a day (about 13:56 and 22:56 IST) and ingests whatever landed.",
+      "creators": [],
+      "links": [
+        "x019",
+        "x018",
+        "core"
+      ],
+      "source": "chat 2026-10-16 (Claude Code)",
+      "added": "2026-10-16",
+      "status": "active"
     }
   ],
   "patterns": {
@@ -2076,6 +2360,99 @@
       ],
       "createdAt": "2026-10-16T12:00:00.000Z",
       "source": "chat 2026-10-16"
+    },
+    {
+      "id": "mix-argued-lesson",
+      "status": "active",
+      "name": "The argued lesson",
+      "oneLine": "Teach a method as a two-character argument: a wrong guess, the real fix, and a last line that cuts back into the first.",
+      "howItWorks": "The skit gives the lesson a built-in conflict, so viewers stay to see who's right. Letting the struggling character guess the obvious fix is a head fake. Proof on screen settles the trust check, and the loop ending sends viewers back to the start.",
+      "recipe": [
+        "A states the problem as a feeling.",
+        "B pushes back with the flipped belief.",
+        "A guesses the obvious fix; B rejects it (head fake).",
+        "B gives the real method, each step shown on screen.",
+        "The last line stops mid-sentence and runs into A's first line."
+      ],
+      "test": {
+        "verdict": "works with care",
+        "why": "The parts don't fight: the skit brings conflict, the head fake brings surprise, the proof brings trust. Aayush's July 2025 skit used three of the four and ran 69 seconds.",
+        "risk": "Skits run long and bad acting breaks them. You speak as a character, not as yourself, so it builds less personal trust than talking to camera."
+      },
+      "example": "A: Why are you smiling?\nB: I finished a week of revision in one evening.\nA: How? I'd need ten hours a day.\nB: That's the mistake. You don't need more hours.\nA: Then a better timetable?\nB: No. Test yourself first, then read only what you got wrong. [on screen: the test sheet]\nA: Why are you smiling?",
+      "parents": [
+        "x020",
+        "p5c",
+        "p7g",
+        "p4g"
+      ],
+      "linksTo": [
+        "p2j",
+        "p5a"
+      ],
+      "createdAt": "2026-10-16T10:00:00.000Z",
+      "source": "mix test 2026-10-16 (Claude Code)"
+    },
+    {
+      "id": "mix-aim-at-belief",
+      "status": "active",
+      "name": "Aim the hook at a belief",
+      "oneLine": "A negative, contrarian hook works when its target is a belief the viewer holds, not the viewer.",
+      "howItWorks": "Negative frames pull harder than positive ones, and contrarian lines break autopilot. Aimed at the viewer, the same energy makes them defensive and the trust check fails. Aimed at a belief, it lets the viewer side with you against it.",
+      "recipe": [
+        "Name a belief the viewer holds.",
+        "Attack the belief in negative terms.",
+        "Give the replacement in the same breath.",
+        "Never make 'you' the subject of the insult."
+      ],
+      "test": {
+        "verdict": "works with care",
+        "why": "Real case: Aayush's Dec 2024 reel has two hooks. The spoken one attacks a belief ('Likes aren't going to sign you any fitness coaching clients. Relationships do.'); the caption attacks the viewer ('Makes sense why you're still broke…'). A year later his own first hook rule is 'never attack the viewer'. Strong aimed at a belief, weak aimed at a person.",
+        "risk": "The line is thin: 'you're doing X wrong' still lands on the viewer even when X is only a habit."
+      },
+      "example": "Weak: No wonder you're still stuck.\nStrong: Rereading your notes isn't learning. Testing yourself is.",
+      "parents": [
+        "p8i",
+        "p3g",
+        "p2d",
+        "p8c"
+      ],
+      "linksTo": [
+        "p4a",
+        "p2e"
+      ],
+      "createdAt": "2026-10-16T10:00:00.000Z",
+      "source": "mix test 2026-10-16 (Claude Code)"
+    },
+    {
+      "id": "mix-beginners-hot-take",
+      "status": "active",
+      "name": "The beginner's hot take",
+      "oneLine": "A contrarian claim, stated as expert truth, by someone with no proof yet.",
+      "howItWorks": "A contrarian belief needs proof to survive the trust check. A beginner has little, so the claim reads as bait. The working version is a different move: frame the take as a test you ran, so the experiment is the proof.",
+      "recipe": [
+        "State the common belief.",
+        "Say you tested the opposite, with a time frame.",
+        "Show what happened, wins and misses.",
+        "Say what you believe now, as a student, not an expert."
+      ],
+      "test": {
+        "verdict": "weak",
+        "why": "Two of the three balls fight. Contrarian belief asks you to sound certain; expert-or-student says a beginner who sounds like an expert burns trust; bullseye proof needs evidence a beginner doesn't have. As an expert claim it fails. Reframed as an experiment it stops being this mix.",
+        "risk": "It tempts beginners because contrarian hooks get views, but the views come from people who will check the proof and find none."
+      },
+      "example": "Weak: Everyone's wrong about studying, and I'll prove it.\nWorking version: Everyone says study 8 hours. I studied 2 a day for 30 days instead. Here's what my marks did.",
+      "parents": [
+        "p8a",
+        "p4h",
+        "p4c"
+      ],
+      "linksTo": [
+        "p4a",
+        "x024"
+      ],
+      "createdAt": "2026-10-16T10:00:00.000Z",
+      "source": "mix test 2026-10-16 (Claude Code)"
     }
   ]
 }

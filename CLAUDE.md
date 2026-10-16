@@ -25,6 +25,10 @@ Aryan's main mission right now is to become an excellent storyteller. He wants t
 
 He launches a new Instagram account from 0 after his exams end on 4 Nov 2026.
 
+## Role split (Aryan, 2026-10-16)
+
+Claude Code sessions do not teach. Their job is to keep the network easy to reach, string everything together, and run tests: validate, health, relink, pattern and gap passes, mix tests, and page checks. Lessons happen in the claude.ai Personal Brand chat; Code ingests what comes out of it. The teaching rules below apply to the chat.
+
 ## How to work with Aryan
 
 - Concise, pure English, human-sounding. Short replies. He is 19, a BBA Marketing student and founder.
