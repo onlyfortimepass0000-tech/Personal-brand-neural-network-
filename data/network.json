@@ -1,0 +1,2081 @@
+{
+  "meta": {
+    "schema": 1,
+    "updated": "2026-10-16",
+    "next_id": 19,
+    "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
+  },
+  "creators": [
+    {
+      "id": "k",
+      "name": "Kallaway",
+      "role": "The attention scientist",
+      "desc": "Explains the brain science of attention: prediction, loops, hooks, and the words that hold people."
+    },
+    {
+      "id": "c",
+      "name": "Caleb Ralston",
+      "role": "The world builder",
+      "desc": "Turns stories into a world people want to live in: belief, credibility, names, characters, lore."
+    },
+    {
+      "id": "s",
+      "name": "Sam Gaudet",
+      "role": "The operator",
+      "desc": "Ships it fast with a phone: context plus conflict, one idea per video, delivery, and reps."
+    },
+    {
+      "id": "a",
+      "name": "Aayush Swamy",
+      "role": "The funnel builder",
+      "desc": "Every Reel is a numbered, proof-heavy structure with a clear job: get found, build trust, or sell."
+    }
+  ],
+  "core": {
+    "id": "core",
+    "name": "Storytelling core",
+    "desc": "Every story that works does four things: it makes the viewer predict, it makes them feel, it earns their trust, and it leaves one idea that sticks. The ten principles hang from this ball, and every technique links back here."
+  },
+  "principles": [
+    {
+      "id": "p1",
+      "kind": "principle",
+      "name": "Prediction & curiosity",
+      "desc": "The viewer's brain is predicting, not just watching. Open a gap they want closed, and give just enough context for them to guess."
+    },
+    {
+      "id": "p2",
+      "kind": "principle",
+      "name": "Stakes & conflict",
+      "desc": "Something must be at risk for someone the viewer roots for. No conflict, no story."
+    },
+    {
+      "id": "p3",
+      "kind": "principle",
+      "name": "The hook",
+      "desc": "The first seconds break autopilot scrolling and answer two questions: what is this about, and what do I get?"
+    },
+    {
+      "id": "p4",
+      "kind": "principle",
+      "name": "Trust in seconds",
+      "desc": "Right after the hook the viewer checks: was I baited, and is this person worth hearing? Earn belief early."
+    },
+    {
+      "id": "p5",
+      "kind": "principle",
+      "name": "Loops & momentum",
+      "desc": "Keep opening new questions as you close old ones, so there's always a reason to stay for the next line."
+    },
+    {
+      "id": "p6",
+      "kind": "principle",
+      "name": "Specifics & feeling",
+      "desc": "Real details and real emotions make the brain live the story instead of just hearing it."
+    },
+    {
+      "id": "p7",
+      "kind": "principle",
+      "name": "One named idea",
+      "desc": "A story earns its time by leaving one idea the viewer can use and repeat."
+    },
+    {
+      "id": "p8",
+      "kind": "principle",
+      "name": "Belief & enemy",
+      "desc": "A story with a point of view travels. A belief people can agree or argue with is what makes them care."
+    },
+    {
+      "id": "p9",
+      "kind": "principle",
+      "name": "Delivery & voice",
+      "desc": "The same story lands or dies on how it's told: to one person, in your own voice, with rhythm."
+    },
+    {
+      "id": "p10",
+      "kind": "principle",
+      "name": "World & following",
+      "desc": "One story earns a view. Many stories inside one world earn a follower."
+    },
+    {
+      "id": "h-aryan",
+      "kind": "hub",
+      "layer": "aryan",
+      "name": "Aryan: raw facts",
+      "desc": "Everything Aryan has said about himself, kept in his own words and sourced. Each fact is strung to the storytelling balls it relates to, so material and method can be mixed."
+    },
+    {
+      "id": "h-practice",
+      "kind": "hub",
+      "layer": "practice",
+      "name": "Practice log",
+      "desc": "What Aryan has been taught, tried, answered and tested. The loop writes here after every lesson, so the network learns how he learns."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "p1a",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p1",
+      "name": "Dopamine = prediction",
+      "desc": "Dopamine fires while we guess, not when we win. A slot machine hooks people; a vending machine doesn't.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p5b"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p1b",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p1",
+      "name": "Context + conflict = curiosity",
+      "desc": "Tension makes people lean in. Give the setting, then the problem.",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p2"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p1c",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p1",
+      "name": "4 inputs of curiosity",
+      "desc": "A knowledge gap, belief the gap will be filled, novelty, and relevance. You control the inputs, not curiosity itself.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p4"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p1d",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p1",
+      "name": "5 reveal outcomes",
+      "desc": "Worse than expected, as expected or confusing loses viewers. Better than expected or unexpected-but-intriguing keeps them.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p5c"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p1e",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p1",
+      "name": "Specifics to predict with",
+      "desc": "'Something crazy happened' gives the brain nothing. Specifics let viewers guess, and guessing is the hook.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p6"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p1f",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p1",
+      "name": "Illusion of novelty",
+      "desc": "A new angle on an old thing, set against a belief they already hold, tied to an outcome they want.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p8"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p1g",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p1",
+      "name": "The 4 N's filter",
+      "desc": "Is the idea net new, non-obvious, nuanced and observable? If not, sharpen it before you tell it.",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p7"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p1h",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p1",
+      "name": "Story lenses",
+      "desc": "Everyone covers the obvious angle. Find yours: on Taylor Swift at the Super Bowl he covered her business impact on the NFL.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p8"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p1i",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p1",
+      "name": "Flex, then subvert",
+      "desc": "'My Ferrari went up $300K… that's not even the most exciting thing today.' A gap opens mid-sentence.",
+      "creators": [
+        "a"
+      ],
+      "links": [
+        "p3"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p1j",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p1",
+      "name": "Old things, new people",
+      "desc": "Repackage fundamental truths with new framing instead of chasing brand-new ideas.",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p7"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p2a",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p2",
+      "name": "Stakes",
+      "desc": "A character to root for, something at risk, and urgency. It doesn't need to be life or death, just personally relevant.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p6"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p2b",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p2",
+      "name": "The dance: but / therefore",
+      "desc": "Between beats put 'but' or 'therefore', never 'and then' (the South Park rule).",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p5"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p2c",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p2",
+      "name": "Call out the consequence",
+      "desc": "'Tired of wearing a hat all the time?' beats 'Tired of being bald?' Name what the pain costs them.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p3"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p2d",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p2",
+      "name": "Negative frames",
+      "desc": "Loss aversion: avoiding pain motivates about twice as much. 'This is killing your growth.'",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p3"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p2e",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p2",
+      "name": "Have a villain",
+      "desc": "A person, a group, an approach or a belief. Without one, nothing pushes back.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p8c"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p2f",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p2",
+      "name": "Something to root for",
+      "desc": "Build common ground so viewers see themselves as the hero.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p10"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p2g",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p2",
+      "name": "Start at 70 out of 100",
+      "desc": "Skip the school story arc. Open high, spike the first conflict early, then peak and release.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p5"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p2h",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p2",
+      "name": "Aggravate the pain",
+      "desc": "In a story that sells: aggravate the pain, show the old method failing, then tease a named new mechanism.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p7"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p2i",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p2",
+      "name": "MAP: broad pain, then specific",
+      "desc": "Mission, then Attack the broad pain for reach, then Pinpoint the specific pain to pull the right viewers.",
+      "creators": [
+        "a"
+      ],
+      "links": [
+        "p3"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p2j",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p2",
+      "name": "Conflict makes them lean in",
+      "desc": "No conflict, no curiosity. Put the problem on screen before the answer, or nobody waits for the answer.",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p1b"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p3a",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "Interrupt theory",
+      "desc": "A hook triggers the involuntary 'wait, what was that?' freeze: the orienting response.",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p3b",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "The 4 S's",
+      "desc": "Subject (crystal clear), Stakes (the outcome), Speed (fewest words), Super clear (only one way to read it).",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p3c",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "Triple hook",
+      "desc": "Text, visual and spoken hooks must all point the same way. Misalignment is the most common mistake.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p6d"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p3d",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "The 6 hook words",
+      "desc": "Subject, action, objective, contrast, plus an optional proof word ('again') and time word ('in 90 days').",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p3e",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "HEIT hook",
+      "desc": "Context + a contrarian take + an open loop: 'Trial reels aren't dead, they're just misunderstood.'",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p8"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p3f",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "Wrapping paper",
+      "desc": "Packaging, hook and format: your only advantage before the click. Keep a library of packaging that stops you.",
+      "creators": [
+        "c"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p3g",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "3 hook rules",
+      "desc": "Never attack the viewer. Speak to what they want, not what they should do. Make the payoff obvious with a number, time or outcome.",
+      "creators": [
+        "a"
+      ],
+      "links": [
+        "p2"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p3h",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "1 idea, 7 hooks",
+      "desc": "Negative spin, positive spin, a question, an experience, a call-out, 'here's how', social proof.",
+      "creators": [
+        "a"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p3i",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "Visual hooks & props",
+      "desc": "Move the camera, move yourself, hold a prop. Show while you tell; props beat heavy editing.",
+      "creators": [
+        "a",
+        "k"
+      ],
+      "links": [
+        "p6d"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p3j",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "Name the plot",
+      "desc": "The first line says what the story is about. Never 'wait till you see this'.",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p4a",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "Lock-in zone",
+      "desc": "The 1-3 lines after the hook take curiosity from 1 to 10 while viewers run a quick trust check.",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p4b",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "6 lock-in moves",
+      "desc": "Tease the proof, tease the transformation, rapid contrast, frame the magic box, handle the objection, double down.",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p4c",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "Bullseye proof",
+      "desc": "Proof from someone just like the viewer beats 'lots of people', which beats a study.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p6"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p4d",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "Contextual credibility",
+      "desc": "Proof that fits this exact topic, not your generic bio.",
+      "creators": [
+        "c"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p4e",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "4 C's intro",
+      "desc": "Call-out, credibility, compass (the roadmap), and a core learning in the first ~60 seconds.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p7"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p4f",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "Triple P",
+      "desc": "Promise what they'll learn, prove you're qualified, show the plan.",
+      "creators": [
+        "s"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p4g",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "Proof on screen",
+      "desc": "View-count badges, client profiles, dashboards: proof the eye sees before the ear processes it.",
+      "creators": [
+        "a"
+      ],
+      "links": [
+        "p3i"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p4h",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "Expert or student",
+      "desc": "Posing as an expert while you're a student burns trust. An honest learning journey earns it.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p10"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p5a",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Story loops",
+      "desc": "Context opens a loop, a reveal closes it, and the next opens. A 45-60 second short holds 3-4 loops.",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p5b",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Addiction loop",
+      "desc": "Stakes, then big question, then head fake, then rehook. The last three repeat to the end.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p2a"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p5c",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Head fake",
+      "desc": "Break their prediction with an answer that surprises but makes sense in hindsight. Plant the clues first.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p1d"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p5d",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Rehook",
+      "desc": "Close one loop and open the next in one breath: 'which would have been great, except…'",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p5e",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Loop openers",
+      "desc": "Reset the attention hourglass: 'But that's not even the most interesting part.'",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p5f",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Contrast words",
+      "desc": "But, actually, instead, turns out, except, yet: the engine under every story lock.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p2b"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p5g",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Asymmetric pacing",
+      "desc": "Make the first point the shortest. Fast early progress feels like momentum.",
+      "creators": [
+        "s"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p5h",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Progressive density",
+      "desc": "Open with a broad problem everyone feels, then get more tactical toward the end.",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p2i"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p5i",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Numbered bodies",
+      "desc": "Steps, phases, months, acronyms. A number tells viewers where they are and how much is left.",
+      "creators": [
+        "a"
+      ],
+      "links": [
+        "p7"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p5j",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Promise, progress, payoff",
+      "desc": "Promise the payoff early, show progress toward it, then pay it off in full. Never promise five lessons and hide them; bait breaks trust for good.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p4"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p6a",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "Only essential context",
+      "desc": "Where were you, when was it, what were you doing? Then straight to the conflict.",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p1b"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p6b",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "Thoughts & emotions",
+      "desc": "Ask 'what was I thinking?' and 'what was I feeling?' Facts alone sound robotic.",
+      "creators": [
+        "s"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p6c",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "Order the W's",
+      "desc": "Lead with what and why, then who and how, then when and where as colour.",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p6d",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "Paint the picture",
+      "desc": "Use visuals. Show while you tell.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p3c"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p6e",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "Thought narration",
+      "desc": "Say what the viewer is thinking right now: 'You're probably thinking this can't work for you.'",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p9"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p6f",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "Admission lines",
+      "desc": "Name your own struggles out loud. It's part of being a likable expert.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p9d"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p6g",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "Losses beat wins",
+      "desc": "Admitting a miss builds more trust than showing a win.",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p10"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p6h",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "Share weaknesses",
+      "desc": "Flaws you can change, limits you adapt to, costs your choices forced on you. Real, never contrived.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p10g"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p6i",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "Lived experience",
+      "desc": "Educational content drawn from what you've actually been through beats an AI-written script.",
+      "creators": [
+        "a"
+      ],
+      "links": [
+        "p9h"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p6j",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "Rhythm",
+      "desc": "Vary sentence length. One sentence per line; the script's right edge should look jagged.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p9"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p7a",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p7",
+      "name": "Teach one thing",
+      "desc": "One simple idea they can apply today, not a 7-step list.",
+      "creators": [
+        "s"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p7b",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p7",
+      "name": "Point, Explain, Illustrate, Lesson",
+      "desc": "Each section makes a point, explains it, illustrates it, and lands a lesson.",
+      "creators": [
+        "s"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p7c",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p7",
+      "name": "Illustrate with analogy",
+      "desc": "Link the unknown to the known: content without a plan is a puzzle without the picture on the box.",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p6"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p7d",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p7",
+      "name": "Name your concepts",
+      "desc": "Names that pass the 3 R's: easy to remember, repeat and reference.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p10"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p7e",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p7",
+      "name": "Term branding",
+      "desc": "The labeling effect: 'improve your offer' becomes Hormozi's 'value equation'.",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p7f",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p7",
+      "name": "Atomic shareability",
+      "desc": "Shrink the idea to one sentence. Say it twice: once to a colleague, once as a metaphor for a child.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p10f"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p7g",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p7",
+      "name": "The last dab",
+      "desc": "Write the last line first. Make it worth repeating; in a short it loops back to the hook.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p5"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p7h",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p7",
+      "name": "Shared language",
+      "desc": "Coin phrases and repeat them for years until the audience says them back.",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p10"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p7i",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p7",
+      "name": "Redefine terms",
+      "desc": "Give vague industry words an operational definition. Own the definition, own the conversation.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p8"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p7j",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p7",
+      "name": "Named systems",
+      "desc": "MAP, Pull / Prove / Connect, ONYX: a named method makes advice feel like a tool.",
+      "creators": [
+        "a"
+      ],
+      "links": [
+        "p4b"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p8a",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "Contrarian belief",
+      "desc": "The 80% lever: something you genuinely believe against the dominant view. Contrarian, not controversial.",
+      "creators": [
+        "c"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p8b",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "Two-column exercise",
+      "desc": "Left: what your space says that you disagree with. Right: your view. Keep the takes you'd defend for years.",
+      "creators": [
+        "c"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p8c",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "Common enemy",
+      "desc": "Your belief reframed as what stands between the viewer and their goal. A belief or approach, never a person.",
+      "creators": [
+        "c",
+        "s"
+      ],
+      "links": [
+        "p2e"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p8d",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "One hill to die on",
+      "desc": "If everyone agrees with you, you're probably not saying anything.",
+      "creators": [
+        "s"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p8e",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "Contrarian take vault",
+      "desc": "Whenever you disagree with something you watch, write down your alternative view.",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p8f",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "Embedded truths",
+      "desc": "Speak as if it's already true: 'When you try this', not 'If you try this'.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p9"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p8g",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "Protect the illusion",
+      "desc": "Don't hedge. Deliver like a whisperer sharing a secret, not a town crier.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p9"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p8h",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "Self-articulation",
+      "desc": "Say what viewers feel but can't put into words.",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p6"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p8i",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "Contrarian hooks in action",
+      "desc": "'The biggest scam in content is crazy editing.' 'Never post raw talking heads.' 'I will die on this hill.'",
+      "creators": [
+        "a"
+      ],
+      "links": [
+        "p3"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p9a",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Talk to one friend",
+      "desc": "Talk with people, not at them. Write and film for one close friend.",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p9b",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Say 'you', end low, pause",
+      "desc": "'You', not 'you guys'. Downward inflection, no upspeak. Let the pauses breathe.",
+      "creators": [
+        "s"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p9c",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Be yourself, minus the friction",
+      "desc": "Delivery isn't performing; it's removing what stops you being you. Calm people stay calm.",
+      "creators": [
+        "c"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p9d",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Likable expert",
+      "desc": "Authority + affinity: believe your words, be happy to be there, be proof-heavy, admit struggles.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p4"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p9e",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Camera anxiety kit",
+      "desc": "Shake out for 30 seconds, do throwaway takes, tape a friend's photo by the lens, record line by line.",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p9f",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Copy speech",
+      "desc": "Read a top creator's transcript aloud in sync with their video to absorb rhythm and pauses.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p9j"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p9g",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Hands & starts",
+      "desc": "Hold something to kill awkward hands. Say 'Okay, so' before the hook, then cut it, so you start mid-thought.",
+      "creators": [
+        "a"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p9h",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Spoken, not written",
+      "desc": "Read the script aloud and fix lines that sound written. Aim for a grade 5-7 reading level; cut for value per second.",
+      "creators": [
+        "a"
+      ],
+      "links": [
+        "p7"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p9i",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Script, then outline",
+      "desc": "Script word for word while learning; move to outlines once comfortable. Tangents feel real.",
+      "creators": [
+        "s",
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p9j",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Reps beat talent",
+      "desc": "Get on more stages and review your own game tape. Volume negates luck.",
+      "creators": [
+        "s",
+        "c"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p10a",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Dopamine ladder",
+      "desc": "Stimulation, captivation, anticipation, validation, then affection and revelation: they like you and expect more.",
+      "creators": [
+        "k"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p10b",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "World building",
+      "desc": "Name concepts, redefine terms, share weaknesses, characters and settings, interest stacking, lore, a common enemy.",
+      "creators": [
+        "c"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p10c",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Characters & settings",
+      "desc": "A recurring cast and recurring places. Aayush calls it building the 'characters' people recognise you by.",
+      "creators": [
+        "c",
+        "a"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p10d",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Interest stacking",
+      "desc": "Your non-niche interests move viewers from acquaintance to friend to best friend.",
+      "creators": [
+        "c"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p10e",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Lore & legends",
+      "desc": "Success and failure stories, each paired with a lesson, kept in a credibility bank.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p6"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p10f",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Content people share to label themselves",
+      "desc": "People share what says something about them. Make content they want to be seen sharing.",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p7f"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p10g",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Character diamond",
+      "desc": "North star, kryptonite, non-negotiables, weird interests. People follow characters.",
+      "creators": [
+        "s"
+      ],
+      "links": [
+        "p6h"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p10h",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Series & 'start here'",
+      "desc": "Episodes that end with 'follow for part 2', and a pinned intro that tells newcomers who you are.",
+      "creators": [
+        "a"
+      ],
+      "links": [
+        "p5"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p10i",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Pull / Prove / Connect",
+      "desc": "Pull gets you found, Prove earns trust, Connect (your story) makes them choose you.",
+      "creators": [
+        "a"
+      ],
+      "links": [],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "p10j",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Power of suggestion",
+      "desc": "Signal, belief, action: let viewers reach the conclusion themselves; people trust what they conclude.",
+      "creators": [
+        "k"
+      ],
+      "links": [
+        "p4"
+      ],
+      "source": "storytelling-playbook.md + creator research notes",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x001",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Brand mission and conditions",
+      "desc": "Personal brand around himself, not his company. Brand-new account from 0 followers and 0 following. He will not use his current account or network. 90 days on camera. Starts after exams end on 4 Nov 2026.",
+      "creators": [],
+      "links": [
+        "p10b"
+      ],
+      "source": "sources/aryan-source-file.md §1-2",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x002",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Goal: master storytelling first",
+      "desc": "Main goal is to become an excellent storyteller. Before choosing content he wants to understand how storytelling works. Current phase: learn the frameworks, not what to post.",
+      "creators": [],
+      "links": [
+        "core"
+      ],
+      "source": "sources/aryan-source-file.md §1, §15",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x003",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Belief: discipline and boredom",
+      "desc": "Consistency, discipline, honour and character can achieve anything. Learn fast and get \"addicted to the boredom of the slow process of life\".",
+      "creators": [],
+      "links": [
+        "p8a",
+        "p8d"
+      ],
+      "source": "sources/aryan-source-file.md §5",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x004",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Belief line (picked)",
+      "desc": "\"Discipline without direction is just a better 9-to-5.\" The gym taught discipline; the internship showed him it needs direction.",
+      "creators": [],
+      "links": [
+        "p8a",
+        "p7f"
+      ],
+      "source": "sources/aryan-source-file.md §4-5",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x005",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Origin: gym, internship, no 9-to-5",
+      "desc": "The gym taught consistency. Seniors repeating the same routine for years and the commute made him say \"not this life\". He wants to be free and build his own legacy.",
+      "creators": [],
+      "links": [
+        "p10e"
+      ],
+      "source": "sources/aryan-source-file.md §4",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x006",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Mission: change his bloodline",
+      "desc": "\"I have to change my bloodline.\" Born middle class; will die rich and make his parents proud. Legacy = a portfolio of companies, family financially free, his name as a brand.",
+      "creators": [],
+      "links": [
+        "p2a",
+        "p10c"
+      ],
+      "source": "sources/aryan-source-file.md §6",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x007",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Story: the doubt night",
+      "desc": "Lowest moment of the past year: doubting the whole path, alone late at night with zero results. One voice says keep going; he calls one or two people to cross-check; he shows up again.",
+      "creators": [],
+      "links": [
+        "p2a",
+        "p6b"
+      ],
+      "source": "sources/aryan-source-file.md §9",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x008",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Story: the cold-calling saga",
+      "desc": "300-350 calls to interior designers, all \"no\". Asked 2-3 friends and a 25-year sales mentor, researched with Claude, switched to manufacturers, stopped at 100 calls with under 10 interested. Friends said cold calling is weak in India, so he went store to store in Hiranandani.",
+      "creators": [],
+      "links": [
+        "p5a",
+        "p5d",
+        "p2b"
+      ],
+      "source": "sources/aryan-source-file.md §10.1",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x009",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Story: the first store",
+      "desc": "Nervous before the first meeting; held one thought: the mind takes the path of least resistance, so do the opposite. Dropped the script and pitched. The first 10 conversations were just understanding. Open: is he comfortable with shop owners now?",
+      "creators": [],
+      "links": [
+        "p6b",
+        "p6d"
+      ],
+      "source": "sources/aryan-source-file.md §10.2",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x010",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Proof inventory",
+      "desc": "300+ cold calls, automations and AI agents built, one paying client (name hidden is fine). OK to show: calls, rejections, his screen while building, struggles. Not chosen: revenue numbers, home and family.",
+      "creators": [],
+      "links": [
+        "p4c",
+        "p4g"
+      ],
+      "source": "sources/aryan-source-file.md §11",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x011",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Audience: undecided, three candidates",
+      "desc": "Students 17-24, small business owners, founders ahead of him. He can help a scared would-be founder, a 12th-grader at a crossroads, a shop owner drowning in manual work. Wants viewers to feel \"I can do this too\".",
+      "creators": [],
+      "links": [
+        "p9a",
+        "p4c"
+      ],
+      "source": "sources/aryan-source-file.md §12",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x012",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Delivery setup",
+      "desc": "Hinglish, English or Hindi, open to all. Phone only (OnePlus Nord CE 3 Lite). 3-5 hours a week. Always wears glasses. Tone: occasional swearing, raw. Has filmed a few times.",
+      "creators": [],
+      "links": [
+        "p9a",
+        "p9e"
+      ],
+      "source": "sources/aryan-source-file.md §14",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x013",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Interests and content taste",
+      "desc": "Could talk 2 hours on how AI changes work, building a business at 19, discipline. Could make 10 videos on gym and body, or middle-class Indian life. Watches Hormozi-style breakdowns, founder journeys, AI tool breakdowns. Does not want it to be only yapping.",
+      "creators": [],
+      "links": [
+        "p10d"
+      ],
+      "source": "sources/aryan-source-file.md §13",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x014",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "How he wants Claude to work",
+      "desc": "Ask psychological and situational questions over time and double down on patterns. Use skills by default. Give one clear direction. Concise, blunt, pure English.",
+      "creators": [],
+      "links": [
+        "core"
+      ],
+      "source": "sources/aryan-source-file.md §15",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x015",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Home: supportive, studies first",
+      "desc": "Family says okay but studies must not be compromised; sometimes \"stop this, get a good job\". They know bits and pieces of what he does.",
+      "creators": [],
+      "links": [
+        "p2a"
+      ],
+      "source": "sources/aryan-source-file.md §8",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x016",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Lesson map: six layers",
+      "desc": "The teaching path has six layers: brain, atom, engine, door, feeling, meaning. Only lesson 1 has been started.",
+      "creators": [],
+      "links": [
+        "core"
+      ],
+      "source": "chat 2026-10-16",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x017",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Lesson 1: the brain predicts (open)",
+      "desc": "Question asked, still unanswered. A: \"Today I'll tell you how I saved money.\" B: \"I saved ₹40,000 this year by doing one thing every bank tells you not to.\" Which makes the brain guess, and which of the four curiosity inputs does B add?",
+      "creators": [],
+      "links": [
+        "p1a",
+        "p1c"
+      ],
+      "source": "chat 2026-10-16",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x018",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Rule: the network is a loop",
+      "desc": "Aryan's rule: every new fact, edit or deletion in this project goes into the network, so it becomes a competitive edge that improves over time.",
+      "creators": [],
+      "links": [
+        "core"
+      ],
+      "source": "chat 2026-10-16",
+      "added": "2026-10-16",
+      "status": "active"
+    }
+  ],
+  "patterns": {
+    "p1": {
+      "k": "Dopamine is a prediction chemical",
+      "c": "4 inputs of curiosity",
+      "s": "Context + conflict = curiosity",
+      "a": "Flex, then subvert"
+    },
+    "p2": {
+      "k": "Stakes; but / therefore",
+      "c": "Call out the consequence of the pain",
+      "s": "Conflict makes people lean in",
+      "a": "MAP: attack the broad pain"
+    },
+    "p3": {
+      "k": "Interrupt theory, 4 S's, triple hook",
+      "c": "Wrapping paper and call-outs",
+      "s": "HEIT hook: context + contrarian take + open loop",
+      "a": "Hook types, 3 hook rules, visual hooks"
+    },
+    "p4": {
+      "k": "Lock-in zone, bullseye proof",
+      "c": "4 C's intro, contextual credibility",
+      "s": "Triple P: promise, proof, plan",
+      "a": "Result-first hooks, proof on screen"
+    },
+    "p5": {
+      "k": "Story loops, addiction loop, rehooks",
+      "c": "Promise, progress, payoff",
+      "s": "Asymmetric pacing, progressive density",
+      "a": "Numbered bodies, series"
+    },
+    "p6": {
+      "k": "Admission lines, paint the picture",
+      "c": "Share weaknesses, show humanity",
+      "s": "Thoughts and emotions; losses build trust",
+      "a": "Lived experience over AI scripts"
+    },
+    "p7": {
+      "k": "Term branding, atomic shareability, last dab",
+      "c": "Name your concepts (3 R's)",
+      "s": "Teach one idea; shared language",
+      "a": "Named systems: MAP, Pull / Prove / Connect"
+    },
+    "p8": {
+      "k": "A villain; contrarian take vault",
+      "c": "Contrarian belief (80% lever); common enemy",
+      "s": "One hill to die on; common enemy",
+      "a": "Contrarian hooks"
+    },
+    "p9": {
+      "k": "Talk to one friend; likable expert",
+      "c": "Remove what stops you being you",
+      "s": "Say 'you', end low; reps",
+      "a": "Spoken, not written; hold something"
+    },
+    "p10": {
+      "k": "Dopamine ladder; power of suggestion",
+      "c": "7 elements of world building",
+      "s": "Cult-brand principles; character diamond",
+      "a": "Characters, series, start here"
+    }
+  },
+  "combos": [
+    {
+      "id": "seed-belief-flip",
+      "status": "active",
+      "name": "The belief flip",
+      "oneLine": "Open on a contrarian belief, prove it on screen, then flip the viewer's guess about why.",
+      "howItWorks": "The contrarian line breaks autopilot because it clashes with what the viewer already believes. Proof on screen settles the 'is this bait?' check in the first seconds. The head fake then makes them predict the wrong reason, so the real one lands as a surprise that still makes sense.",
+      "recipe": [
+        "Hook: say the common belief, then your opposite take, in one breath (HEIT).",
+        "Proof: show something on screen that makes the take credible in under 3 seconds.",
+        "Big question: ask why the common belief fails.",
+        "Head fake: name the reason most people would guess, then reject it.",
+        "Reveal: the real reason, with one specific detail.",
+        "Last line: restate the belief as a sentence worth repeating."
+      ],
+      "test": {
+        "verdict": "strong",
+        "why": "It stacks one move from each creator (Caleb's belief lever, Sam's HEIT hook, Kallaway's head fake, Aayush's proof-first opening) and none of them fight each other.",
+        "risk": "If the proof is weak, or the take is contrarian only for shock, the trust check fails and the flip feels like bait."
+      },
+      "example": "Everyone says study 8 hours before an exam. That's the worst advice going.\n[On screen: two mark sheets side by side]\nSo why does cramming fail?\nYou'd guess it's tiredness. It isn't.\nYour brain keeps only what it's forced to recall, and rereading forces nothing.\nStudy less. Recall more.",
+      "linksTo": [
+        "p1d",
+        "p4a",
+        "p7g",
+        "p8i"
+      ],
+      "parents": [
+        "p8a",
+        "p3e",
+        "p5c",
+        "p4g"
+      ],
+      "createdAt": "2026-10-16T12:00:00.000Z",
+      "source": "chat 2026-10-16"
+    }
+  ]
+}
