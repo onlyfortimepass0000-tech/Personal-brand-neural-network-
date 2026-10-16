@@ -2,7 +2,7 @@
   "meta": {
     "schema": 1,
     "updated": "2026-10-16",
-    "next_id": 27,
+    "next_id": 28,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -2242,6 +2242,23 @@
         "p10g"
       ],
       "source": "pattern pass 2026-10-16 over p10c, p10g",
+      "added": "2026-10-16",
+      "status": "active"
+    },
+    {
+      "id": "x027",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Sync: chat writes to GitHub, Code watches",
+      "desc": "Aryan, 2026-10-16: the Personal Brand chat has a project instruction to write every new thing to GitHub, either into a markdown file or as direct changes. No Google Doc. The Claude Code session checks the repo twice a day (about 13:56 and 22:56 IST) and ingests whatever landed.",
+      "creators": [],
+      "links": [
+        "x019",
+        "x018",
+        "core"
+      ],
+      "source": "chat 2026-10-16 (Claude Code)",
       "added": "2026-10-16",
       "status": "active"
     }
