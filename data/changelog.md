@@ -6,6 +6,7 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 
 ## 2026-10-16
 
+- NOTE First Claude Code session, capability check. Artifacts: yes, the page at `meta.page_artifact` is Aryan's and writable from here, so it can be republished. Page database: readable; `combos` holds only `seed-belief-flip`, already in `combos`, nothing new to copy. Memory: no memory tool in this session, so the project note could not be checked. Browser: Chromium is installed, but the container's network policy blocks instagram.com (proxy 403), so Aayush's 1.5-year-old reels cannot be studied with a local browser. Connector routes (vidIQ Instagram tools, Eden social index, Firecrawl) might reach them; untested, may spend credits, Aryan to decide.
 - NOTE Network moved out of the chat into this repo. Before this, the 10 principles and 95 technique balls lived inside the published page; now `data/network.json` is the source of truth and the page is built from it.
 - ADD h-aryan hub (layer aryan) with x001-x015: Aryan's facts from `sources/aryan-source-file.md`, each strung to the framework balls it relates to. Source: the Personal Brand chat, 15-16 Oct 2026.
 - ADD h-practice hub (layer practice) with x016-x018: lesson map, lesson 1 (open question), and the update-loop rule. Source: chat 2026-10-16.
