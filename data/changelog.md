@@ -4,6 +4,22 @@ Newest first. One entry per day, one bullet per change. Every session that touch
 
 Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or source.
 
+## 2026-10-23
+
+- ADD x028-x032, lesson results 2-6 from the claude.ai chat (practice). Scores: L2 2/3, L3 3/3 and he found unplanted flaws, L4 needed a replay of the 6 hook words, L5 breakthrough after 5 misses, L6 0.5/6. Each linked to the framework balls it tested.
+- ADD x033 "Leak: he answers with the result, not the thing" (practice). His most repeated habit, seen across three lessons and two sessions: asked for a body detail he gave the urge, asked for a name he gave the outcome, asked for an enemy he gave the consequence. Linked to p6b, p7d, p8c, p6a.
+- ADD x034 "Leak: vague gaps in his own writing" (practice). Catches vague gaps in others and writes them himself; also answers his own gap one clause later. Linked to p1e, p3b, p7f.
+- ADD x035 "Skill profile: recognise > produce > classify" (practice). Intuition without taxonomy: he feels a line is wrong before he can name the rule. Linked to p1c, p1d.
+- ADD x036 "Absorption: comprehension breaks at minute 62" (practice). From message timestamps: minute 62 on 20 Oct, minute 64 on 22-23 Oct, two separate sessions. Also 16 of 18 messages fall between 23:00 and 02:30 and he has never studied in daylight. Rule set: 45-minute hard stop. Linked to p9j, x035.
+- ADD x037 "Absorption: structures stick, flat lists do not" (practice). Read-once retention is fine, including across a 47-hour gap; contrasts hold, 4-5 item inventories do not. Teach in pairs, never test five-way classification. Linked to p1c, p1d, x035.
+- ADD x038 "Rule: more examples, fewer questions about him" (practice). Aryan, 22 Oct: concept, four broken-down examples, two counter-examples, drills on other people's material, one rep on his own. Roughly 70 per cent other people's work. Linked to x016, p9j, x031.
+- EDIT x016 "Lesson map": name and desc updated from "only lesson 1 started" to all six layers taught by 23 Oct, capstone next, running score 11/24. Links extended to x028-x032.
+- EDIT x017 "Lesson 1": was "(open)" with the question text. Now the result: 1.5/3, got that B makes the brain guess, named relevance when the answer was the knowledge gap, then repeated the vague-gap fault in his own hook. Links extended to x034, x028.
+- EDIT x009 "Story: the first store": desc extended with the frame switch he identified on 22-23 Oct (entered as a student asking for an interview, tried to close as a founder) plus the three body tells he can now name (palms wet once pricing starts, the owner's mid-pitch phone call and his compressing line, five-to-six-second eye contact). Links extended to p4h, p6b, p5c.
+- MIX mix-frame-you-walked-in-with "The frame you walked in with" (strong): p4h expert-or-student + x033 + p5c head fake + p6b thoughts and emotions. Tested on his first-shop story; held with no invention needed.
+- NOTE Left out on purpose. Aryan said on 22 Oct not to store the call-count detail (conversations out of total calls) or interlink it, so no ball holds those numbers. His palm sweating is recorded only as the body tell "palms go wet once pricing starts"; the medical condition behind it is not recorded, because it is not needed for storytelling and he has not decided whether it belongs in a public brand. He can override either.
+- NOTE Enemy for x004 "Discipline without direction is just a better 9-to-5" is still open. His answer named the consequence, not the enemy, so nothing was stored; a four-words-or-fewer version is the outstanding question.
+
 ## 2026-10-16
 
 - ADD x027 "Sync: chat writes to GitHub, Code watches" (practice). Aryan: no Google Doc; the Personal Brand chat writes new things to a markdown file or straight to GitHub, and the Code session checks the repo twice a day and ingests it. Linked to x019, x018, core.
