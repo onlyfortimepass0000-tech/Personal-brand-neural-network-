@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema": 1,
-    "updated": "2026-10-16",
-    "next_id": 28,
+    "updated": "2026-10-23",
+    "next_id": 39,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -1930,9 +1930,11 @@
       "layer": "aryan",
       "parent": "h-aryan",
       "name": "Story: the first store",
-      "desc": "Nervous before the first meeting; held one thought: the mind takes the path of least resistance, so do the opposite. Dropped the script and pitched. The first 10 conversations were just understanding. Open: is he comfortable with shop owners now?",
+      "desc": "Nervous before the first meeting; held one thought: the mind takes the path of least resistance, so do the opposite. Dropped the script and pitched. The first 10 conversations were just understanding. Open: is he comfortable with shop owners now? Added 22-23 Oct: the real fault was a frame switch. He walked in as a student asking for a student interview, then tried to close as a founder, which is why the conversation turned awkward and why he wondered whether the owner was too protective to let a student help. His thought at the time: the student part went fine, the founder part he lost. Body tells he can now name: his palms go wet once pricing starts; the owner took a phone call mid-pitch and came back with \"okay, so bottom line, you're trying to tell me this\", compressing the whole pitch into one line; and the owner held eye contact for five or six seconds at a time before looking away.",
       "creators": [],
       "links": [
+        "p4h",
+        "p5c",
         "p6b",
         "p6d"
       ],
@@ -2038,11 +2040,16 @@
       "type": "fact",
       "layer": "practice",
       "parent": "h-practice",
-      "name": "Lesson map: six layers",
-      "desc": "The teaching path has six layers: brain, atom, engine, door, feeling, meaning. Only lesson 1 has been started.",
+      "name": "Lesson map: six layers (all taught)",
+      "desc": "The teaching path has six layers: brain (prediction), atom (the loop), engine (the addiction loop), door (the hook), feeling (thoughts and emotions), meaning (the named idea). All six taught by 23 Oct 2026. Next is the capstone: three full scripts. Running test score 11/24.",
       "creators": [],
       "links": [
-        "core"
+        "core",
+        "x028",
+        "x029",
+        "x030",
+        "x031",
+        "x032"
       ],
       "source": "chat 2026-10-16",
       "added": "2026-10-16",
@@ -2053,12 +2060,14 @@
       "type": "fact",
       "layer": "practice",
       "parent": "h-practice",
-      "name": "Lesson 1: the brain predicts (open)",
-      "desc": "Question asked, still unanswered. A: \"Today I'll tell you how I saved money.\" B: \"I saved ₹40,000 this year by doing one thing every bank tells you not to.\" Which makes the brain guess, and which of the four curiosity inputs does B add?",
+      "name": "Lesson 1 result: the brain predicts (1.5/3)",
+      "desc": "Answered. He got that B makes the brain guess, and that the guessing itself is where the pull comes from. Missed which input B adds: said relevance when the answer is the knowledge gap. Then wrote a hook of his own with the same fault he had just been shown, using 'this' as the mystery. Retest passed on the second attempt. The lesson behind the lesson: the skill is spotting an input that is present but weak, not just present or absent.",
       "creators": [],
       "links": [
         "p1a",
-        "p1c"
+        "p1c",
+        "x028",
+        "x034"
       ],
       "source": "chat 2026-10-16",
       "added": "2026-10-16",
@@ -2261,6 +2270,206 @@
       "source": "chat 2026-10-16 (Claude Code)",
       "added": "2026-10-16",
       "status": "active"
+    },
+    {
+      "id": "x028",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Lesson 2 result: loops and reveals (2/3)",
+      "desc": "Taught story loops, the 5 reveal outcomes, but/therefore and essential context. Scored 2/3. Got 'as expected' and 'unexpected but confusing' right; called an unexpected-but-intriguing reveal 'worse than expected', so he read a failed outcome as a dead loop when a new question had actually opened. Half right on but/therefore: used 'but' correctly for a new problem, then used it again for a consequence that needed 'so'. Full marks on cutting context down to where, when and what.",
+      "creators": [],
+      "links": [
+        "p5a",
+        "p1d",
+        "p2b",
+        "p6a"
+      ],
+      "source": "chat 2026-10-23",
+      "added": "2026-10-23",
+      "status": "active"
+    },
+    {
+      "id": "x029",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Lesson 3 result: the engine (3/3, found extra)",
+      "desc": "Taught the addiction loop: stakes, big question, head fake, rehook. Full marks, and he spotted flaws that were not planted. On his own he worked out the dependency chain: no stakes means nobody cares, so nobody predicts, so there is nothing to fake and nothing to rehook. His best round of the course. Weak spot: his own written answers kept using vague nouns ('inappropriate results') while he was busy catching the same fault in the examples.",
+      "creators": [],
+      "links": [
+        "p5b",
+        "p2a",
+        "p5c",
+        "p5d"
+      ],
+      "source": "chat 2026-10-23",
+      "added": "2026-10-23",
+      "status": "active"
+    },
+    {
+      "id": "x030",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Lesson 4 result: the hook (needed a replay)",
+      "desc": "Taught interrupt theory, the 4 S's, the 6 hook words and the triple hook. He said plainly he did not understand the 6 hook words as first explained; the labels were too abstract. Re-explained with a plain worked example and he then found all six slots, but shifted three of them: gave 'land client' as subject, '3 client' as action, 'in 30 days 3 client' as objective. He can see the parts; he cannot yet name which part is which.",
+      "creators": [],
+      "links": [
+        "p3b",
+        "p3d",
+        "p3a"
+      ],
+      "source": "chat 2026-10-23",
+      "added": "2026-10-23",
+      "status": "active"
+    },
+    {
+      "id": "x031",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Lesson 5 result: feeling (breakthrough after 5 misses)",
+      "desc": "Taught thoughts and emotions over labels, and that losses build more trust than wins. He missed the body-detail task five times running, each time answering with an urge or a tactic instead ('wanted to end it fast', 'spitting facts'). Concept, template and worked examples all failed. What worked was a forced-choice list of concrete body signals to pick from, which produced three usable details in one reply. Teaching note: when an abstract instruction fails twice, switch to recognition before asking him to produce.",
+      "creators": [],
+      "links": [
+        "p6b",
+        "p6g",
+        "p6h"
+      ],
+      "source": "chat 2026-10-23",
+      "added": "2026-10-23",
+      "status": "active"
+    },
+    {
+      "id": "x032",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Lesson 6 result: meaning (0.5/6, worst round)",
+      "desc": "Taught name it, last line first, one sentence, enemy and badge. Scored 0.5/6. Classification of the five mechanisms: 0/3. His name for a given idea ('demand fulfilment') was abstract jargon that fails the 3 R's. On contrarian versus controversial he picked the right line but justified it by why it would work, which is the exact trap. Part of this is a teaching error: a five-item taxonomy handed over at midnight and then tested on classification.",
+      "creators": [],
+      "links": [
+        "p7d",
+        "p7f",
+        "p8c",
+        "p10f"
+      ],
+      "source": "chat 2026-10-23",
+      "added": "2026-10-23",
+      "status": "active"
+    },
+    {
+      "id": "x033",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Leak: he answers with the result, not the thing",
+      "desc": "His single most repeated habit, across three lessons and two sessions, so not fatigue. Asked for a body detail he gave the urge it produced. Asked to name an idea he gave the outcome it leads to. Asked for an enemy he gave the consequence of the enemy. Every time the question asked for something concrete and he reached one step past it to what it causes. Fix in use: before sending an answer, ask whether a person could see, hear or touch it, or whether it is only what that thing causes.",
+      "creators": [],
+      "links": [
+        "p6b",
+        "p7d",
+        "p8c",
+        "p6a",
+        "x031",
+        "x032",
+        "x004"
+      ],
+      "source": "chat 2026-10-23",
+      "added": "2026-10-23",
+      "status": "active"
+    },
+    {
+      "id": "x034",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Leak: vague gaps in his own writing",
+      "desc": "He reliably catches a vague curiosity gap in someone else's line and then writes one himself in the next breath: 'this', 'inappropriate results', 'diamond move', 'pitch rate increased', '15 quality info'. He also tends to name the mystery and explain it one clause later, which closes the gap before it can pull. The test to run on his own lines: could a stranger guess what comes next.",
+      "creators": [],
+      "links": [
+        "p1e",
+        "p3b",
+        "p7f",
+        "x029"
+      ],
+      "source": "chat 2026-10-23",
+      "added": "2026-10-23",
+      "status": "active"
+    },
+    {
+      "id": "x035",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Skill profile: recognise > produce > classify",
+      "desc": "Three clear tiers from six lessons. Recognising a flaw in someone else's line is his strength, including flaws not planted. Producing the thing himself usually fails on the first attempt and lands on the second. Naming which category or mechanism something belongs to is his weakest by a distance. He has intuition without taxonomy: he feels that a line is wrong before he can say which rule it breaks. Drill the naming, not the spotting.",
+      "creators": [],
+      "links": [
+        "p1c",
+        "p1d",
+        "x029",
+        "x030",
+        "x032"
+      ],
+      "source": "chat 2026-10-23",
+      "added": "2026-10-23",
+      "status": "active"
+    },
+    {
+      "id": "x036",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Absorption: comprehension breaks at minute 62",
+      "desc": "From message timestamps across two separate sessions. Session of 20 Oct began 00:49; at minute 62 he said he did not understand. Session of 22-23 Oct began 23:21; at minute 64 he scored 0.5/6, his worst round. Two sessions two days apart, and the wall lands within two minutes of the same place. Everything before minute 50 was decent in both. Also: 16 of 18 timestamped messages fall between 23:00 and 02:30, and he has never run a lesson in daylight, so his measured capacity is his floor, not his range. Rule set: hard stop at 45 minutes.",
+      "creators": [],
+      "links": [
+        "p9j",
+        "x035",
+        "x032"
+      ],
+      "source": "chat 2026-10-23",
+      "added": "2026-10-23",
+      "status": "active"
+    },
+    {
+      "id": "x037",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Absorption: structures stick, flat lists do not",
+      "desc": "Read-once retention of concepts is good and his worry about forgetting is not supported. He has never once asked for a concept from an earlier session to be re-explained, and after a 47-hour gap he opened with full marks. What held: but/therefore and the 5 reveal outcomes, both built as contrasts. What did not: the 4 curiosity inputs (he named relevance as weakest twice when it was his strongest) and the 5 meaning mechanisms (0/3). He remembers structures and sequences, not inventories of four or five parallel items. Teach in pairs and contrasts; never test five-way classification.",
+      "creators": [],
+      "links": [
+        "p1c",
+        "p1d",
+        "x035",
+        "x028",
+        "x032",
+        "x017"
+      ],
+      "source": "chat 2026-10-23",
+      "added": "2026-10-23",
+      "status": "active"
+    },
+    {
+      "id": "x038",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Rule: more examples, fewer questions about him",
+      "desc": "Aryan, 22 Oct: his sole purpose in this phase is to get good at storytelling, so lessons should carry more examples and only around one question tied to his own life. Agreed format per lesson: concept, four real examples broken down beat by beat, two counter-examples showing why the weak version dies, drills on other people's material, then one rep on his own, banked and moved past. Roughly 70 per cent other people's work. Separate error owned: one answer was chased across five turns instead of giving it, showing a worked example and re-testing two lessons later.",
+      "creators": [],
+      "links": [
+        "x016",
+        "p9j",
+        "x031"
+      ],
+      "source": "chat 2026-10-23",
+      "added": "2026-10-23",
+      "status": "active"
     }
   ],
   "patterns": {
@@ -2453,6 +2662,43 @@
       ],
       "createdAt": "2026-10-16T10:00:00.000Z",
       "source": "mix test 2026-10-16 (Claude Code)"
+    },
+    {
+      "id": "mix-frame-you-walked-in-with",
+      "status": "active",
+      "name": "The frame you walked in with",
+      "oneLine": "Tell a failure where the other person never changed; your own frame did, halfway through.",
+      "howItWorks": "Expert-or-student says pick one frame and stay honest inside it. The story works because the viewer is handed an obvious culprit (my age, the market, a bad lead) and the real cause is the narrator quietly switching frames. Stakes make the switch matter, one thought and one body detail make it felt, and the head fake is that the antagonist did nothing wrong.",
+      "recipe": [
+        "Stakes: what you wanted out of the room, in one line.",
+        "Essential context only: where, when, what you were doing.",
+        "The frame you opened with, said plainly.",
+        "One thought in your own words, one thing your body did.",
+        "The other person's action, quoted if you have their words.",
+        "Head fake: name the reason the viewer is already blaming, then reject it.",
+        "Reveal: you changed frames, and that was the whole problem.",
+        "Last line: the rule you now follow, short enough to repeat."
+      ],
+      "test": {
+        "verdict": "strong",
+        "why": "Tested on Aryan's first-shop story and it held with no invention needed. Every beat was already in his own account: the student-interview opening, the founder pitch, his palms, the owner's phone call and his compressing line. The head fake is unusually clean because the viewer blames his age and the answer is his own frame.",
+        "risk": "Only works when the narrator genuinely was at fault. If the other person really did behave badly, the same shape reads as false modesty. Also needs a real quote; paraphrasing the other person kills the proof."
+      },
+      "example": "I asked a shop owner for a student interview. Twenty minutes later I was pitching him.\nHe took a call halfway through my price. I stood there, palms going wet, thinking: the student part went fine, the founder part I just lost.\nYou'd guess he said no because I'm 19. He didn't.\nHe hung up and said, \"Okay, so bottom line, you're trying to tell me this.\" And he was right. He'd said my whole pitch in one line.\nPick the frame you walk in with. Then stay in it.",
+      "linksTo": [
+        "p2a",
+        "p6b",
+        "p5c",
+        "p6a"
+      ],
+      "parents": [
+        "p4h",
+        "x033",
+        "p5c",
+        "p6b"
+      ],
+      "createdAt": "2026-10-23T19:00:00.000Z",
+      "source": "chat 2026-10-23"
     }
   ]
 }
