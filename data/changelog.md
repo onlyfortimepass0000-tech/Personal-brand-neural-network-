@@ -27,6 +27,7 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - NOTE `data/network.json` re-indented from 1 space back to 2 (`JSON.stringify(d, null, 2)`), the format it had on main. The 1-space write made the PR #2 diff 5,147 lines for about 250 lines of real change. Rule added to `CLAUDE.md` data rules.
 - NOTE `HANDOFF.md` "State of the teaching" updated: it still said lesson 1 was open, so a fresh chat would have restarted the course.
 - NOTE Page database `combos`: only `seed-belief-flip`, already in `combos`. Nothing to copy.
+- NOTE Page republished to `meta.page_artifact` as version 6 from Claude Code, built on the chat's version 5 with only the network data replaced.
 
 ## 2026-10-16
 
