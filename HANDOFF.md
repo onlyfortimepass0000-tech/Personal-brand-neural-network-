@@ -10,7 +10,7 @@ Aryan Thakkar, 19, BBA Marketing student in Thane, India, and a founder (B2B gro
 
 | thing | where |
 |---|---|
-| The network (source of truth) | `data/network.json` (99 technique balls, 15 Aryan facts, 4 practice balls, 5 pattern balls, 4 mixes; as of 2026-10-16) |
+| The network (source of truth) | `data/network.json` (99 technique balls, 15 Aryan facts, 16 practice balls, 5 pattern balls, 5 mixes; as of 2026-10-23) |
 | Change log | `data/changelog.md` |
 | The page | `dist/story-network.html`, built from `site/template.html`. Published as a private artifact: https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy |
 | Storytelling playbook (70K chars, 9 sections) | `sources/storytelling-playbook.md` |
@@ -30,12 +30,20 @@ Aryan Thakkar, 19, BBA Marketing student in Thane, India, and a founder (B2B gro
 
 Teaching happens in the claude.ai chat only. Claude Code sessions do not teach (see the role split in `CLAUDE.md`). This section is for chat sessions.
 
-Aryan wants to learn how storytelling works, not what to post. The teaching path has six layers: brain, atom, engine, door, feeling, meaning. Lesson 1 ("the brain predicts") is open and he has not answered. The question:
+Aryan wants to learn how storytelling works, not what to post. The teaching path has six layers: brain, atom, engine, door, feeling, meaning. All six were taught by 23 Oct 2026 (results in x017, x028-x032; running score 11/24). **Next is the capstone: three full scripts** (x016).
 
-- A: "Today I'll tell you how I saved money."
-- B: "I saved ₹40,000 this year by doing one thing every bank tells you not to."
+How to teach him, from what the lessons showed:
 
-Which one makes the brain guess, and which of the four curiosity inputs (knowledge gap, belief it will be filled, novelty, relevance) does B add? Continue from here. Teach with a real example and one question at a time. Record his answer and how he did in the `practice` hub.
+- Format he asked for (x038): concept, four real examples broken down beat by beat, two counter-examples, drills on other people's material, then one rep on his own. About 70 per cent other people's work.
+- Hard stop at 45 minutes. Comprehension broke at minute 62 and minute 64 in two separate sessions (x036).
+- Teach in pairs and contrasts. Do not test four- or five-way classification (x037).
+- He spots flaws well, produces on the second try, and names categories worst. Drill the naming (x035).
+- If an abstract instruction fails twice, switch to a pick-from-a-list prompt before asking him to produce (x031).
+- Watch his two leaks: answering with the result instead of the thing (x033), and vague gaps in his own lines (x034).
+
+Open question: the enemy for his belief x004, in four words or fewer. His last answer named the consequence, not the enemy.
+
+Record every answer and result in the `practice` hub.
 
 ## Known gaps (first jobs)
 

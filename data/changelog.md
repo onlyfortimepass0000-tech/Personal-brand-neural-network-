@@ -20,6 +20,14 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - NOTE Page republished to `meta.page_artifact` as version 5 from a claude.ai chat session (Artifact tool reachable here, unlike the first Code session). Branch `storytelling-lessons-1-6`, PR #2.
 - NOTE Left out on purpose. Aryan said on 22 Oct not to store the call-count detail (conversations out of total calls) or interlink it, so no ball holds those numbers. His palm sweating is recorded only as the body tell "palms go wet once pricing starts"; the medical condition behind it is not recorded, because it is not needed for storytelling and he has not decided whether it belongs in a public brand. He can override either.
 - NOTE Enemy for x004 "Discipline without direction is just a better 9-to-5" is still open. His answer named the consequence, not the enemy, so nothing was stored; a four-words-or-fewer version is the outstanding question.
+- NOTE Claude Code sync check, 23 Oct 08:26 UTC: found branch `storytelling-lessons-1-6` (PR #2) from the chat. Validate OK, 0 unlinked. Ran the post-ingest loop jobs on top of it (this ingest added 11 balls).
+- RELINK 11 strings between the new practice balls and the lessons that show them: x033 → x031, x032, x004 (the body-detail, naming and enemy misses it describes; x004 is the belief whose enemy is still open); x034 → x029 (the "inappropriate results" vague noun); x035 → x029, x030, x032 (recognise: unplanted flaws; classify: hook-word slots and 0/3 mechanisms); x036 → x032 (the minute-64 round); x037 → x028, x032, x017 (contrasts held in L2; the 4 inputs and 5 mechanisms did not). No reverse duplicates.
+- NOTE Pattern pass: no new framework balls came in, so no new pattern.
+- EDIT x009 typo: "shop owners now?." → "shop owners now?".
+- NOTE `data/network.json` re-indented from 1 space back to 2 (`JSON.stringify(d, null, 2)`), the format it had on main. The 1-space write made the PR #2 diff 5,147 lines for about 250 lines of real change. Rule added to `CLAUDE.md` data rules.
+- NOTE `HANDOFF.md` "State of the teaching" updated: it still said lesson 1 was open, so a fresh chat would have restarted the course.
+- NOTE Page database `combos`: only `seed-belief-flip`, already in `combos`. Nothing to copy.
+- NOTE Page republished to `meta.page_artifact` as version 6 from Claude Code, built on the chat's version 5 with only the network data replaced.
 
 ## 2026-10-16
 
