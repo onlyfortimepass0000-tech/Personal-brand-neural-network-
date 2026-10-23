@@ -51,6 +51,7 @@ Claude Code sessions do not teach. Their job is to keep the network easy to reac
 ## Data rules (`data/network.json`)
 
 - Source of truth. Never edit `dist/` by hand; it is built.
+- Save it as `JSON.stringify(data, null, 2)` plus a final newline. Any other indent rewrites every line and buries the real change in the diff.
 - Ids are permanent. Never renumber or reuse an id. Framework balls from the first export keep ids like `p3e`. New balls use `x###` from `meta.next_id` (then increment it).
 - Every ball needs: `id, type, layer, parent, name, desc, creators, links, source, added, status`. `source` names a file and section (`sources/aryan-source-file.md §10.1`) or `chat YYYY-MM-DD`. A framework ball with no traceable source is not allowed; put it in `practice` marked unverified or find the source.
 - Search before adding. If the idea already exists, edit that ball and add the new creator to its `creators` instead of adding a duplicate. Same idea from several creators is how patterns surface.
