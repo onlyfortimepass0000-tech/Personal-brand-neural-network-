@@ -16,6 +16,7 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - NOTE Two clusters do not sit cleanly under the ten principles: measurement and testing (x041, x046, x047, x067) and engagement engineering (x045). Parked under the nearest principle. A "Testing & measurement" principle may be worth adding — flagged to Aryan, not decided here.
 - NOTE Eden's creator research tools were unusable this session (workspace is on the free plan; research needs Eden Discover), so reel-level detail came from the creators' own captions and third-party analysis instead.
 - ADD reports/adley-and-jun.md — the one-page report for Aryan.
+- NOTE Page republished from this chat session, version 7. Verified first that the live version 6 was byte-identical to the repo build it came from, so nothing published from a Code session was lost.
 
 ## 2026-10-23
 
