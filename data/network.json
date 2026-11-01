@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema": 1,
-    "updated": "2026-10-23",
-    "next_id": 39,
+    "updated": "2026-11-02",
+    "next_id": 69,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -29,6 +29,18 @@
       "name": "Aayush Swamy",
       "role": "The funnel builder",
       "desc": "Every Reel is a numbered, proof-heavy structure with a clear job: get found, build trust, or sell."
+    },
+    {
+      "id": "ak",
+      "name": "Adley Kinsman",
+      "role": "The retention engineer",
+      "desc": "Founder of Viralish. Treats a video as a testable unit: engineer the hook for retention, design the comment section before filming, then split test everything."
+    },
+    {
+      "id": "jy",
+      "name": "Jun Yuh",
+      "role": "The story excavator",
+      "desc": "Built 8M followers on his own becoming. Frameworks for digging a real story out of your own life and arcing it from problem to payoff, plus the system to post it every week."
     }
   ],
   "core": {
@@ -290,9 +302,10 @@
       "layer": "framework",
       "parent": "p2",
       "name": "Stakes",
-      "desc": "A character to root for, something at risk, and urgency. It doesn't need to be life or death, just personally relevant.",
+      "desc": "A character to root for, something at risk, and urgency. It doesn't need to be life or death, just personally relevant. Adley: \"Stakes determine why people care.\"",
       "creators": [
-        "k"
+        "k",
+        "ak"
       ],
       "links": [
         "p6"
@@ -409,9 +422,10 @@
       "layer": "framework",
       "parent": "p2",
       "name": "Aggravate the pain",
-      "desc": "In a story that sells: aggravate the pain, show the old method failing, then tease a named new mechanism.",
+      "desc": "In a story that sells: aggravate the pain, show the old method failing, then tease a named new mechanism. Jun puts the same beat first in every story, because shared struggle is the fastest common ground there is.",
       "creators": [
-        "k"
+        "k",
+        "jy"
       ],
       "links": [
         "p7"
@@ -761,9 +775,10 @@
       "layer": "framework",
       "parent": "p4",
       "name": "Expert or student",
-      "desc": "Posing as an expert while you're a student burns trust. An honest learning journey earns it.",
+      "desc": "Posing as an expert while you're a student burns trust. An honest learning journey earns it. Jun splits it into Expert POV (proven systems) and Journey POV (\"I posted for six months and lost 100 followers, here's what NOT to do\").",
       "creators": [
-        "c"
+        "c",
+        "jy"
       ],
       "links": [
         "p10"
@@ -778,9 +793,10 @@
       "layer": "framework",
       "parent": "p5",
       "name": "Story loops",
-      "desc": "Context opens a loop, a reveal closes it, and the next opens. A 45-60 second short holds 3-4 loops.",
+      "desc": "Context opens a loop, a reveal closes it, and the next opens. A 45-60 second short holds 3-4 loops. Adley calls it the itch you create and refuse to scratch.",
       "creators": [
-        "k"
+        "k",
+        "ak"
       ],
       "links": [
         "p5b",
@@ -936,7 +952,8 @@
       "name": "Promise, progress, payoff",
       "desc": "Promise the payoff early, show progress toward it, then pay it off in full. Never promise five lessons and hide them; bait breaks trust for good.",
       "creators": [
-        "c"
+        "c",
+        "ak"
       ],
       "links": [
         "p4"
@@ -1087,9 +1104,10 @@
       "layer": "framework",
       "parent": "p6",
       "name": "Lived experience",
-      "desc": "Educational content drawn from what you've actually been through beats an AI-written script.",
+      "desc": "Educational content drawn from what you've actually been through beats an AI-written script. Jun's whole brand is this: his biggest videos are all the same becoming story.",
       "creators": [
-        "a"
+        "a",
+        "jy"
       ],
       "links": [
         "p9h"
@@ -1174,9 +1192,11 @@
       "layer": "framework",
       "parent": "p7",
       "name": "Name your concepts",
-      "desc": "Names that pass the 3 R's: easy to remember, repeat and reference.",
+      "desc": "Names that pass the 3 R's: easy to remember, repeat and reference. Jun names everything he teaches (L.I.F.E., the 3Ps, the wheel, 3-1-2-1); Adley names her methods too (the combo method, the Missy Elliott method).",
       "creators": [
-        "c"
+        "c",
+        "jy",
+        "ak"
       ],
       "links": [
         "p10"
@@ -1610,11 +1630,12 @@
       "layer": "framework",
       "parent": "p9",
       "name": "Reps beat talent",
-      "desc": "Get on more stages and review your own game tape. Volume negates luck. Aayush: your first 30 videos will suck, push through anyway.",
+      "desc": "Get on more stages and review your own game tape. Volume negates luck. Aayush: your first 30 videos will suck, push through anyway. Adley: \"This isn't a time thing. It's definitely a reps thing.\"",
       "creators": [
         "s",
         "c",
-        "a"
+        "a",
+        "ak"
       ],
       "links": [],
       "source": "storytelling-playbook.md + creator research notes; sources/research/notes_aayush.md (DePGd1Nsugv, FEfeRjrHHmc)",
@@ -2154,7 +2175,9 @@
         "k",
         "c",
         "s",
-        "a"
+        "a",
+        "jy",
+        "ak"
       ],
       "links": [
         "p7e",
@@ -2177,7 +2200,8 @@
         "c",
         "s",
         "k",
-        "a"
+        "a",
+        "jy"
       ],
       "links": [
         "p8a",
@@ -2223,7 +2247,8 @@
       "creators": [
         "k",
         "s",
-        "c"
+        "c",
+        "jy"
       ],
       "links": [
         "p6f",
@@ -2244,7 +2269,8 @@
       "creators": [
         "c",
         "a",
-        "s"
+        "s",
+        "jy"
       ],
       "links": [
         "p10c",
@@ -2470,6 +2496,546 @@
       "source": "chat 2026-10-23",
       "added": "2026-10-23",
       "status": "active"
+    },
+    {
+      "id": "x039",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "Emotion plus a gap",
+      "desc": "Her hook rule, stated flat: \"Every hook must elicit an emotional response and open up a gap in curiosity.\" One without the other fails. A gap with no feeling is trivia; a feeling with no gap has nothing left to watch for.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "p1c",
+        "p3a"
+      ],
+      "source": "sources/research/notes_adley.md §six-step 1",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x040",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p1",
+      "name": "The combo method",
+      "desc": "Pair two things that do not normally go together, so the brain cannot place what it is seeing. Her example: a rack of ribs cooking on a car engine.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "p1f",
+        "p1e",
+        "x039"
+      ],
+      "source": "sources/research/notes_adley.md §six-step 1",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x041",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "90% through six seconds",
+      "desc": "Her retention target for the opening: 90% still watching at six seconds, 82% still good, and about 75% through the first twelve seconds as the sign a video can travel. \"The first three seconds matter more than the next 30 ever will.\"",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "p3b",
+        "p3j"
+      ],
+      "source": "sources/research/notes_adley.md §rules and numbers",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x042",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "The Missy Elliott method",
+      "desc": "Put it down, flip it and reverse it: design the video backwards from its opening three seconds. Open on an intriguing scene, never on your end goal, and pitch the opening shot rather than the payoff.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "p7g",
+        "p3f"
+      ],
+      "source": "sources/research/notes_adley.md §six-step 2",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x043",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Hold the payoff",
+      "desc": "Give value the whole way through but resolve the curiosity gap only in the last 3-10 seconds. \"There is a subconscious itch there that I created that I am not going to scratch.\" Leaving it unresolved on purpose is how you force a part two.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "p5a",
+        "p5j"
+      ],
+      "source": "sources/research/notes_adley.md §six-step 3",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x044",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p2",
+      "name": "Four stakes levers",
+      "desc": "Four cheap ways to raise what is at risk. Location: get out of the expected setting. Props: raise the value of the thing that could break. Wardrobe: signal character with no explanation. Casting: pick people whose presence changes the weight, like a child or a couple in their seventies.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "p2a",
+        "p3i"
+      ],
+      "source": "sources/research/notes_adley.md §six-step 5",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x045",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Engineer the comment section",
+      "desc": "Decide what you want people to comment before you film, then build the triggers in: Easter eggs, a relatable moment, debate bait, odd wardrobe, a deliberate gap that lets viewers show their expertise.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "p10f",
+        "p10j"
+      ],
+      "source": "sources/research/notes_adley.md §six-step 4",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x046",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "Split test before you post",
+      "desc": "Make 3-4 versions of the same video with different hooks, opening shots, lengths and captions. Load 5-12 onto trial reels, let them run 24-72 hours, then publish the winner to the feed. Paid version: $5-6 a variant, about 1,000 views to read a curve.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "p3h",
+        "x041"
+      ],
+      "source": "sources/research/notes_adley.md §six-step 6",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x047",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Cut at the 40% drop",
+      "desc": "Read the retention curve and find where it falls off a cliff. A drop of 40% or more names the beat to rewrite. Writing version: check the script every three seconds and ask whether they would keep watching, and why anyone cares.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "p5g",
+        "x046"
+      ],
+      "source": "sources/research/notes_adley.md §rules and numbers",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x048",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "One emotional tone",
+      "desc": "Pick the emotion before you write: learning, humour, fear or trust. Then hold it. Switching tone mid-video confuses people and they leave. Music and text overlays set that tone, so the same footage reads differently under suspenseful music.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "p6b",
+        "p3c"
+      ],
+      "source": "sources/research/notes_adley.md §rules and numbers",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x049",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "Contextual vs cultural relevance",
+      "desc": "Contextual relevance is being known for a service inside your niche. Cultural relevance is broad shareable appeal. Cultural makes you contextually relevant by default; the reverse is not true.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "p8a",
+        "p10d"
+      ],
+      "source": "sources/research/notes_adley.md §rules and numbers",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x050",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Virality is subjective",
+      "desc": "The bar is set by your own channel, not by the internet. Her company counts 5 million views as viral; a channel that normally does 300-400 views can honestly call 40,000 viral.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "x049"
+      ],
+      "source": "sources/research/notes_adley.md §rules and numbers",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x051",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Most of it is top of funnel",
+      "desc": "Aim for 60% or more of your posts to be awareness content built for people who do not know you, because shares are what the algorithm weights and what finds lookalike audiences.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "x062",
+        "p10i"
+      ],
+      "source": "sources/research/notes_adley.md §rules and numbers",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x052",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "L.I.F.E. story buckets",
+      "desc": "Every personal story fits at least one of four buckets: Love, Identity, Fitness, Earnings. Stuck for a post? Pick a letter first, then pick the story. Better still when two buckets overlap.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p10e",
+        "p6i"
+      ],
+      "source": "sources/research/notes_jun.md §L.I.F.E.",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x053",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "Ask why three times",
+      "desc": "After you pick the story, ask why three times. The first answer is surface. The second is more honest. The third is where you are actually vulnerable, and that is the one worth telling.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "x054",
+        "p6b"
+      ],
+      "source": "sources/research/notes_jun.md §the three whys",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x054",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "The storytelling wheel: safe, real, raw",
+      "desc": "Safe is a surface description of what happened. Raw is the why and the deeper emotion underneath it. His line: the safe story gets you attention, the raw one gets people to relate to you. Bad creators stay on the surface, average creators jump around, the best stay in the raw.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p6f",
+        "p6g"
+      ],
+      "source": "sources/research/notes_jun.md §storytelling wheel",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x055",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "The 3P arc: problem, pursuit, payoff",
+      "desc": "His story arc. Open on the problem, show the pursuit, land the payoff. Then package the same three beats into a format you can repeat.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p5j",
+        "p2h"
+      ],
+      "source": "sources/research/notes_jun.md §3P arc",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x056",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "Lead with the problem, not your success",
+      "desc": "\"Most creators make the mistake of starting their videos with personal successes to earn the viewer's trust, however it's actually turning viewers away.\" The fancy car and the house push people out. His objection is to status as the opener, not to proof itself: prove you understand their problem, not that you have escaped it.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p4c",
+        "p4g"
+      ],
+      "source": "sources/research/notes_jun.md §3P arc",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x057",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Silent film format",
+      "desc": "No talking at all. On-screen text, B-roll and music. Start with pain, because you do not need footage from the real moment, only words for the feeling. Skip trending sounds and pick audio with rising action. The music drop is the payoff moment.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p3i",
+        "x055"
+      ],
+      "source": "sources/research/notes_jun.md §silent film",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x058",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "No one else is a prop",
+      "desc": "Never tell someone else's story. None of his storytelling videos speak badly about his mother, his father or an ex, and he keeps his girlfriend's name private. Every story stays on his own maturation, so nobody can accuse him of monetising someone else's pain.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p6h",
+        "p6g"
+      ],
+      "source": "sources/research/notes_jun.md §two hard lines",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x059",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p6",
+      "name": "Land on the transformation",
+      "desc": "Never park on the pain. The story has to resolve into \"here is who I became because of it\". That resolution is the difference between useful and merely sad, and it is what stops a feed becoming a highlight reel of curated wounds.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "x055",
+        "p2h"
+      ],
+      "source": "sources/research/notes_jun.md §two hard lines",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x060",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Creator Vision: what, who, why",
+      "desc": "One page, three branches. What: your message and the pillars under it. Who: the person you make it for. Why: your own stories. He calls a blank Why branch the whole gap between 100K followers and a million, and says \"what do I post today?\" is a symptom of it. Takes about 30 minutes on paper.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p8a",
+        "p10b"
+      ],
+      "source": "sources/research/notes_jun.md §Creator Vision",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x061",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "Become the niche",
+      "desc": "The advice says pick a micro-topic and stay in it. His objection: you evolve, your interests shift, your story expands, and the niche boxes you in. Build the brand on your story, values and message instead, create around your pillars, and the audience grows with you.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p8a",
+        "p10d"
+      ],
+      "source": "sources/research/notes_jun.md §become the niche",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x062",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "3-1-2-1",
+      "desc": "Seven posts a week, each with a job. Three attract (storytelling, usually struggle) to bring new people. One nurture: real life, no lesson, no arc, which is the release valve that stops the storytelling calcifying. Two position (insight, systems) for authority. One convert, a clear path to work with you.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p10i",
+        "p10h"
+      ],
+      "source": "sources/research/notes_jun.md §3-1-2-1",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x063",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p1",
+      "name": "The younger you",
+      "desc": "When you do not know what to make, make it for the version of yourself from two or three years ago. You already know exactly what he needed to hear and what he would have clicked on.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p1c",
+        "p4c"
+      ],
+      "source": "sources/research/notes_jun.md §younger you",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x064",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Study format, not substance",
+      "desc": "Learn from creators in any industry by copying the format, never the story. His checklist for taking a format apart: hook, visuals and editing, cadence, audio, story arc, CTA. Then plan by date, your own ideas, and the formats you have studied.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p9f",
+        "p3f"
+      ],
+      "source": "sources/research/notes_jun.md §study format",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x065",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p9",
+      "name": "Complexity kills consistency",
+      "desc": "Equipment is an excuse; the repeatable system is the asset. He grew the first three million followers on a shattered iPhone 12. The system: three batch phases (script, film, edit) plus a scene library of 50+ labelled B-roll folders, so nobody has to film to post.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p9e",
+        "p9j"
+      ],
+      "source": "sources/research/notes_jun.md §production system",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x066",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "Valuable, not viral",
+      "desc": "Separate the content that gets attention from the content that earns trust, and build the product from what the audience actually asks for. He surveyed his audience twice a week for three months before launching one. Old posts keep selling, so every post needs a job.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p4a",
+        "p10i"
+      ],
+      "source": "sources/research/notes_jun.md §valuable not viral",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x067",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "Retention is the honest vote",
+      "desc": "Likes and comments can be bought or bantered into existence. Staying cannot. She optimises for retention above everything because it is the one signal that says the viewer thought the next second was worth it, and it is the signal the algorithm trusts too.",
+      "creators": [
+        "ak"
+      ],
+      "links": [
+        "p4a",
+        "x047"
+      ],
+      "source": "sources/research/notes_adley.md §rules and numbers",
+      "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x068",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p3",
+      "name": "Three hook archetypes",
+      "desc": "The three openings that recur across his reels: a contrarian declaration that challenges an industry norm, a vulnerable confession of sudden crisis, and a visual misdirection that sets a false premise before the twist.",
+      "creators": [
+        "jy"
+      ],
+      "links": [
+        "p3e",
+        "p8i"
+      ],
+      "source": "sources/research/notes_jun.md §style and voice",
+      "added": "2026-11-02",
+      "status": "active"
     }
   ],
   "patterns": {
@@ -2477,61 +3043,81 @@
       "k": "Dopamine is a prediction chemical",
       "c": "4 inputs of curiosity",
       "s": "Context + conflict = curiosity",
-      "a": "Flex, then subvert"
+      "a": "Flex, then subvert",
+      "ak": "Combo method: pair two things that do not belong together",
+      "jy": "The younger you: make it for who you were 2-3 years ago"
     },
     "p2": {
       "k": "Stakes; but / therefore",
       "c": "Call out the consequence of the pain",
       "s": "Conflict makes people lean in",
-      "a": "MAP: attack the broad pain"
+      "a": "MAP: attack the broad pain",
+      "ak": "Four stakes levers: location, props, wardrobe, casting",
+      "jy": "Open on the problem; struggle is the fastest shared ground"
     },
     "p3": {
       "k": "Interrupt theory, 4 S's, triple hook",
       "c": "Wrapping paper and call-outs",
       "s": "HEIT hook: context + contrarian take + open loop",
-      "a": "Hook types, 3 hook rules, visual hooks"
+      "a": "Hook types, 3 hook rules, visual hooks",
+      "ak": "Emotion plus a gap, 90% through six seconds, reverse design, split test",
+      "jy": "Contrarian declaration, vulnerable confession, visual misdirection"
     },
     "p4": {
       "k": "Lock-in zone, bullseye proof",
       "c": "4 C's intro, contextual credibility",
       "s": "Triple P: promise, proof, plan",
-      "a": "Result-first hooks, proof on screen"
+      "a": "Result-first hooks, proof on screen",
+      "ak": "Retention is the trust signal; read the curve, not the comments",
+      "jy": "Lead with the problem, not your success; valuable, not viral"
     },
     "p5": {
       "k": "Story loops, addiction loop, rehooks",
       "c": "Promise, progress, payoff",
       "s": "Asymmetric pacing, progressive density",
-      "a": "Numbered bodies, series"
+      "a": "Numbered bodies, series",
+      "ak": "Hold the payoff to the last 3-10 seconds; cut at the 40% drop",
+      "jy": "The 3P arc: problem, pursuit, payoff"
     },
     "p6": {
       "k": "Admission lines, paint the picture",
       "c": "Share weaknesses, show humanity",
       "s": "Thoughts and emotions; losses build trust",
-      "a": "Lived experience over AI scripts"
+      "a": "Lived experience over AI scripts",
+      "ak": "One emotional tone per video, set by music and text",
+      "jy": "L.I.F.E. buckets, three whys, and the safe-real-raw wheel"
     },
     "p7": {
       "k": "Term branding, atomic shareability, last dab",
       "c": "Name your concepts (3 R's)",
       "s": "Teach one idea; shared language",
-      "a": "Named systems: MAP, Pull / Prove / Connect"
+      "a": "Named systems: MAP, Pull / Prove / Connect",
+      "ak": "Names her methods: combo, Missy Elliott, the billion-view formula",
+      "jy": "Names everything: L.I.F.E., the 3Ps, the wheel, 3-1-2-1"
     },
     "p8": {
       "k": "A villain; contrarian take vault",
       "c": "Contrarian belief (80% lever); common enemy",
       "s": "One hill to die on; common enemy",
-      "a": "Contrarian hooks"
+      "a": "Contrarian hooks",
+      "ak": "Cultural relevance beats contextual; virality is subjective",
+      "jy": "Become the niche: niche is dead, narrative wins"
     },
     "p9": {
       "k": "Talk to one friend; likable expert",
       "c": "Remove what stops you being you",
       "s": "Say 'you', end low; reps",
-      "a": "Spoken, not written; hold something"
+      "a": "Spoken, not written; hold something",
+      "ak": "Reps, not time",
+      "jy": "Silent film format; complexity kills consistency; study format, not substance"
     },
     "p10": {
       "k": "Dopamine ladder; power of suggestion",
       "c": "7 elements of world building",
       "s": "Cult-brand principles; character diamond",
-      "a": "Characters, series, start here"
+      "a": "Characters, series, start here",
+      "ak": "Engineer the comment section; keep 60% top of funnel",
+      "jy": "Creator Vision and 3-1-2-1: every post has a job"
     }
   },
   "combos": [

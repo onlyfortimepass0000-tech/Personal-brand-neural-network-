@@ -4,6 +4,19 @@ Newest first. One entry per day, one bullet per change. Every session that touch
 
 Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or source.
 
+## 2026-11-02
+
+- ADD creators `ak` Adley Kinsman (the retention engineer) and `jy` Jun Yuh (the story excavator). Six inputs now. Research written up first in `sources/research/notes_adley.md` and `sources/research/notes_jun.md` from her Social Media Examiner six-step talk, a podcast transcript, both creators' own Instagram captions, and third-party reel analysis. Every new ball cites a section of those files.
+- ADD x039-x051, x067 — Adley, 14 balls: the combo method (p1), four stakes levers (p2), emotion plus a gap / 90% through six seconds / the Missy Elliott method / split test before you post (p3), retention is the honest vote (p4), hold the payoff / cut at the 40% drop (p5), one emotional tone (p6), contextual vs cultural relevance (p8), engineer the comment section / virality is subjective / most of it is top of funnel (p10).
+- ADD x052-x066, x068 — Jun, 16 balls: the younger you (p1), three hook archetypes (p3), lead with the problem not your success / valuable not viral (p4), the 3P arc (p5), L.I.F.E. buckets / ask why three times / the storytelling wheel safe-real-raw / no one else is a prop / land on the transformation (p6), become the niche (p8), silent film format / study format not substance / complexity kills consistency (p9), Creator Vision / 3-1-2-1 (p10).
+- NOTE Id collision avoided: this session drafted these as x019-x048 before fetching, but Code sessions had already used x019-x038. The additions were rebuilt on top of the remote and renumbered to x039-x068. Nothing was overwritten. Lesson for every session: fetch before numbering.
+- EDIT p2a, p5a, p5j, p9j gained `ak`; p2h, p4h, p6i gained `jy`; p7d gained both. Their existing wording was kept and the new creator's line appended, never replaced.
+- RELINK x022 "Name it so they can say it back" now carries all six creators; x023 "Take a side you'd defend", x025 "Admit the miss" and x026 "People follow characters" gained `jy`. Those pattern balls were four-creator; three of them are now five or six, which strengthens them.
+- NOTE Live disagreement, kept rather than smoothed: Jun's x056 "lead with the problem, not your success" sits against x024 "Prove it before they doubt it", a four-creator pattern. On reading him closely the conflict is narrower than it looks — he objects to opening on status (the car, the house), not to proof of understanding the viewer's problem. The ball says so. Worth a mix test.
+- NOTE Two clusters do not sit cleanly under the ten principles: measurement and testing (x041, x046, x047, x067) and engagement engineering (x045). Parked under the nearest principle. A "Testing & measurement" principle may be worth adding — flagged to Aryan, not decided here.
+- NOTE Eden's creator research tools were unusable this session (workspace is on the free plan; research needs Eden Discover), so reel-level detail came from the creators' own captions and third-party analysis instead.
+- ADD reports/adley-and-jun.md — the one-page report for Aryan.
+
 ## 2026-10-23
 
 - ADD x028-x032, lesson results 2-6 from the claude.ai chat (practice). Scores: L2 2/3, L3 3/3 and he found unplanted flaws, L4 needed a replay of the 6 hook words, L5 breakthrough after 5 misses, L6 0.5/6. Each linked to the framework balls it tested.

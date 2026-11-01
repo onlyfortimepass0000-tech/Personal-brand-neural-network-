@@ -9,7 +9,7 @@
 :root{
   --bg:#F1F4F7; --surface:#FFFFFF; --ink:#14202B; --muted:#586674; --line:#C9D3DD; --faint:#E2E8EE;
   --accent:#3350CF; --accent-ink:#FFFFFF;
-  --k:#C2410C; --c:#2E7A3A; --s:#1C6CC0; --a:#8C36A6;
+  --k:#C2410C; --c:#2E7A3A; --s:#1C6CC0; --a:#8C36A6; --ak:#BE123C; --jy:#0E7490;
   --core:#14202B; --core-ink:#F1F4F7; --pr:#3350CF; --child:#8795A3; --combo:#C98E0E; --l-aryan:#0E8A7D; --l-practice:#C2417A; --l-pattern:#6B5B00;
   --good:#2E7A3A; --warn:#B7791F; --bad:#C0392B;
   --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
@@ -20,7 +20,7 @@
   :root:not([data-theme="light"]){
     --bg:#0E141A; --surface:#151E27; --ink:#E3EAF1; --muted:#94A3B1; --line:#2C3946; --faint:#1C2732;
     --accent:#8197FF; --accent-ink:#0E141A;
-    --k:#F28A55; --c:#62BE70; --s:#5DA9F2; --a:#C882DC;
+    --k:#F28A55; --c:#62BE70; --s:#5DA9F2; --a:#C882DC; --ak:#FB7185; --jy:#4FC9E8;
     --core:#E3EAF1; --core-ink:#0E141A; --pr:#8197FF; --child:#7C8B99; --combo:#F0C14A; --l-aryan:#4CC9B8; --l-practice:#F07DB0; --l-pattern:#D9C45A;
     --good:#62BE70; --warn:#E3B04B; --bad:#F07A6C;
     color-scheme:dark;
@@ -29,7 +29,7 @@
 :root[data-theme="dark"]{
   --bg:#0E141A; --surface:#151E27; --ink:#E3EAF1; --muted:#94A3B1; --line:#2C3946; --faint:#1C2732;
   --accent:#8197FF; --accent-ink:#0E141A;
-  --k:#F28A55; --c:#62BE70; --s:#5DA9F2; --a:#C882DC;
+  --k:#F28A55; --c:#62BE70; --s:#5DA9F2; --a:#C882DC; --ak:#FB7185; --jy:#4FC9E8;
   --core:#E3EAF1; --core-ink:#0E141A; --pr:#8197FF; --child:#7C8B99; --combo:#F0C14A; --l-aryan:#4CC9B8; --l-practice:#F07DB0; --l-pattern:#D9C45A;
   --good:#62BE70; --warn:#E3B04B; --bad:#F07A6C;
   color-scheme:dark;
@@ -151,7 +151,7 @@ td.pn small{display:block;font:400 13px/1.4 var(--body);color:var(--muted);margi
   <header>
     <div>
       <h1>Story Neural Network</h1>
-      <p class="sub">Four creators feed one storytelling core. The core spins out ten principles plus two hubs, your raw facts and your practice log. Each one spins out its balls, and strings tie every ball to its parent, its neighbours and the creators who teach it. Mix any balls to test a new move; saved mixes become new balls.</p>
+      <p class="sub">Six creators feed one storytelling core. The core spins out ten principles plus two hubs, your raw facts and your practice log. Each one spins out its balls, and strings tie every ball to its parent, its neighbours and the creators who teach it. Mix any balls to test a new move; saved mixes become new balls.</p>
     </div>
     <div class="tabs" role="tablist">
       <button id="tab-net" role="tab" aria-selected="true" data-view="net">Network</button>
@@ -171,10 +171,7 @@ td.pn small{display:block;font:400 13px/1.4 var(--body);color:var(--muted);margi
       <div class="hint">Drag to pan, pinch or scroll to zoom. Zoom in to read every ball.</div>
       <div class="zoomctl"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button><button id="zfit" aria-label="Fit to screen">⤢</button></div>
       <div class="legend">
-        <span><i class="dot" style="background:var(--k)"></i>Kallaway</span>
-        <span><i class="dot" style="background:var(--c)"></i>Caleb</span>
-        <span><i class="dot" style="background:var(--s)"></i>Sam</span>
-        <span><i class="dot" style="background:var(--a)"></i>Aayush</span>
+        <span id="legend-creators"></span>
         <span><i class="dot" style="background:var(--pr)"></i>Principle</span>
         <span><i class="dot" style="background:var(--child)"></i>Technique</span>
         <span><i class="dot" style="background:var(--combo)"></i>Your mix</span>
@@ -217,7 +214,11 @@ const LAYERS = {
 const nodes = new Map();
 const links = []; // {s,t,kind}
 const RAD = Math.PI/180;
-CREATORS.forEach((c,i)=>{ nodes.set(c.id,{...c,type:"creator",x:-560,y:-270+i*180,r:26}); links.push({s:c.id,t:"core",kind:"creator"}); });
+CREATORS.forEach((c,i)=>{
+  const n=CREATORS.length, span=Math.min(760,(n-1)*150), y = n>1 ? -span/2 + i*(span/(n-1)) : 0;
+  nodes.set(c.id,{...c,type:"creator",x:-560,y,r:n>5?22:26});
+  links.push({s:c.id,t:"core",kind:"creator"});
+});
 nodes.set("core",{...CORE,type:"core",x:0,y:0,r:48});
 P.forEach((p,i)=>{
   const ang = -90 + i*(360/P.length);
@@ -599,6 +600,8 @@ document.addEventListener("click", e=>{ if(!e.target.closest(".find")) findRes.h
 mergeCombos(); placeCombos(); renderPatterns(); renderPanel();
 (function legendExtras(){
   const leg = document.querySelector(".legend"); if(!leg) return;
+  const slot = document.getElementById("legend-creators");
+  if(slot) slot.outerHTML = CREATORS.map(c=>`<span><i class="dot" style="background:var(--${c.id})"></i>${esc(c.name.split(" ")[0])}</span>`).join("");
   const used = new Set([...nodes.values()].filter(n=>n.layer && n.layer!=="framework").map(n=>n.layer));
   used.forEach(l=>{ if(LAYERS[l]) leg.insertAdjacentHTML("beforeend",`<span><i class="dot" style="background:var(--l-${l})"></i>${LAYERS[l].label}</span>`); });
 })();
