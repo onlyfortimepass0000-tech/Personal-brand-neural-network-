@@ -17,6 +17,8 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - NOTE Eden's creator research tools were unusable this session (workspace is on the free plan; research needs Eden Discover), so reel-level detail came from the creators' own captions and third-party analysis instead.
 - ADD reports/adley-and-jun.md — the one-page report for Aryan.
 - NOTE Page republished from this chat session, version 7. Verified first that the live version 6 was byte-identical to the repo build it came from, so nothing published from a Code session was lost.
+- NOTE Claude Code sync check, 2 Nov: found commits 1c80af3 and 06b18f9 on main. Validate OK, 0 unlinked, 2-space format intact, page already at version 7, so no rebuild or republish needed. Pattern pass: covered by that session's pattern-ball updates (x022, x023, x025, x026); no new 3-creator idea found among x039-x068. Open for Aryan: the x056 vs x024 mix test and whether to add a "Testing & measurement" principle.
+- EDIT `HANDOFF.md` counts: 99 technique balls to 129 from six creators.
 
 ## 2026-10-23
 
