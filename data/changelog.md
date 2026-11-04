@@ -9,6 +9,10 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - ADD x069 offer today (end-to-end systems, 7-10 day build, retainer); x070 runway and commitment; x071 age/stage constraint on charging for guidance. Source chat 2026-11-04 (exam short answers B1, B3, MCQ 2, 10).
 - ADD x072 direction exam result (community vs clients) in practice; verdict: clients first, community later. Open, not decided by Aryan.
 - EDIT x011 gained a string to x071.
+- EDIT x010 proof inventory: "one paying client" -> three paying clients, strung to x073.
+- EDIT x069 offer: monthly fee corrected to ₹10,000 retainer for software; added that no software client exists yet. Before: 500-10000 range, currency not stated.
+- EDIT x072 exam: added corrected answers and corrected lean (1 community, 7 clients); replaced the one-client conflict note. Verdict unchanged: clients first, community later.
+- ADD x073 three clients and their deals; x074 price ladder in INR; x075 account audience and DM stance. Source chat 2026-11-04. EDIT x011 gained a string to x075.
 - NOTE page not republished this session.
 
 ## 2026-11-02

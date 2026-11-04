@@ -2,7 +2,7 @@
   "meta": {
     "schema": 1,
     "updated": "2026-11-04",
-    "next_id": 73,
+    "next_id": 76,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -1969,7 +1969,7 @@
       "layer": "aryan",
       "parent": "h-aryan",
       "name": "Proof inventory",
-      "desc": "300+ cold calls, automations and AI agents built, one paying client (name hidden is fine). OK to show: calls, rejections, his screen while building, struggles. Not chosen: revenue numbers, home and family.",
+      "desc": "300+ cold calls, automations and AI agents built, three paying clients (see x073; names hidden is fine). OK to show: calls, rejections, his screen while building, struggles. Not chosen: revenue numbers, home and family.",
       "creators": [],
       "links": [
         "p4c",
@@ -1990,7 +1990,8 @@
       "links": [
         "p9a",
         "p4c",
-        "x071"
+        "x071",
+        "x075"
       ],
       "source": "sources/aryan-source-file.md §12",
       "added": "2026-10-16",
@@ -3044,7 +3045,7 @@
       "layer": "aryan",
       "parent": "h-aryan",
       "name": "Offer today: end-to-end systems, retainer",
-      "desc": "What he sells now: end-to-end systems for businesses that replace a salaried role. His claim: about 5x output on that task. Build takes 7-10 days, then a monthly maintenance or upgrade fee that he puts between 500 and 10000 depending on project size (currency not stated). Own words for the buyer: businesses that need efficiency optimisation through proper systems and a bigger audience. Claim rests on one paying client so far (see x010).",
+      "desc": "What he sells now: end-to-end systems for businesses that replace a salaried role. His claim: about 5x output on that task. Build takes 7-10 days, then a monthly maintenance or upgrade fee that he puts of ₹10,000 for software (corrected 4 Nov, see x074; earlier he said 500 to 10000). Own words for the buyer: businesses that need efficiency optimisation through proper systems and a bigger audience. The 5x claim has no software client behind it; his three paying clients are marketing work (see x073).",
       "creators": [],
       "links": [
         "x010",
@@ -3092,13 +3093,61 @@
       "layer": "practice",
       "parent": "h-practice",
       "name": "Direction exam: community vs clients",
-      "desc": "4 Nov: took a 10 MCQ + 3 short-answer exam to choose between a paid community (guidance sessions for early founders) and clients from content. MCQ lean: 4 community, 5 clients. Preference answers (energy, exit, teaching) lean community; evidence answers (cash in 3 months, proof, age worry, DM sales) lean clients. Weak spots found: B2 gave categories, not a count of people who would pay in 30 days; offer price range is 20x wide; kill criteria are time-based, not metric-based; Q1 (proof = own journey) conflicts with Q5 (client result) until read against x010 (one client). Verdict given in chat: clients first, community later built on client proof. Not yet decided by Aryan.",
+      "desc": "4 Nov: took a 10 MCQ + 3 short-answer exam to choose between a paid community (guidance sessions for early founders) and clients from content. MCQ lean as first submitted: 4 community, 5 clients. Corrected same evening: Q1 proof is actually three client jobs; Q4 energised by both talking and building; Q5 right option but wants early founders to feel DM-reachable; Q8 can show work from three clients. Corrected lean: 1 community, 7 clients, 1 neutral (my recount). Preference answers (energy, exit, teaching) lean community; evidence answers (cash in 3 months, proof, age worry, DM sales) lean clients. Weak spots found: B2 gave categories, not a count of people who would pay in 30 days; offer price range is 20x wide; kill criteria are time-based, not metric-based; Q1 vs Q5 conflict resolved: he has three clients but no stated outcomes. New weak spots: nothing yet shows results, spa delivery is short (140 of 250 messages, reviews dropped), software prices have no software client behind them. Verdict given in chat: clients first, community later built on client proof. Not yet decided by Aryan.",
       "creators": [],
       "links": [
         "x069",
         "x070",
         "x071",
         "x011"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x073",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Clients so far: three, all small",
+      "desc": "Three paying clients, ₹7,500 collected in total (private, not for camera). (1) Tissue paper manufacturer, a college friend: 4 reels for ₹4,500. (2) Spa: ₹5,000 deal, ₹2,000 paid so far; owes 4 reels and 4 posts plus a revival campaign: 140 of about 250 promised messages sent. Google Maps reviews were promised but cannot be automated or bought, so he will drop them and send 100 extra messages as compensation. (3) Cycle retail shop: 2 posts and 3 reels for ₹1,000, a lead from an earlier \"we can work for any amount\" conversation. No results (replies, bookings, sales) stated for any of the three yet. No software or system client yet.",
+      "creators": [],
+      "links": [
+        "x010",
+        "x069"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x074",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Price ladder (INR)",
+      "desc": "Software: ₹10,000 to ₹50,000, possibly ₹1 lakh, with a ₹10,000 monthly retainer. Marketing: post ₹500, reel ₹1,000; revival campaign sending 1,000 to 2,000 messages for ₹5,000 to ₹10,000; websites ₹10,000 to ₹50,000; end-to-end systems ₹20,000 to ₹2 lakh. This replaces the earlier \"500 to 10000\" monthly maintenance range in x069.",
+      "creators": [],
+      "links": [
+        "x069",
+        "x073"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x075",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Account audience and DM stance",
+      "desc": "Wants the account to speak to owners and founders who run a current business. Then to translate it for early founders: a realistic, raw view of what you actually get and what to expect, against the \"start and figure it out\" mindset. Also wants to reach ambitious people who might work with him, become clients, or want guidance. Wants early-stage people to feel they can just DM him, with no gatekeeping.",
+      "creators": [],
+      "links": [
+        "x011",
+        "x074"
       ],
       "source": "chat 2026-11-04",
       "added": "2026-11-04",
