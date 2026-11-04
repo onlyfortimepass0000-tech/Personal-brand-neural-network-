@@ -4,6 +4,13 @@ Newest first. One entry per day, one bullet per change. Every session that touch
 
 Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or source.
 
+## 2026-11-04
+
+- ADD x069 offer today (end-to-end systems, 7-10 day build, retainer); x070 runway and commitment; x071 age/stage constraint on charging for guidance. Source chat 2026-11-04 (exam short answers B1, B3, MCQ 2, 10).
+- ADD x072 direction exam result (community vs clients) in practice; verdict: clients first, community later. Open, not decided by Aryan.
+- EDIT x011 gained a string to x071.
+- NOTE page not republished this session.
+
 ## 2026-11-02
 
 - ADD creators `ak` Adley Kinsman (the retention engineer) and `jy` Jun Yuh (the story excavator). Six inputs now. Research written up first in `sources/research/notes_adley.md` and `sources/research/notes_jun.md` from her Social Media Examiner six-step talk, a podcast transcript, both creators' own Instagram captions, and third-party reel analysis. Every new ball cites a section of those files.

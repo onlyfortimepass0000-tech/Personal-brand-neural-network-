@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema": 1,
-    "updated": "2026-11-02",
-    "next_id": 69,
+    "updated": "2026-11-04",
+    "next_id": 73,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -1989,7 +1989,8 @@
       "creators": [],
       "links": [
         "p9a",
-        "p4c"
+        "p4c",
+        "x071"
       ],
       "source": "sources/aryan-source-file.md §12",
       "added": "2026-10-16",
@@ -3035,6 +3036,72 @@
       ],
       "source": "sources/research/notes_jun.md §style and voice",
       "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x069",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Offer today: end-to-end systems, retainer",
+      "desc": "What he sells now: end-to-end systems for businesses that replace a salaried role. His claim: about 5x output on that task. Build takes 7-10 days, then a monthly maintenance or upgrade fee that he puts between 500 and 10000 depending on project size (currency not stated). Own words for the buyer: businesses that need efficiency optimisation through proper systems and a bigger audience. Claim rests on one paying client so far (see x010).",
+      "creators": [],
+      "links": [
+        "x010",
+        "x011"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x070",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Runway and commitment",
+      "desc": "Needs cash within about 3 months. Will not quit the personal brand: he has \"nowhere else to go\". Would reconsider direction only after 6-7 months of consistent posting with bare-minimum results. No day-30/60/90 metric set yet.",
+      "creators": [],
+      "links": [
+        "x001",
+        "x010"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x071",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Constraint: age and stage when charging for guidance",
+      "desc": "Says his age and stage worry him a lot when charging for advice and it would hold him back. Wants proven outcomes before he charges for guidance. Does not yet know who the viewer is (audience still open, x011). Energy and content taste lean to talking, guiding and teaching frameworks; exit preference is recurring membership income.",
+      "creators": [],
+      "links": [
+        "x011",
+        "x010"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x072",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Direction exam: community vs clients",
+      "desc": "4 Nov: took a 10 MCQ + 3 short-answer exam to choose between a paid community (guidance sessions for early founders) and clients from content. MCQ lean: 4 community, 5 clients. Preference answers (energy, exit, teaching) lean community; evidence answers (cash in 3 months, proof, age worry, DM sales) lean clients. Weak spots found: B2 gave categories, not a count of people who would pay in 30 days; offer price range is 20x wide; kill criteria are time-based, not metric-based; Q1 (proof = own journey) conflicts with Q5 (client result) until read against x010 (one client). Verdict given in chat: clients first, community later built on client proof. Not yet decided by Aryan.",
+      "creators": [],
+      "links": [
+        "x069",
+        "x070",
+        "x071",
+        "x011"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
       "status": "active"
     }
   ],
