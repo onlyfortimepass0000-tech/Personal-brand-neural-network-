@@ -13,6 +13,9 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - EDIT x069 offer: monthly fee corrected to ₹10,000 retainer for software; added that no software client exists yet. Before: 500-10000 range, currency not stated.
 - EDIT x072 exam: added corrected answers and corrected lean (1 community, 7 clients); replaced the one-client conflict note. Verdict unchanged: clients first, community later.
 - ADD x073 three clients and their deals; x074 price ladder in INR; x075 account audience and DM stance. Source chat 2026-11-04. EDIT x011 gained a string to x075.
+- EDIT x073 clients: added that tissue paper and cycle shop content is not posted yet; only the spa campaign is measurable (views, replies), numbers pending.
+- ADD x076 90-day buyer (owners of existing businesses) and lead offer (revival campaign, bundled). EDIT x011 audience: appended the 4 Nov decision and a string to x076.
+- ADD x077 site check of atomz.online (practice): audience and proof do not match the chosen buyer. Claude observation.
 - NOTE page not republished this session.
 
 ## 2026-11-02

@@ -2,7 +2,7 @@
   "meta": {
     "schema": 1,
     "updated": "2026-11-04",
-    "next_id": 76,
+    "next_id": 78,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -1985,13 +1985,14 @@
       "layer": "aryan",
       "parent": "h-aryan",
       "name": "Audience: undecided, three candidates",
-      "desc": "Students 17-24, small business owners, founders ahead of him. He can help a scared would-be founder, a 12th-grader at a crossroads, a shop owner drowning in manual work. Wants viewers to feel \"I can do this too\".",
+      "desc": "Students 17-24, small business owners, founders ahead of him. He can help a scared would-be founder, a 12th-grader at a crossroads, a shop owner drowning in manual work. Wants viewers to feel \"I can do this too\". Update 4 Nov: for the next 90 days he chose owners of existing businesses (see x076).",
       "creators": [],
       "links": [
         "p9a",
         "p4c",
         "x071",
-        "x075"
+        "x075",
+        "x076"
       ],
       "source": "sources/aryan-source-file.md §12",
       "added": "2026-10-16",
@@ -3111,7 +3112,7 @@
       "layer": "aryan",
       "parent": "h-aryan",
       "name": "Clients so far: three, all small",
-      "desc": "Three paying clients, ₹7,500 collected in total (private, not for camera). (1) Tissue paper manufacturer, a college friend: 4 reels for ₹4,500. (2) Spa: ₹5,000 deal, ₹2,000 paid so far; owes 4 reels and 4 posts plus a revival campaign: 140 of about 250 promised messages sent. Google Maps reviews were promised but cannot be automated or bought, so he will drop them and send 100 extra messages as compensation. (3) Cycle retail shop: 2 posts and 3 reels for ₹1,000, a lead from an earlier \"we can work for any amount\" conversation. No results (replies, bookings, sales) stated for any of the three yet. No software or system client yet.",
+      "desc": "Three paying clients, ₹7,500 collected in total (private, not for camera). (1) Tissue paper manufacturer, a college friend: 4 reels for ₹4,500. (2) Spa: ₹5,000 deal, ₹2,000 paid so far; owes 4 reels and 4 posts plus a revival campaign: 140 of about 250 promised messages sent. Google Maps reviews were promised but cannot be automated or bought, so he will drop them and send 100 extra messages as compensation. (3) Cycle retail shop: 2 posts and 3 reels for ₹1,000, a lead from an earlier \"we can work for any amount\" conversation. No results (replies, bookings, sales) stated for any of the three yet. No software or system client yet. Update 4 Nov: the tissue paper reels and the cycle shop posts have not been posted by the clients yet, so they carry no public proof. The only measurable thing so far is the spa revival campaign: how many people viewed the messages and how many replies came in (numbers not given yet).",
       "creators": [],
       "links": [
         "x010",
@@ -3148,6 +3149,40 @@
       "links": [
         "x011",
         "x074"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x076",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "90-day buyer and lead offer",
+      "desc": "Decision on 4 Nov: for the next 90 days the one buyer is owners of existing businesses. They get software systems and marketing. The lead offer is the revival campaign (messaging past customers), which he says can also carry reels, posts, websites and branding correction. Single offer is not yet fixed: he describes the revival campaign as one of the lead-generating offers, bundled with other work.",
+      "creators": [],
+      "links": [
+        "x011",
+        "x073",
+        "x074"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x077",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Site check: atomz.online vs chosen buyer",
+      "desc": "Claude fetched atomz.online on 4 Nov at his suggestion. It lists four service areas (content strategy, brand growth, monetization, operations) aimed at creators and founders, with no pricing, no client names, no results and no case studies. It does not mention revival campaigns, local businesses or his three real clients. Mismatch: his chosen 90-day buyer is owners of existing businesses. Observation by Claude, not a statement by Aryan.",
+      "creators": [],
+      "links": [
+        "x076",
+        "x073",
+        "x010"
       ],
       "source": "chat 2026-11-04",
       "added": "2026-11-04",
