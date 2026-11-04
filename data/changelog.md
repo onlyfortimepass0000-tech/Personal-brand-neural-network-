@@ -4,6 +4,10 @@ Newest first. One entry per day, one bullet per change. Every session that touch
 
 Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or source.
 
+## 2026-11-05
+
+- NOTE Content map doc published (private Claude Doc, https://claude.ai/artifact/9tk6eK33R4P783ZSck8bde): 3 pillars, 15 topics, 75 ideas, 300 angles, built from Aryan's brand profile, source file and the creator teardown. Requested by Aryan on 2026-11-05 (storytelling phase now open for content planning). Eden research tools blocked on the Free plan, so performance patterns came from web sources only. No balls added.
+
 ## 2026-11-04
 
 - ADD x039-x041 from the creator growth teardown (see `sources/research/creator-growth-teardown-2026-11-04.md`): two patterns (keyword lead reels; prove the method on yourself) and one framework (one format at volume). Linked to p10i, p10h, p4g, p10j.
