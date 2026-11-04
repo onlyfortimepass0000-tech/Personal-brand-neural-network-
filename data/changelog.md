@@ -16,6 +16,8 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - EDIT x073 clients: added that tissue paper and cycle shop content is not posted yet; only the spa campaign is measurable (views, replies), numbers pending.
 - ADD x076 90-day buyer (owners of existing businesses) and lead offer (revival campaign, bundled). EDIT x011 audience: appended the 4 Nov decision and a string to x076.
 - ADD x077 site check of atomz.online (practice): audience and proof do not match the chosen buyer. Claude observation.
+- ADD x078 software pitch declined (one person). EDIT x073 clients: software line corrected. Before: implied no software attempt; Aryan corrected on 4 Nov.
+- ADD x079 GitHub review (practice): the software work exists and is documented; paid status unknown. Claude observation. No secrets stored.
 - NOTE page not republished this session.
 
 ## 2026-11-02

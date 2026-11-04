@@ -2,7 +2,7 @@
   "meta": {
     "schema": 1,
     "updated": "2026-11-04",
-    "next_id": 78,
+    "next_id": 80,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -3112,7 +3112,7 @@
       "layer": "aryan",
       "parent": "h-aryan",
       "name": "Clients so far: three, all small",
-      "desc": "Three paying clients, ₹7,500 collected in total (private, not for camera). (1) Tissue paper manufacturer, a college friend: 4 reels for ₹4,500. (2) Spa: ₹5,000 deal, ₹2,000 paid so far; owes 4 reels and 4 posts plus a revival campaign: 140 of about 250 promised messages sent. Google Maps reviews were promised but cannot be automated or bought, so he will drop them and send 100 extra messages as compensation. (3) Cycle retail shop: 2 posts and 3 reels for ₹1,000, a lead from an earlier \"we can work for any amount\" conversation. No results (replies, bookings, sales) stated for any of the three yet. No software or system client yet. Update 4 Nov: the tissue paper reels and the cycle shop posts have not been posted by the clients yet, so they carry no public proof. The only measurable thing so far is the spa revival campaign: how many people viewed the messages and how many replies came in (numbers not given yet).",
+      "desc": "Three paying clients, ₹7,500 collected in total (private, not for camera). (1) Tissue paper manufacturer, a college friend: 4 reels for ₹4,500. (2) Spa: ₹5,000 deal, ₹2,000 paid so far; owes 4 reels and 4 posts plus a revival campaign: 140 of about 250 promised messages sent. Google Maps reviews were promised but cannot be automated or bought, so he will drop them and send 100 extra messages as compensation. (3) Cycle retail shop: 2 posts and 3 reels for ₹1,000, a lead from an earlier \"we can work for any amount\" conversation. No results (replies, bookings, sales) stated for any of the three yet. No software or system client yet. Update 4 Nov: the tissue paper reels and the cycle shop posts have not been posted by the clients yet, so they carry no public proof. The only measurable thing so far is the spa revival campaign: how many people viewed the messages and how many replies came in (numbers not given yet). Software: one pitch made, declined (see x078). So software has a pitch but no paying client yet.",
       "creators": [],
       "links": [
         "x010",
@@ -3183,6 +3183,40 @@
         "x076",
         "x073",
         "x010"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x078",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Software pitch declined",
+      "desc": "He has pitched software to one person, who declined. No further detail given yet (who, what was pitched, price, reason).",
+      "creators": [],
+      "links": [
+        "x073",
+        "x074"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x079",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "GitHub review: what he has built",
+      "desc": "Claude read his GitHub on 4 Nov (shallow reads). Built and documented: green-culture (private) booking, UPI payment matching and travel pricing for a gardening nursery, with a demo mode, tests and a race-condition stress test; kalakruti (public) automatic payment-reminder emails with a 4-step schedule, live on Vercel; CRM (private) his own cold-call and WhatsApp outreach tracker with script-funnel analytics; AtomZ- (public) the agency marketing site, aimed at creators and founders; le-mom-zart (public) a brand site for an embroidery label; sills (private) a Claude plugin for web scraping; Reverse-Engineering (public) tool setup only; Quotation-builder- is empty. Not opened: Aryan-journal, Claude-. Whether any of these was built for a paying client is not stated. Observation by Claude from the repos, not a statement by Aryan.",
+      "creators": [],
+      "links": [
+        "x078",
+        "x073",
+        "x069",
+        "x074"
       ],
       "source": "chat 2026-11-04",
       "added": "2026-11-04",
