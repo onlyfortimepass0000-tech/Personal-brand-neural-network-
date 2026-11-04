@@ -7,7 +7,9 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 ## 2026-11-04
 
 - ADD x039-x041 from the creator growth teardown (see `sources/research/creator-growth-teardown-2026-11-04.md`): two patterns (keyword lead reels; prove the method on yourself) and one framework (one format at volume). Linked to p10i, p10h, p4g, p10j.
-- NOTE Teardown doc published as a private Claude Doc. Eden Free plan blocked creator research and vidIQ credits ran out, so samples are thinner than the 10-20 per platform asked for; Caleb's Instagram was not pulled. Page not republished.
+- NOTE Teardown doc published as a private Claude Doc. Eden Free plan blocked creator research and vidIQ credits ran out, so samples are thinner than the 10-20 per platform asked for; Page not republished.
+- ADD x042 70-20-10 content split (Caleb, framework) from his Instagram reels DI1StLcpxz- and DN8eIp3y7nw; linked x041, p10h.
+- NOTE Caleb's Instagram was pulled later the same day from public reel pages (9 reels plus the TRUST reel): captions, likes and comments only; no views or transcripts (Eden transcripts stay queued, vidIQ at 0 credits until 2026-11-15). Doc updated; follower count corrected to about 220K.
 
 ## 2026-10-23
 

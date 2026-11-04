@@ -2,7 +2,7 @@
   "meta": {
     "schema": 1,
     "updated": "2026-11-04",
-    "next_id": 42,
+    "next_id": 43,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -255,7 +255,7 @@
       "layer": "framework",
       "parent": "p1",
       "name": "Flex, then subvert",
-      "desc": "'My Ferrari went up $300K… that's not even the most exciting thing today.' A gap opens mid-sentence.",
+      "desc": "'My Ferrari went up $300K\u2026 that's not even the most exciting thing today.' A gap opens mid-sentence.",
       "creators": [
         "a"
       ],
@@ -280,7 +280,7 @@
       "links": [
         "p7"
       ],
-      "source": "storytelling-playbook.md + creator research notes; sources/research/notes_aayush.md §Old reels (Dec 2024 to Sep 2025), DMA_-JqpfxX",
+      "source": "storytelling-playbook.md + creator research notes; sources/research/notes_aayush.md \u00a7Old reels (Dec 2024 to Sep 2025), DMA_-JqpfxX",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -593,7 +593,7 @@
         "p2d",
         "p3f"
       ],
-      "source": "storytelling-playbook.md + creator research notes; sources/research/notes_aayush.md §Old reels (Dec 2024 to Sep 2025), DK7nVlEAQbH",
+      "source": "storytelling-playbook.md + creator research notes; sources/research/notes_aayush.md \u00a7Old reels (Dec 2024 to Sep 2025), DK7nVlEAQbH",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -830,7 +830,7 @@
       "layer": "framework",
       "parent": "p5",
       "name": "Rehook",
-      "desc": "Close one loop and open the next in one breath: 'which would have been great, except…'",
+      "desc": "Close one loop and open the next in one breath: 'which would have been great, except\u2026'",
       "creators": [
         "k"
       ],
@@ -1226,7 +1226,7 @@
       "layer": "framework",
       "parent": "p7",
       "name": "The last dab",
-      "desc": "Write the last line first. Make it worth repeating; in a short it loops back to the hook. Aayush ends mid-line ('Till then…') so his last words run straight into his first.",
+      "desc": "Write the last line first. Make it worth repeating; in a short it loops back to the hook. Aayush ends mid-line ('Till then\u2026') so his last words run straight into his first.",
       "creators": [
         "k",
         "a"
@@ -1234,7 +1234,7 @@
       "links": [
         "p5"
       ],
-      "source": "storytelling-playbook.md + creator research notes; sources/research/notes_aayush.md §Old reels (Dec 2024 to Sep 2025), DOxIdPWkR9B",
+      "source": "storytelling-playbook.md + creator research notes; sources/research/notes_aayush.md \u00a7Old reels (Dec 2024 to Sep 2025), DOxIdPWkR9B",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1809,7 +1809,7 @@
       "links": [
         "p10b"
       ],
-      "source": "sources/aryan-source-file.md §1-2",
+      "source": "sources/aryan-source-file.md \u00a71-2",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1824,7 +1824,7 @@
       "links": [
         "core"
       ],
-      "source": "sources/aryan-source-file.md §1, §15",
+      "source": "sources/aryan-source-file.md \u00a71, \u00a715",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1840,7 +1840,7 @@
         "p8a",
         "p8d"
       ],
-      "source": "sources/aryan-source-file.md §5",
+      "source": "sources/aryan-source-file.md \u00a75",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1856,7 +1856,7 @@
         "p8a",
         "p7f"
       ],
-      "source": "sources/aryan-source-file.md §4-5",
+      "source": "sources/aryan-source-file.md \u00a74-5",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1871,7 +1871,7 @@
       "links": [
         "p10e"
       ],
-      "source": "sources/aryan-source-file.md §4",
+      "source": "sources/aryan-source-file.md \u00a74",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1887,7 +1887,7 @@
         "p2a",
         "p10c"
       ],
-      "source": "sources/aryan-source-file.md §6",
+      "source": "sources/aryan-source-file.md \u00a76",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1903,7 +1903,7 @@
         "p2a",
         "p6b"
       ],
-      "source": "sources/aryan-source-file.md §9",
+      "source": "sources/aryan-source-file.md \u00a79",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1920,7 +1920,7 @@
         "p5d",
         "p2b"
       ],
-      "source": "sources/aryan-source-file.md §10.1",
+      "source": "sources/aryan-source-file.md \u00a710.1",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1938,7 +1938,7 @@
         "p6b",
         "p6d"
       ],
-      "source": "sources/aryan-source-file.md §10.2",
+      "source": "sources/aryan-source-file.md \u00a710.2",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1954,7 +1954,7 @@
         "p4c",
         "p4g"
       ],
-      "source": "sources/aryan-source-file.md §11",
+      "source": "sources/aryan-source-file.md \u00a711",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1970,7 +1970,7 @@
         "p9a",
         "p4c"
       ],
-      "source": "sources/aryan-source-file.md §12",
+      "source": "sources/aryan-source-file.md \u00a712",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -1986,7 +1986,7 @@
         "p9a",
         "p9e"
       ],
-      "source": "sources/aryan-source-file.md §14",
+      "source": "sources/aryan-source-file.md \u00a714",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -2001,7 +2001,7 @@
       "links": [
         "p10d"
       ],
-      "source": "sources/aryan-source-file.md §13",
+      "source": "sources/aryan-source-file.md \u00a713",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -2016,7 +2016,7 @@
       "links": [
         "core"
       ],
-      "source": "sources/aryan-source-file.md §15",
+      "source": "sources/aryan-source-file.md \u00a715",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -2031,7 +2031,7 @@
       "links": [
         "p2a"
       ],
-      "source": "sources/aryan-source-file.md §8",
+      "source": "sources/aryan-source-file.md \u00a78",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -2120,7 +2120,7 @@
         "p2j",
         "p10c"
       ],
-      "source": "sources/research/notes_aayush.md §Old reels (Dec 2024 to Sep 2025), DMA_-JqpfxX",
+      "source": "sources/research/notes_aayush.md \u00a7Old reels (Dec 2024 to Sep 2025), DMA_-JqpfxX",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -2139,7 +2139,7 @@
         "p6d",
         "p3i"
       ],
-      "source": "sources/research/notes_aayush.md §Old reels (Dec 2024 to Sep 2025), DK7nVlEAQbH; notes_aayush.md O-GXIw8YWvY, tGYh79FnOq8",
+      "source": "sources/research/notes_aayush.md \u00a7Old reels (Dec 2024 to Sep 2025), DK7nVlEAQbH; notes_aayush.md O-GXIw8YWvY, tGYh79FnOq8",
       "added": "2026-10-16",
       "status": "active"
     },
@@ -2531,6 +2531,24 @@
         "p10h",
         "p10i"
       ]
+    },
+    {
+      "id": "x042",
+      "type": "ball",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "70-20-10 content split",
+      "desc": "Caleb Ralston's rule for content: 70% what already works, 20% small tweaks on that, 10% completely new experiments. Teams that stay at 70% stall when algorithms and audiences shift. His Aug 2025 version of the reel got about 4x the likes of the Apr 2025 one.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "x041",
+        "p10h"
+      ],
+      "source": "sources/research/creator-growth-teardown-2026-11-04.md",
+      "added": "2026-11-04",
+      "status": "active"
     }
   ],
   "patterns": {
@@ -2677,7 +2695,7 @@
       ],
       "test": {
         "verdict": "works with care",
-        "why": "Real case: Aayush's Dec 2024 reel has two hooks. The spoken one attacks a belief ('Likes aren't going to sign you any fitness coaching clients. Relationships do.'); the caption attacks the viewer ('Makes sense why you're still broke…'). A year later his own first hook rule is 'never attack the viewer'. Strong aimed at a belief, weak aimed at a person.",
+        "why": "Real case: Aayush's Dec 2024 reel has two hooks. The spoken one attacks a belief ('Likes aren't going to sign you any fitness coaching clients. Relationships do.'); the caption attacks the viewer ('Makes sense why you're still broke\u2026'). A year later his own first hook rule is 'never attack the viewer'. Strong aimed at a belief, weak aimed at a person.",
         "risk": "The line is thin: 'you're doing X wrong' still lands on the viewer even when X is only a habit."
       },
       "example": "Weak: No wonder you're still stuck.\nStrong: Rereading your notes isn't learning. Testing yourself is.",
