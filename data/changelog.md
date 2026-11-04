@@ -19,6 +19,7 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - ADD x078 software pitch declined (one person). EDIT x073 clients: software line corrected. Before: implied no software attempt; Aryan corrected on 4 Nov.
 - ADD x079 GitHub review (practice): the software work exists and is documented; paid status unknown. Claude observation. No secrets stored.
 - NOTE page not republished this session.
+- NOTE Claude Code sync check, 4 Nov: ingested c0212d2..d35b271 from chat (x069-x079). Validate OK, 0 unlinked, format intact. Page republished to `meta.page_artifact` as version 8 (live v7 template kept, only the network data replaced). The 11 new aryan/practice balls are business facts (offer, clients, prices, buyer); health lists them as not strung to a storytelling ball, and none honestly maps to one, so left for Aryan. Pattern pass: none of them are framework balls, so no new pattern.
 
 ## 2026-11-02
 
