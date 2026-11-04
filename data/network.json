@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema": 1,
-    "updated": "2026-11-02",
-    "next_id": 69,
+    "updated": "2026-11-04",
+    "next_id": 80,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -1969,7 +1969,7 @@
       "layer": "aryan",
       "parent": "h-aryan",
       "name": "Proof inventory",
-      "desc": "300+ cold calls, automations and AI agents built, one paying client (name hidden is fine). OK to show: calls, rejections, his screen while building, struggles. Not chosen: revenue numbers, home and family.",
+      "desc": "300+ cold calls, automations and AI agents built, three paying clients (see x073; names hidden is fine). OK to show: calls, rejections, his screen while building, struggles. Not chosen: revenue numbers, home and family.",
       "creators": [],
       "links": [
         "p4c",
@@ -1985,11 +1985,14 @@
       "layer": "aryan",
       "parent": "h-aryan",
       "name": "Audience: undecided, three candidates",
-      "desc": "Students 17-24, small business owners, founders ahead of him. He can help a scared would-be founder, a 12th-grader at a crossroads, a shop owner drowning in manual work. Wants viewers to feel \"I can do this too\".",
+      "desc": "Students 17-24, small business owners, founders ahead of him. He can help a scared would-be founder, a 12th-grader at a crossroads, a shop owner drowning in manual work. Wants viewers to feel \"I can do this too\". Update 4 Nov: for the next 90 days he chose owners of existing businesses (see x076).",
       "creators": [],
       "links": [
         "p9a",
-        "p4c"
+        "p4c",
+        "x071",
+        "x075",
+        "x076"
       ],
       "source": "sources/aryan-source-file.md §12",
       "added": "2026-10-16",
@@ -3035,6 +3038,188 @@
       ],
       "source": "sources/research/notes_jun.md §style and voice",
       "added": "2026-11-02",
+      "status": "active"
+    },
+    {
+      "id": "x069",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Offer today: end-to-end systems, retainer",
+      "desc": "What he sells now: end-to-end systems for businesses that replace a salaried role. His claim: about 5x output on that task. Build takes 7-10 days, then a monthly maintenance or upgrade fee that he puts of ₹10,000 for software (corrected 4 Nov, see x074; earlier he said 500 to 10000). Own words for the buyer: businesses that need efficiency optimisation through proper systems and a bigger audience. The 5x claim has no software client behind it; his three paying clients are marketing work (see x073).",
+      "creators": [],
+      "links": [
+        "x010",
+        "x011"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x070",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Runway and commitment",
+      "desc": "Needs cash within about 3 months. Will not quit the personal brand: he has \"nowhere else to go\". Would reconsider direction only after 6-7 months of consistent posting with bare-minimum results. No day-30/60/90 metric set yet.",
+      "creators": [],
+      "links": [
+        "x001",
+        "x010"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x071",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Constraint: age and stage when charging for guidance",
+      "desc": "Says his age and stage worry him a lot when charging for advice and it would hold him back. Wants proven outcomes before he charges for guidance. Does not yet know who the viewer is (audience still open, x011). Energy and content taste lean to talking, guiding and teaching frameworks; exit preference is recurring membership income.",
+      "creators": [],
+      "links": [
+        "x011",
+        "x010"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x072",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Direction exam: community vs clients",
+      "desc": "4 Nov: took a 10 MCQ + 3 short-answer exam to choose between a paid community (guidance sessions for early founders) and clients from content. MCQ lean as first submitted: 4 community, 5 clients. Corrected same evening: Q1 proof is actually three client jobs; Q4 energised by both talking and building; Q5 right option but wants early founders to feel DM-reachable; Q8 can show work from three clients. Corrected lean: 1 community, 7 clients, 1 neutral (my recount). Preference answers (energy, exit, teaching) lean community; evidence answers (cash in 3 months, proof, age worry, DM sales) lean clients. Weak spots found: B2 gave categories, not a count of people who would pay in 30 days; offer price range is 20x wide; kill criteria are time-based, not metric-based; Q1 vs Q5 conflict resolved: he has three clients but no stated outcomes. New weak spots: nothing yet shows results, spa delivery is short (140 of 250 messages, reviews dropped), software prices have no software client behind them. Verdict given in chat: clients first, community later built on client proof. Not yet decided by Aryan.",
+      "creators": [],
+      "links": [
+        "x069",
+        "x070",
+        "x071",
+        "x011"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x073",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Clients so far: three, all small",
+      "desc": "Three paying clients, ₹7,500 collected in total (private, not for camera). (1) Tissue paper manufacturer, a college friend: 4 reels for ₹4,500. (2) Spa: ₹5,000 deal, ₹2,000 paid so far; owes 4 reels and 4 posts plus a revival campaign: 140 of about 250 promised messages sent. Google Maps reviews were promised but cannot be automated or bought, so he will drop them and send 100 extra messages as compensation. (3) Cycle retail shop: 2 posts and 3 reels for ₹1,000, a lead from an earlier \"we can work for any amount\" conversation. No results (replies, bookings, sales) stated for any of the three yet. No software or system client yet. Update 4 Nov: the tissue paper reels and the cycle shop posts have not been posted by the clients yet, so they carry no public proof. The only measurable thing so far is the spa revival campaign: how many people viewed the messages and how many replies came in (numbers not given yet). Software: one pitch made, declined (see x078). So software has a pitch but no paying client yet.",
+      "creators": [],
+      "links": [
+        "x010",
+        "x069"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x074",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Price ladder (INR)",
+      "desc": "Software: ₹10,000 to ₹50,000, possibly ₹1 lakh, with a ₹10,000 monthly retainer. Marketing: post ₹500, reel ₹1,000; revival campaign sending 1,000 to 2,000 messages for ₹5,000 to ₹10,000; websites ₹10,000 to ₹50,000; end-to-end systems ₹20,000 to ₹2 lakh. This replaces the earlier \"500 to 10000\" monthly maintenance range in x069.",
+      "creators": [],
+      "links": [
+        "x069",
+        "x073"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x075",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Account audience and DM stance",
+      "desc": "Wants the account to speak to owners and founders who run a current business. Then to translate it for early founders: a realistic, raw view of what you actually get and what to expect, against the \"start and figure it out\" mindset. Also wants to reach ambitious people who might work with him, become clients, or want guidance. Wants early-stage people to feel they can just DM him, with no gatekeeping.",
+      "creators": [],
+      "links": [
+        "x011",
+        "x074"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x076",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "90-day buyer and lead offer",
+      "desc": "Decision on 4 Nov: for the next 90 days the one buyer is owners of existing businesses. They get software systems and marketing. The lead offer is the revival campaign (messaging past customers), which he says can also carry reels, posts, websites and branding correction. Single offer is not yet fixed: he describes the revival campaign as one of the lead-generating offers, bundled with other work.",
+      "creators": [],
+      "links": [
+        "x011",
+        "x073",
+        "x074"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x077",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Site check: atomz.online vs chosen buyer",
+      "desc": "Claude fetched atomz.online on 4 Nov at his suggestion. It lists four service areas (content strategy, brand growth, monetization, operations) aimed at creators and founders, with no pricing, no client names, no results and no case studies. It does not mention revival campaigns, local businesses or his three real clients. Mismatch: his chosen 90-day buyer is owners of existing businesses. Observation by Claude, not a statement by Aryan.",
+      "creators": [],
+      "links": [
+        "x076",
+        "x073",
+        "x010"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x078",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Software pitch declined",
+      "desc": "He has pitched software to one person, who declined. No further detail given yet (who, what was pitched, price, reason).",
+      "creators": [],
+      "links": [
+        "x073",
+        "x074"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x079",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "GitHub review: what he has built",
+      "desc": "Claude read his GitHub on 4 Nov (shallow reads). Built and documented: green-culture (private) booking, UPI payment matching and travel pricing for a gardening nursery, with a demo mode, tests and a race-condition stress test; kalakruti (public) automatic payment-reminder emails with a 4-step schedule, live on Vercel; CRM (private) his own cold-call and WhatsApp outreach tracker with script-funnel analytics; AtomZ- (public) the agency marketing site, aimed at creators and founders; le-mom-zart (public) a brand site for an embroidery label; sills (private) a Claude plugin for web scraping; Reverse-Engineering (public) tool setup only; Quotation-builder- is empty. Not opened: Aryan-journal, Claude-. Whether any of these was built for a paying client is not stated. Observation by Claude from the repos, not a statement by Aryan.",
+      "creators": [],
+      "links": [
+        "x078",
+        "x073",
+        "x069",
+        "x074"
+      ],
+      "source": "chat 2026-11-04",
+      "added": "2026-11-04",
       "status": "active"
     }
   ],

@@ -4,6 +4,22 @@ Newest first. One entry per day, one bullet per change. Every session that touch
 
 Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or source.
 
+## 2026-11-04
+
+- ADD x069 offer today (end-to-end systems, 7-10 day build, retainer); x070 runway and commitment; x071 age/stage constraint on charging for guidance. Source chat 2026-11-04 (exam short answers B1, B3, MCQ 2, 10).
+- ADD x072 direction exam result (community vs clients) in practice; verdict: clients first, community later. Open, not decided by Aryan.
+- EDIT x011 gained a string to x071.
+- EDIT x010 proof inventory: "one paying client" -> three paying clients, strung to x073.
+- EDIT x069 offer: monthly fee corrected to ₹10,000 retainer for software; added that no software client exists yet. Before: 500-10000 range, currency not stated.
+- EDIT x072 exam: added corrected answers and corrected lean (1 community, 7 clients); replaced the one-client conflict note. Verdict unchanged: clients first, community later.
+- ADD x073 three clients and their deals; x074 price ladder in INR; x075 account audience and DM stance. Source chat 2026-11-04. EDIT x011 gained a string to x075.
+- EDIT x073 clients: added that tissue paper and cycle shop content is not posted yet; only the spa campaign is measurable (views, replies), numbers pending.
+- ADD x076 90-day buyer (owners of existing businesses) and lead offer (revival campaign, bundled). EDIT x011 audience: appended the 4 Nov decision and a string to x076.
+- ADD x077 site check of atomz.online (practice): audience and proof do not match the chosen buyer. Claude observation.
+- ADD x078 software pitch declined (one person). EDIT x073 clients: software line corrected. Before: implied no software attempt; Aryan corrected on 4 Nov.
+- ADD x079 GitHub review (practice): the software work exists and is documented; paid status unknown. Claude observation. No secrets stored.
+- NOTE page not republished this session.
+
 ## 2026-11-02
 
 - ADD creators `ak` Adley Kinsman (the retention engineer) and `jy` Jun Yuh (the story excavator). Six inputs now. Research written up first in `sources/research/notes_adley.md` and `sources/research/notes_jun.md` from her Social Media Examiner six-step talk, a podcast transcript, both creators' own Instagram captions, and third-party reel analysis. Every new ball cites a section of those files.
