@@ -4,6 +4,13 @@ Newest first. One entry per day, one bullet per change. Every session that touch
 
 Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or source.
 
+## 2026-11-05
+
+- EDIT x078 renamed and rewritten. Before: name "Software pitch declined", desc "pitched software to one person, who declined". After: three builds (nursery booking, dental CRM, manufacturing tool-entry), none converted; nursery paused until after Diwali. Source chat 2026-11-05 plus screenshot of the nursery owner message.
+- EDIT x073 software line: one pitch declined -> three builds, none paid. EDIT x079: green-culture confirmed as a real client build that did not convert; other two builds not matched to repos.
+- ADD x080 pattern: built before commitment (Claude diagnosis, unconfirmed). Notes the correction to the 4 Nov proof comparison.
+- NOTE page not republished this session.
+
 ## 2026-11-04
 
 - ADD x069 offer today (end-to-end systems, 7-10 day build, retainer); x070 runway and commitment; x071 age/stage constraint on charging for guidance. Source chat 2026-11-04 (exam short answers B1, B3, MCQ 2, 10).

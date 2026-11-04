@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema": 1,
-    "updated": "2026-11-04",
-    "next_id": 80,
+    "updated": "2026-11-05",
+    "next_id": 81,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -3112,7 +3112,7 @@
       "layer": "aryan",
       "parent": "h-aryan",
       "name": "Clients so far: three, all small",
-      "desc": "Three paying clients, ₹7,500 collected in total (private, not for camera). (1) Tissue paper manufacturer, a college friend: 4 reels for ₹4,500. (2) Spa: ₹5,000 deal, ₹2,000 paid so far; owes 4 reels and 4 posts plus a revival campaign: 140 of about 250 promised messages sent. Google Maps reviews were promised but cannot be automated or bought, so he will drop them and send 100 extra messages as compensation. (3) Cycle retail shop: 2 posts and 3 reels for ₹1,000, a lead from an earlier \"we can work for any amount\" conversation. No results (replies, bookings, sales) stated for any of the three yet. No software or system client yet. Update 4 Nov: the tissue paper reels and the cycle shop posts have not been posted by the clients yet, so they carry no public proof. The only measurable thing so far is the spa revival campaign: how many people viewed the messages and how many replies came in (numbers not given yet). Software: one pitch made, declined (see x078). So software has a pitch but no paying client yet.",
+      "desc": "Three paying clients, ₹7,500 collected in total (private, not for camera). (1) Tissue paper manufacturer, a college friend: 4 reels for ₹4,500. (2) Spa: ₹5,000 deal, ₹2,000 paid so far; owes 4 reels and 4 posts plus a revival campaign: 140 of about 250 promised messages sent. Google Maps reviews were promised but cannot be automated or bought, so he will drop them and send 100 extra messages as compensation. (3) Cycle retail shop: 2 posts and 3 reels for ₹1,000, a lead from an earlier \"we can work for any amount\" conversation. No results (replies, bookings, sales) stated for any of the three yet. No software or system client yet. Update 4 Nov: the tissue paper reels and the cycle shop posts have not been posted by the clients yet, so they carry no public proof. The only measurable thing so far is the spa revival campaign: how many people viewed the messages and how many replies came in (numbers not given yet). Software: three builds made, none paid (see x078).",
       "creators": [],
       "links": [
         "x010",
@@ -3193,8 +3193,8 @@
       "type": "fact",
       "layer": "aryan",
       "parent": "h-aryan",
-      "name": "Software pitch declined",
-      "desc": "He has pitched software to one person, who declined. No further detail given yet (who, what was pitched, price, reason).",
+      "name": "Software builds: three made, none converted",
+      "desc": "Corrects the earlier note that he had pitched software once. He has built software for three businesses and none has paid. (1) A plant nursery: they had tried a booking system before and said it did not work; asked why, got no solid answer; he offered to build one, they said yes, he built it to their detailed requirements, then the owner wrote that the software is not her priority, asked to pause because of upcoming events, and Aryan said he would ping after Diwali to decide whether to move forward. This is the green-culture build. (2) A dental clinic: he built a CRM, she said she would look into it, then said she was moving in with another doctor in the same clinic and would use their software; he insisted she look at his, she kept delaying, then said she did not need it. (3) A manufacturing shop: he built a tool-entry system because they said they were losing about ₹50,000 a year on lost tools; after follow-up they said they did not want to invest. Stated on 5 Nov. Whether any deposit or written scope was agreed before building is not yet known.",
       "creators": [],
       "links": [
         "x073",
@@ -3210,7 +3210,7 @@
       "layer": "practice",
       "parent": "h-practice",
       "name": "GitHub review: what he has built",
-      "desc": "Claude read his GitHub on 4 Nov (shallow reads). Built and documented: green-culture (private) booking, UPI payment matching and travel pricing for a gardening nursery, with a demo mode, tests and a race-condition stress test; kalakruti (public) automatic payment-reminder emails with a 4-step schedule, live on Vercel; CRM (private) his own cold-call and WhatsApp outreach tracker with script-funnel analytics; AtomZ- (public) the agency marketing site, aimed at creators and founders; le-mom-zart (public) a brand site for an embroidery label; sills (private) a Claude plugin for web scraping; Reverse-Engineering (public) tool setup only; Quotation-builder- is empty. Not opened: Aryan-journal, Claude-. Whether any of these was built for a paying client is not stated. Observation by Claude from the repos, not a statement by Aryan.",
+      "desc": "Claude read his GitHub on 4 Nov (shallow reads). Built and documented: green-culture (private) booking, UPI payment matching and travel pricing for a gardening nursery, with a demo mode, tests and a race-condition stress test; kalakruti (public) automatic payment-reminder emails with a 4-step schedule, live on Vercel; CRM (private) his own cold-call and WhatsApp outreach tracker with script-funnel analytics; AtomZ- (public) the agency marketing site, aimed at creators and founders; le-mom-zart (public) a brand site for an embroidery label; sills (private) a Claude plugin for web scraping; Reverse-Engineering (public) tool setup only; Quotation-builder- is empty. Not opened: Aryan-journal, Claude-. Whether any of these was built for a paying client is not stated. Observation by Claude from the repos, not a statement by Aryan. Update 5 Nov: Aryan says green-culture was a real build for a real nursery client, not converted (see x078). The dental CRM and the manufacturing tool-entry tool were not matched to a repo; the repo named CRM is his own outreach tracker.",
       "creators": [],
       "links": [
         "x078",
@@ -3220,6 +3220,24 @@
       ],
       "source": "chat 2026-11-04",
       "added": "2026-11-04",
+      "status": "active"
+    },
+    {
+      "id": "x080",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Pattern: built before the client committed",
+      "desc": "Claude diagnosis on 5 Nov from his three software cases, not yet confirmed by him. In all three he built first and asked for commitment after. Warning signs that were present before the build: the nursery could not say why their earlier system failed; the dental clinic only said she would look into it and then delayed; the manufacturer named a ₹50,000-a-year loss but a loss that size is a small problem for them to pay to fix. Words were the only commitment in each case. Test to run next: whether any money or signed scope was agreed before building. Also corrects Claude's 4 Nov line that his software proof is stronger than his marketing proof: the software shows he can build, only marketing has taken money (₹7,500 across three clients).",
+      "creators": [],
+      "links": [
+        "x078",
+        "x073",
+        "x074",
+        "x010"
+      ],
+      "source": "chat 2026-11-05",
+      "added": "2026-11-05",
       "status": "active"
     }
   ],
