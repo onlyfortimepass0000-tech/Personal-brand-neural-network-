@@ -4,6 +4,11 @@ Newest first. One entry per day, one bullet per change. Every session that touch
 
 Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or source.
 
+## 2026-11-04
+
+- ADD x039-x041 from the creator growth teardown (see `sources/research/creator-growth-teardown-2026-11-04.md`): two patterns (keyword lead reels; prove the method on yourself) and one framework (one format at volume). Linked to p10i, p10h, p4g, p10j.
+- NOTE Teardown doc published as a private Claude Doc. Eden Free plan blocked creator research and vidIQ credits ran out, so samples are thinner than the 10-20 per platform asked for; Caleb's Instagram was not pulled. Page not republished.
+
 ## 2026-10-23
 
 - ADD x028-x032, lesson results 2-6 from the claude.ai chat (practice). Scores: L2 2/3, L3 3/3 and he found unplanted flaws, L4 needed a replay of the 6 hook words, L5 breakthrough after 5 misses, L6 0.5/6. Each linked to the framework balls it tested.
