@@ -2,7 +2,7 @@
   "meta": {
     "schema": 1,
     "updated": "2026-11-05",
-    "next_id": 81,
+    "next_id": 85,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -3238,6 +3238,85 @@
       ],
       "source": "chat 2026-11-05",
       "added": "2026-11-05",
+      "status": "active"
+    },
+    {
+      "type": "pattern",
+      "parent": "p10",
+      "source": "sources/research/creator-growth-teardown-2026-11-04.md",
+      "added": "2026-11-04",
+      "status": "active",
+      "id": "x081",
+      "layer": "pattern",
+      "name": "Keyword lead reels, kept off reach reels",
+      "desc": "All four creators end lead reels with a one-word comment keyword (Kallaway BLUEPRINT, Caleb TRUST, Sam FULL, Aayush ONYX) and leave reach reels with no ask, so views and leads do different jobs.",
+      "creators": [
+        "k",
+        "c",
+        "s",
+        "a"
+      ],
+      "links": [
+        "p10i",
+        "p10h"
+      ]
+    },
+    {
+      "type": "pattern",
+      "parent": "p4",
+      "source": "sources/research/creator-growth-teardown-2026-11-04.md",
+      "added": "2026-11-04",
+      "status": "active",
+      "id": "x082",
+      "layer": "pattern",
+      "name": "Prove the method on yourself, with a number and a timebox",
+      "desc": "Each creator runs their own method in public and states the result: 0 to 60K in 100 days, about 100K subscribers in 18 months, 0 to 80K in 9 months, a start-from-scratch breakout. Self-reported, so treat as claims.",
+      "creators": [
+        "k",
+        "c",
+        "s",
+        "a"
+      ],
+      "links": [
+        "p4g",
+        "p10j"
+      ]
+    },
+    {
+      "type": "technique",
+      "parent": "p10",
+      "source": "sources/research/creator-growth-teardown-2026-11-04.md",
+      "added": "2026-11-04",
+      "status": "active",
+      "id": "x083",
+      "layer": "framework",
+      "name": "One format, repeated at volume",
+      "desc": "Kallaway repeats a two-panel news breakdown (title card on top, face below) and Aayush repeats one start-from-scratch template. A fixed wrapper makes each post recognisable and lets the idea change while the format stays.",
+      "creators": [
+        "k",
+        "a"
+      ],
+      "links": [
+        "p10h",
+        "p10i"
+      ]
+    },
+    {
+      "id": "x084",
+      "type": "ball",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "70-20-10 content split",
+      "desc": "Caleb Ralston's rule for content: 70% what already works, 20% small tweaks on that, 10% completely new experiments. Teams that stay at 70% stall when algorithms and audiences shift. His Aug 2025 version of the reel got about 4x the likes of the Apr 2025 one.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "x083",
+        "p10h"
+      ],
+      "source": "sources/research/creator-growth-teardown-2026-11-04.md",
+      "added": "2026-11-04",
       "status": "active"
     }
   ],

@@ -10,7 +10,7 @@ Aryan Thakkar, 19, BBA Marketing student in Thane, India, and a founder (B2B gro
 
 | thing | where |
 |---|---|
-| The network (source of truth) | `data/network.json` (99 technique balls, 15 Aryan facts, 16 practice balls, 5 pattern balls, 5 mixes; as of 2026-10-23) |
+| The network (source of truth) | `data/network.json` (129 technique balls from six creators, 15 Aryan facts, 16 practice balls, 5 pattern balls, 5 mixes; as of 2026-11-02) |
 | Change log | `data/changelog.md` |
 | The page | `dist/story-network.html`, built from `site/template.html`. Published as a private artifact: https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy |
 | Storytelling playbook (70K chars, 9 sections) | `sources/storytelling-playbook.md` |

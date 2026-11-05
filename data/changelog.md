@@ -10,6 +10,9 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - EDIT x073 software line: one pitch declined -> three builds, none paid. EDIT x079: green-culture confirmed as a real client build that did not convert; other two builds not matched to repos.
 - ADD x080 pattern: built before commitment (Claude diagnosis, unconfirmed). Notes the correction to the 4 Nov proof comparison.
 - NOTE page not republished this session.
+- NOTE Claude Code sync check, 5 Nov: the chat's 4 Nov commits 95fcbd2 and a11bcc7 were written on a stale copy (138 balls) and reused ids x039-x042, which already belonged to Adley's balls. The later merge on main kept Adley's and silently dropped the chat's four. Nothing of Adley's was overwritten.
+- ADD x081-x084 restored from a11bcc7 under new ids, content unchanged: x081 (was x039) keyword lead reels, x082 (was x040) prove the method on yourself, x083 (was x041) one format repeated at volume, x084 (was x042) Caleb's 70-20-10 split; x084's link to x041 now points to x083. Older changelog bullets that say x039-x042 for these mean x081-x084.
+- NOTE Page republished to `meta.page_artifact` as version 9 from Claude Code.
 
 ## 2026-11-04
 
@@ -26,6 +29,7 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - ADD x078 software pitch declined (one person). EDIT x073 clients: software line corrected. Before: implied no software attempt; Aryan corrected on 4 Nov.
 - ADD x079 GitHub review (practice): the software work exists and is documented; paid status unknown. Claude observation. No secrets stored.
 - NOTE page not republished this session.
+- NOTE Claude Code sync check, 4 Nov: ingested c0212d2..d35b271 from chat (x069-x079). Validate OK, 0 unlinked, format intact. Page republished to `meta.page_artifact` as version 8 (live v7 template kept, only the network data replaced). The 11 new aryan/practice balls are business facts (offer, clients, prices, buyer); health lists them as not strung to a storytelling ball, and none honestly maps to one, so left for Aryan. Pattern pass: none of them are framework balls, so no new pattern.
 
 ## 2026-11-02
 
@@ -40,6 +44,8 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - NOTE Eden's creator research tools were unusable this session (workspace is on the free plan; research needs Eden Discover), so reel-level detail came from the creators' own captions and third-party analysis instead.
 - ADD reports/adley-and-jun.md — the one-page report for Aryan.
 - NOTE Page republished from this chat session, version 7. Verified first that the live version 6 was byte-identical to the repo build it came from, so nothing published from a Code session was lost.
+- NOTE Claude Code sync check, 2 Nov: found commits 1c80af3 and 06b18f9 on main. Validate OK, 0 unlinked, 2-space format intact, page already at version 7, so no rebuild or republish needed. Pattern pass: covered by that session's pattern-ball updates (x022, x023, x025, x026); no new 3-creator idea found among x039-x068. Open for Aryan: the x056 vs x024 mix test and whether to add a "Testing & measurement" principle.
+- EDIT `HANDOFF.md` counts: 99 technique balls to 129 from six creators.
 
 ## 2026-10-23
 
