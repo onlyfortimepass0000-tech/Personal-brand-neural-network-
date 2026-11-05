@@ -10,6 +10,9 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - EDIT x073 software line: one pitch declined -> three builds, none paid. EDIT x079: green-culture confirmed as a real client build that did not convert; other two builds not matched to repos.
 - ADD x080 pattern: built before commitment (Claude diagnosis, unconfirmed). Notes the correction to the 4 Nov proof comparison.
 - NOTE page not republished this session.
+- NOTE Claude Code sync check, 5 Nov: the chat's 4 Nov commits 95fcbd2 and a11bcc7 were written on a stale copy (138 balls) and reused ids x039-x042, which already belonged to Adley's balls. The later merge on main kept Adley's and silently dropped the chat's four. Nothing of Adley's was overwritten.
+- ADD x081-x084 restored from a11bcc7 under new ids, content unchanged: x081 (was x039) keyword lead reels, x082 (was x040) prove the method on yourself, x083 (was x041) one format repeated at volume, x084 (was x042) Caleb's 70-20-10 split; x084's link to x041 now points to x083. Older changelog bullets that say x039-x042 for these mean x081-x084.
+- NOTE Page republished to `meta.page_artifact` as version 9 from Claude Code.
 
 ## 2026-11-04
 
