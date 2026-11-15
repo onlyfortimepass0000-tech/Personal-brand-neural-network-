@@ -2,7 +2,7 @@
   "meta": {
     "schema": 1,
     "updated": "2026-11-15",
-    "next_id": 85,
+    "next_id": 88,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -3312,6 +3312,63 @@
         "x081"
       ],
       "source": "sources/research/reel_calebralston_DfSnhm8T6gQ.md",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "x085",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Brand Journey answers: the journey road",
+      "desc": "His answers on 15 Nov. Outcome: show his journey, belief system and learnings, earn trust, ask people what they want, build it, open a waitlist, run a launch and get customers for an AI or software product. Follower: early entrepreneurs, because he has no credibility yet to pitch customers. Voice: an early founder who is honestly confused about what to do and whom to sell to, not someone sorted. If no money comes: he would still connect with ambitious, open-minded people, help them and share learnings, networking in the morning and building at night. Proof he can show: spa campaign numbers, reels made (he calls some of them bad), and software demos deployed on Vercel.",
+      "creators": [],
+      "links": [
+        "x081",
+        "x082",
+        "p4h",
+        "x075",
+        "x073",
+        "x079"
+      ],
+      "source": "chat 2026-11-15",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "x086",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Share the knowledge, sell the execution",
+      "desc": "Caleb gives the teaching away (a six-hour free course, reels) and charges for doing it with you: an application-only high-ticket program and consulting. It works because his viewers, business owners, are the same people who can buy. Price and revenue are not public.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "x082",
+        "x066"
+      ],
+      "source": "sources/research/caleb_monetisation.md",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "x087",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Pushback: journey road vs 90-day buyer",
+      "desc": "Claude pushback on 15 Nov, not yet answered by him. (1) His journey account targets early entrepreneurs, but his chosen 90-day buyer is owners of existing businesses and he needs cash in about 3 months; the account cannot be the cash source on that timeline. (2) 'They suggest, I build, then waitlist' repeats the built-before-commitment pattern unless the waitlist takes money. (3) Jun, his cited model, sold courses and coaching to creators, not an AI product, per the network's notes; 'Tim' is not identified. Draft pond offered: first-year founders in India building a service or software business with AI.",
+      "creators": [],
+      "links": [
+        "x085",
+        "x076",
+        "x070",
+        "x080",
+        "x086"
+      ],
+      "source": "chat 2026-11-15",
       "added": "2026-11-15",
       "status": "active"
     }

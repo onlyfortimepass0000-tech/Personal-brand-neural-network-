@@ -10,6 +10,9 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - ADD x081 Brand Journey (c, p4), x082 Pick your pond (c, p8), x083 Priority reversal (c, p5). Checked first: no existing ball held these; p7i already covers the brand definition and p8a the contrarian take, so no duplicates added.
 - ADD x084 practice: reel read. Strung to x067, x066, p7i, x081.
 - RELINK p8a -> x082, p4h -> x081, p5j -> x083.
+- ADD x085 aryan: Brand Journey answers (journey road, early-entrepreneur follower, confused-founder voice, proof he can show). Source chat 2026-11-15.
+- ADD x086 framework (c, p10): share the knowledge, sell the execution. Source sources/research/caleb_monetisation.md (new).
+- ADD x087 practice: Claude pushback on the journey road vs his 90-day buyer; unanswered.
 - NOTE page not republished this session.
 
 ## 2026-11-05
