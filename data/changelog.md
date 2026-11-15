@@ -4,6 +4,14 @@ Newest first. One entry per day, one bullet per change. Every session that touch
 
 Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or source.
 
+## 2026-11-15
+
+- NOTE source saved: sources/research/reel_calebralston_DfSnhm8T6gQ.md (Caleb Ralston reel teardown, transcript, metrics, storytelling read). No visual or retention data was available.
+- ADD x081 Brand Journey (c, p4), x082 Pick your pond (c, p8), x083 Priority reversal (c, p5). Checked first: no existing ball held these; p7i already covers the brand definition and p8a the contrarian take, so no duplicates added.
+- ADD x084 practice: reel read. Strung to x067, x066, p7i, x081.
+- RELINK p8a -> x082, p4h -> x081, p5j -> x083.
+- NOTE page not republished this session.
+
 ## 2026-11-05
 
 - EDIT x078 renamed and rewritten. Before: name "Software pitch declined", desc "pitched software to one person, who declined". After: three builds (nursery booking, dental CRM, manufacturing tool-entry), none converted; nursery paused until after Diwali. Source chat 2026-11-05 plus screenshot of the nursery owner message.

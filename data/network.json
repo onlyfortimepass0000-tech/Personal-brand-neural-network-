@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema": 1,
-    "updated": "2026-11-05",
-    "next_id": 81,
+    "updated": "2026-11-15",
+    "next_id": 85,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -781,7 +781,8 @@
         "jy"
       ],
       "links": [
-        "p10"
+        "p10",
+        "x081"
       ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
@@ -956,7 +957,8 @@
         "ak"
       ],
       "links": [
-        "p4"
+        "p4",
+        "x083"
       ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
@@ -1321,7 +1323,8 @@
       ],
       "links": [
         "p8d",
-        "p3e"
+        "p3e",
+        "x082"
       ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
@@ -3238,6 +3241,78 @@
       ],
       "source": "chat 2026-11-05",
       "added": "2026-11-05",
+      "status": "active"
+    },
+    {
+      "id": "x081",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "Brand Journey: reverse from the outcome",
+      "desc": "Four questions asked in order: what outcome do you want from the brand, what must you be known for to get it, what must you do to be known for that, what must you learn to do that. Caleb says to answer these before anything else. No defined outcome means throwing noodles at the wall.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p4h",
+        "p8a"
+      ],
+      "source": "sources/research/reel_calebralston_DfSnhm8T6gQ.md §transcript; sources/research/notes_caleb.md Brand Journey",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "x082",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "Pick your pond by credibility",
+      "desc": "Ocean, lake, pond, puddle: choose the body of water your accomplishments let you compete in, then move up only when credibility and content-market fit allow. Experts pick by what they have done; students pick by the outcome they are pursuing.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p4h",
+        "x061"
+      ],
+      "source": "sources/research/reel_calebralston_DfSnhm8T6gQ.md §transcript; sources/research/notes_caleb.md body of water",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "x083",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Priority reversal",
+      "desc": "List a few points, then reveal that the last one must come before all the others (Caleb's #5, 'before you do any of the first four'). The reorder is the turn that keeps a list from feeling flat. Observed in one reel; not yet tested by Aryan.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p5j",
+        "p1c"
+      ],
+      "source": "sources/research/reel_calebralston_DfSnhm8T6gQ.md §storytelling read",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "x084",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Reel read: Caleb, brand in 90 seconds",
+      "desc": "Claude teardown on 15 Nov of Caleb Ralston's reel (96.7K views, about 3x his baseline, 48 comments). It is a framework list, not a story: strong on hook promise, named ideas and a priority reversal; weak on specifics, feeling and any call to reply. Its own point, trust over views, sits against its result: the format earned views. No visual or retention data was available. Full notes in the source file.",
+      "creators": [],
+      "links": [
+        "x067",
+        "x066",
+        "p7i",
+        "x081"
+      ],
+      "source": "sources/research/reel_calebralston_DfSnhm8T6gQ.md",
+      "added": "2026-11-15",
       "status": "active"
     }
   ],
