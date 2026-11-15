@@ -4,6 +4,11 @@ Newest first. One entry per day, one bullet per change. Every session that touch
 
 Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or source.
 
+## 2026-11-15
+
+- ADD x043 Material shared: Hormozi's 10 stages of business (practice). Aryan sent 10 stage-table screenshots (stages 0-9) and asked for a thorough analysis. Full transcription of all 10 tables plus pattern analysis in `sources/hormozi-10-stages-of-business.md`. Linked to x010 (proof inventory). No framework balls added: Hormozi is not one of the four network creators and the validator needs a creator on every framework ball. Decision put to Aryan.
+- NOTE page not republished (no change to storytelling balls).
+
 ## 2026-11-05
 
 - NOTE Content map doc published (private Claude Doc, https://claude.ai/artifact/9tk6eK33R4P783ZSck8bde): 3 pillars, 15 topics, 75 ideas, 300 angles, built from Aryan's brand profile, source file and the creator teardown. Requested by Aryan on 2026-11-05 (storytelling phase now open for content planning). Eden research tools blocked on the Free plan, so performance patterns came from web sources only. No balls added.
