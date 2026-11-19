@@ -9,6 +9,7 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - NOTE Claude Code sync check: chat commits 7a5a38b and 87ce632 (15 Nov) were written on main at d63f0d0, which did not have this session's 5 Nov restore, so their new x081-x087 reused four ids already used on the session branch. Kept the chat's x081-x087 as they are on main.
 - EDIT moved the session branch's four restored balls to new ids, content unchanged: x088 (was branch x081, chat x039) keyword lead reels, x089 (was x082, chat x040) prove the method on yourself, x090 (was x083, chat x041) one format repeated at volume, x091 (was x084, chat x042) Caleb's 70-20-10 split; x091's link now points to x090. Older bullets naming x081-x084 for these mean x088-x091. meta.next_id is now 92.
 - NOTE restored the 2, 4 and 5 Nov sync notes that the chat's changelog rewrite dropped (see git eec460b for their full text).
+- NOTE page republished to `meta.page_artifact` as version 10.
 - NOTE ask the chat session to fetch before it numbers new balls; this is the second id collision.
 
 ## 2026-11-15
