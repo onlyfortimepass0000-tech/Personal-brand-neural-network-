@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema": 1,
-    "updated": "2026-11-05",
-    "next_id": 85,
+    "updated": "2026-11-19",
+    "next_id": 92,
     "page_artifact": "https://claude.ai/artifact/2h5rxSpBRU2STmdwqUNYwy"
   },
   "creators": [
@@ -781,7 +781,8 @@
         "jy"
       ],
       "links": [
-        "p10"
+        "p10",
+        "x081"
       ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
@@ -956,7 +957,8 @@
         "ak"
       ],
       "links": [
-        "p4"
+        "p4",
+        "x083"
       ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
@@ -1321,7 +1323,8 @@
       ],
       "links": [
         "p8d",
-        "p3e"
+        "p3e",
+        "x082"
       ],
       "source": "storytelling-playbook.md + creator research notes",
       "added": "2026-10-16",
@@ -3241,12 +3244,141 @@
       "status": "active"
     },
     {
+      "id": "x081",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p4",
+      "name": "Brand Journey: reverse from the outcome",
+      "desc": "Four questions asked in order: what outcome do you want from the brand, what must you be known for to get it, what must you do to be known for that, what must you learn to do that. Caleb says to answer these before anything else. No defined outcome means throwing noodles at the wall.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p4h",
+        "p8a"
+      ],
+      "source": "sources/research/reel_calebralston_DfSnhm8T6gQ.md §transcript; sources/research/notes_caleb.md Brand Journey",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "x082",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p8",
+      "name": "Pick your pond by credibility",
+      "desc": "Ocean, lake, pond, puddle: choose the body of water your accomplishments let you compete in, then move up only when credibility and content-market fit allow. Experts pick by what they have done; students pick by the outcome they are pursuing.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p4h",
+        "x061"
+      ],
+      "source": "sources/research/reel_calebralston_DfSnhm8T6gQ.md §transcript; sources/research/notes_caleb.md body of water",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "x083",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p5",
+      "name": "Priority reversal",
+      "desc": "List a few points, then reveal that the last one must come before all the others (Caleb's #5, 'before you do any of the first four'). The reorder is the turn that keeps a list from feeling flat. Observed in one reel; not yet tested by Aryan.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "p5j",
+        "p1c"
+      ],
+      "source": "sources/research/reel_calebralston_DfSnhm8T6gQ.md §storytelling read",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "x084",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Reel read: Caleb, brand in 90 seconds",
+      "desc": "Claude teardown on 15 Nov of Caleb Ralston's reel (96.7K views, about 3x his baseline, 48 comments). It is a framework list, not a story: strong on hook promise, named ideas and a priority reversal; weak on specifics, feeling and any call to reply. Its own point, trust over views, sits against its result: the format earned views. No visual or retention data was available. Full notes in the source file.",
+      "creators": [],
+      "links": [
+        "x067",
+        "x066",
+        "p7i",
+        "x081"
+      ],
+      "source": "sources/research/reel_calebralston_DfSnhm8T6gQ.md",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "x085",
+      "type": "fact",
+      "layer": "aryan",
+      "parent": "h-aryan",
+      "name": "Brand Journey answers: the journey road",
+      "desc": "His answers on 15 Nov. Outcome: show his journey, belief system and learnings, earn trust, ask people what they want, build it, open a waitlist, run a launch and get customers for an AI or software product. Follower: early entrepreneurs, because he has no credibility yet to pitch customers. Voice: an early founder who is honestly confused about what to do and whom to sell to, not someone sorted. If no money comes: he would still connect with ambitious, open-minded people, help them and share learnings, networking in the morning and building at night. Proof he can show: spa campaign numbers, reels made (he calls some of them bad), and software demos deployed on Vercel.",
+      "creators": [],
+      "links": [
+        "x081",
+        "x082",
+        "p4h",
+        "x075",
+        "x073",
+        "x079"
+      ],
+      "source": "chat 2026-11-15",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "x086",
+      "type": "technique",
+      "layer": "framework",
+      "parent": "p10",
+      "name": "Share the knowledge, sell the execution",
+      "desc": "Caleb gives the teaching away (a six-hour free course, reels) and charges for doing it with you: an application-only high-ticket program and consulting. It works because his viewers, business owners, are the same people who can buy. Price and revenue are not public.",
+      "creators": [
+        "c"
+      ],
+      "links": [
+        "x082",
+        "x066"
+      ],
+      "source": "sources/research/caleb_monetisation.md",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "x087",
+      "type": "fact",
+      "layer": "practice",
+      "parent": "h-practice",
+      "name": "Pushback: journey road vs 90-day buyer",
+      "desc": "Claude pushback on 15 Nov, not yet answered by him. (1) His journey account targets early entrepreneurs, but his chosen 90-day buyer is owners of existing businesses and he needs cash in about 3 months; the account cannot be the cash source on that timeline. (2) 'They suggest, I build, then waitlist' repeats the built-before-commitment pattern unless the waitlist takes money. (3) Jun, his cited model, sold courses and coaching to creators, not an AI product, per the network's notes; 'Tim' is not identified. Draft pond offered: first-year founders in India building a service or software business with AI.",
+      "creators": [],
+      "links": [
+        "x085",
+        "x076",
+        "x070",
+        "x080",
+        "x086"
+      ],
+      "source": "chat 2026-11-15",
+      "added": "2026-11-15",
+      "status": "active"
+    },
+    {
       "type": "pattern",
       "parent": "p10",
       "source": "sources/research/creator-growth-teardown-2026-11-04.md",
       "added": "2026-11-04",
       "status": "active",
-      "id": "x081",
+      "id": "x088",
       "layer": "pattern",
       "name": "Keyword lead reels, kept off reach reels",
       "desc": "All four creators end lead reels with a one-word comment keyword (Kallaway BLUEPRINT, Caleb TRUST, Sam FULL, Aayush ONYX) and leave reach reels with no ask, so views and leads do different jobs.",
@@ -3267,7 +3399,7 @@
       "source": "sources/research/creator-growth-teardown-2026-11-04.md",
       "added": "2026-11-04",
       "status": "active",
-      "id": "x082",
+      "id": "x089",
       "layer": "pattern",
       "name": "Prove the method on yourself, with a number and a timebox",
       "desc": "Each creator runs their own method in public and states the result: 0 to 60K in 100 days, about 100K subscribers in 18 months, 0 to 80K in 9 months, a start-from-scratch breakout. Self-reported, so treat as claims.",
@@ -3288,7 +3420,7 @@
       "source": "sources/research/creator-growth-teardown-2026-11-04.md",
       "added": "2026-11-04",
       "status": "active",
-      "id": "x083",
+      "id": "x090",
       "layer": "framework",
       "name": "One format, repeated at volume",
       "desc": "Kallaway repeats a two-panel news breakdown (title card on top, face below) and Aayush repeats one start-from-scratch template. A fixed wrapper makes each post recognisable and lets the idea change while the format stays.",
@@ -3302,7 +3434,7 @@
       ]
     },
     {
-      "id": "x084",
+      "id": "x091",
       "type": "ball",
       "layer": "framework",
       "parent": "p10",
@@ -3312,7 +3444,7 @@
         "c"
       ],
       "links": [
-        "x083",
+        "x090",
         "p10h"
       ],
       "source": "sources/research/creator-growth-teardown-2026-11-04.md",

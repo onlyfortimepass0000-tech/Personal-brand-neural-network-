@@ -4,6 +4,24 @@ Newest first. One entry per day, one bullet per change. Every session that touch
 
 Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or source.
 
+## 2026-11-19
+
+- NOTE Claude Code sync check: chat commits 7a5a38b and 87ce632 (15 Nov) were written on main at d63f0d0, which did not have this session's 5 Nov restore, so their new x081-x087 reused four ids already used on the session branch. Kept the chat's x081-x087 as they are on main.
+- EDIT moved the session branch's four restored balls to new ids, content unchanged: x088 (was branch x081, chat x039) keyword lead reels, x089 (was x082, chat x040) prove the method on yourself, x090 (was x083, chat x041) one format repeated at volume, x091 (was x084, chat x042) Caleb's 70-20-10 split; x091's link now points to x090. Older bullets naming x081-x084 for these mean x088-x091. meta.next_id is now 92.
+- NOTE restored the 2, 4 and 5 Nov sync notes that the chat's changelog rewrite dropped (see git eec460b for their full text).
+- NOTE ask the chat session to fetch before it numbers new balls; this is the second id collision.
+
+## 2026-11-15
+
+- NOTE source saved: sources/research/reel_calebralston_DfSnhm8T6gQ.md (Caleb Ralston reel teardown, transcript, metrics, storytelling read). No visual or retention data was available.
+- ADD x081 Brand Journey (c, p4), x082 Pick your pond (c, p8), x083 Priority reversal (c, p5). Checked first: no existing ball held these; p7i already covers the brand definition and p8a the contrarian take, so no duplicates added.
+- ADD x084 practice: reel read. Strung to x067, x066, p7i, x081.
+- RELINK p8a -> x082, p4h -> x081, p5j -> x083.
+- ADD x085 aryan: Brand Journey answers (journey road, early-entrepreneur follower, confused-founder voice, proof he can show). Source chat 2026-11-15.
+- ADD x086 framework (c, p10): share the knowledge, sell the execution. Source sources/research/caleb_monetisation.md (new).
+- ADD x087 practice: Claude pushback on the journey road vs his 90-day buyer; unanswered.
+- NOTE page not republished this session.
+
 ## 2026-11-05
 
 - EDIT x078 renamed and rewritten. Before: name "Software pitch declined", desc "pitched software to one person, who declined". After: three builds (nursery booking, dental CRM, manufacturing tool-entry), none converted; nursery paused until after Diwali. Source chat 2026-11-05 plus screenshot of the nursery owner message.
