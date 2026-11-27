@@ -1,0 +1,404 @@
+<title>Reel Design Lab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@500;600;800;900&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one dark screening room. Hero line, then a wall of five 9:16 motion pieces, each with its steal-this notes. Deliberately single-theme. */
+:root{
+  --stage:#07080C; --ink:#ECE9E2; --muted:#8E8B96; --line:#1D1F27; --card:#0D0E14;
+  --amber:#FFB547; --paper:#ECE6DA;
+  --serif:"Instrument Serif",Georgia,serif; --sans:"Inter Tight","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace; --poster:"Anton",Impact,sans-serif;
+  color-scheme:dark;
+}
+body{background:var(--stage);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55}
+.wrap{max-width:1240px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(44px,8vw,96px);line-height:.95;letter-spacing:-.02em;margin:.25em 0 .2em;text-wrap:balance}
+h1 em{font-style:italic;color:var(--amber)}
+.lede{max-width:60ch;color:var(--muted);font-size:16px;margin:0}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:26px 0 30px}
+button{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink);background:transparent;border:1px solid #2C2F3A;border-radius:999px;padding:8px 14px;cursor:pointer}
+button[aria-pressed="true"]{border-color:var(--amber);color:var(--amber)}
+button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.hint{font:500 12px var(--mono);color:var(--muted)}
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:28px 22px}
+.piece{display:flex;flex-direction:column;gap:14px;min-width:0}
+.screen{position:relative;width:100%;aspect-ratio:9/16;border-radius:22px;overflow:hidden;background:#000;box-shadow:0 0 0 1px var(--line),0 30px 60px -30px rgba(0,0,0,.9);cursor:pointer}
+.screen canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.num{position:absolute;top:12px;left:14px;font:500 10px var(--mono);letter-spacing:.14em;color:rgba(255,255,255,.55);z-index:3;mix-blend-mode:difference}
+.meta h2{font:800 17px var(--sans);letter-spacing:-.01em;margin:0 0 2px}
+.meta .from{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--amber);margin:0 0 8px}
+.meta p{margin:0 0 6px;color:var(--muted);font-size:14px}
+.meta p b{color:var(--ink);font-weight:600}
+.study{margin-top:56px;border-top:1px solid var(--line);padding-top:26px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:24px}
+@media (max-width:760px){.study{grid-template-columns:minmax(0,1fr)}}
+.study h3{font-family:var(--serif);font-weight:400;font-size:34px;line-height:1;margin:0}
+.study ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:10px}
+.study li{color:var(--muted)}
+.study a{color:var(--ink);text-decoration-color:#3a3d4a;text-underline-offset:3px}
+.study a:hover{text-decoration-color:var(--amber)}
+.foot{margin-top:40px;font:500 12px var(--mono);color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">Reel Design Lab · Drop 01 · Fri 27 Nov 2026</div>
+  <h1>Launch-film craft, <em>cut for a 9:16 feed</em></h1>
+  <p class="lede">Five motion pieces built the way OpenAI, Anthropic and Studio Dumbar build theirs, using your own lines and numbers. Each one is a single function of time, so it renders frame-exact in Remotion and drops over your A-roll as an overlay.</p>
+
+  <div class="bar">
+    <button id="slow" aria-pressed="false">Study mode 0.25×</button>
+    <button id="pause" aria-pressed="false">Pause all</button>
+    <span class="hint">Tap any screen to restart it</span>
+  </div>
+
+  <div class="wall">
+    <article class="piece">
+      <div class="screen" data-p="point"><span class="num">01 / THE POINT</span><canvas width="540" height="960"></canvas></div>
+      <div class="meta">
+        <h2>Dot to proof</h2>
+        <div class="from">Stolen from OpenAI "Refreshed"</div>
+        <p>One dot types the hook with a tick per letter, deletes it, swells, bursts into rings, then the particles assemble your number.</p>
+        <p><b>Why it stops a thumb:</b> the eye can't predict what the dot becomes, so it waits to find out.</p>
+        <p><b>Build it:</b> letters every 3 frames, burst on a downbeat, 1 s morph staggered by position. Particles only for the reveal, never as wallpaper.</p>
+      </div>
+    </article>
+
+    <article class="piece">
+      <div class="screen" data-p="decode"><span class="num">02 / DECODE</span><canvas width="540" height="960"></canvas></div>
+      <div class="meta">
+        <h2>Terminal decode hook</h2>
+        <div class="from">Stolen from Anthropic's Claude Code launch</div>
+        <p>Heavy type scrambles through glyphs and locks left to right, then each line exits by rising behind its own mask.</p>
+        <p><b>Why it stops a thumb:</b> scrambled letters read as "something is loading" and pull the eye for the payoff word.</p>
+        <p><b>Build it:</b> glyph swap every 45 ms, each letter locks 45 ms after the last, last word in the accent. Under 4 words, or it becomes noise.</p>
+      </div>
+    </article>
+
+    <article class="piece">
+      <div class="screen" data-p="gravity"><span class="num">03 / GRAVITY</span><canvas width="540" height="960"></canvas></div>
+      <div class="meta">
+        <h2>Your belief, dropped</h2>
+        <div class="from">Stolen from physics type, Memorables 2026</div>
+        <p>Your line "Discipline without direction is just a better 9-to-5" falls word by word, squashes on landing, and the last word hits with a shake.</p>
+        <p><b>Why it stops a thumb:</b> weight is a feeling. Each landing is a beat the viewer feels before reading.</p>
+        <p><b>Build it:</b> words fall on t² for 0.42 s, squash 15% on impact, rotation settles on a spring. Shake 3 frames, only on the final word.</p>
+      </div>
+    </article>
+
+    <article class="piece">
+      <div class="screen" data-p="odometer"><span class="num">04 / EVERY DOT</span><canvas width="540" height="960"></canvas></div>
+      <div class="meta">
+        <h2>300 calls, counted</h2>
+        <div class="from">Stolen from the Remocn Opus 5 film notes</div>
+        <p>An odometer rolls to 300+, then a grid of 300 dots fills in a wave. Each dot is one of your real cold calls.</p>
+        <p><b>Why it stops a thumb:</b> a unit chart turns a number into effort you can see. The paper stage also breaks the dark-feed pattern.</p>
+        <p><b>Build it:</b> opacity on a short ramp, movement on a spring 3× longer. Stagger by pow(i, 0.8). Spend the accent only on the payoff.</p>
+      </div>
+    </article>
+
+    <article class="piece">
+      <div class="screen" data-p="glass"><span class="num">05 / GLASS</span><canvas class="gl" width="540" height="960"></canvas><canvas class="ov" width="540" height="960"></canvas></div>
+      <div class="meta">
+        <h2>Liquid glass caption card</h2>
+        <div class="from">Stolen from Apple Liquid Glass and editorial type</div>
+        <p>A shader light field moves behind a frosted panel. The caption mixes an italic serif with heavy caps and blurs into focus word by word.</p>
+        <p><b>Why it stops a thumb:</b> it looks like nothing else in a feed full of yellow karaoke captions.</p>
+        <p><b>Build it:</b> blur the background inside the panel at about 18 px, 1 px white rim at 25%, words sharpen from 14 px blur over 0.35 s.</p>
+      </div>
+    </article>
+  </div>
+
+  <section class="study">
+    <div>
+      <div class="eyebrow">Homework</div>
+      <h3>Watch these, frame by frame</h3>
+    </div>
+    <ol>
+      <li><a href="https://craftingui.com/motion/moments/openai-refreshed" target="_blank" rel="noopener">OpenAI "Refreshed", taken apart</a>: construction lines before the finished shape, one sound per event, music drops for the key mark.</li>
+      <li><a href="https://remocn.dev/blog/claude-opus-5-launch-video" target="_blank" rel="noopener">Making a launch video for Claude Opus 5</a>: three transition grammars, no scene arrives blank, one accent spent only on the payoff.</li>
+      <li><a href="https://impractical.ai/launch-videos/claude-code" target="_blank" rel="noopener">Claude Code launch video notes</a>: restraint, typewriter and scramble, hold time set by reading speed.</li>
+      <li><a href="https://memorabl.es/inspiration/best-motion-design-2026" target="_blank" rel="noopener">Best motion design of 2026</a>: physics type, Voronoi fills, shader logos, point-mesh morphs.</li>
+      <li><a href="https://awards.europeandesign.org/winner/261911" target="_blank" rel="noopener">Instagram motion identity by Studio Dumbar</a>: motion that mimics camera physics and swiping.</li>
+      <li><a href="https://pickscribe.com/v/VEcU_VnlX7c" target="_blank" rel="noopener">Kallaway's 46M-view edit breakdown</a>: key visual, title text, riser into a 3-keyframe jump.</li>
+    </ol>
+  </section>
+
+  <p class="foot">Brain: 8 balls · 40 sub-balls · 7 patterns · 5 open problems. Tomorrow's drop adds 2 to 4 new findings.</p>
+</div>
+
+<script>
+(function(){
+const W=540,H=960, AMBER='#FFB547';
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const clamp=x=>x<0?0:x>1?1:x;
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const expoOut=x=>x>=1?1:1-Math.pow(2,-10*x);
+const cubicIO=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const quadIn=x=>x*x, quadOut=x=>1-(1-x)*(1-x);
+const backOut=x=>{const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);};
+const spring=(x,z=6,w=9)=>x<=0?0:x>=1.6?1:1-Math.exp(-z*x)*Math.cos(w*x);
+function rng(s){return function(){s|=0;s=s+0x6D2B79F5|0;let t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+const lerp=(a,b,t)=>a+(b-a)*t;
+function mix(c1,c2,t){return `rgb(${Math.round(lerp(c1[0],c2[0],t))},${Math.round(lerp(c1[1],c2[1],t))},${Math.round(lerp(c1[2],c2[2],t))})`;}
+
+// shared film grain
+const grain=document.createElement('canvas');grain.width=grain.height=256;
+(()=>{const g=grain.getContext('2d'),d=g.createImageData(256,256),r=rng(7);for(let i=0;i<d.data.length;i+=4){const v=r()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255;}g.putImageData(d,0,0);})();
+function addGrain(ctx,a){ctx.save();ctx.globalAlpha=a;ctx.globalCompositeOperation='overlay';const ox=-Math.random()*256,oy=-Math.random()*256;for(let x=ox;x<W;x+=256)for(let y=oy;y<H;y+=256)ctx.drawImage(grain,x,y);ctx.restore();}
+function vignette(ctx,a){const g=ctx.createRadialGradient(W/2,H*.45,H*.2,W/2,H*.5,H*.75);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,`rgba(0,0,0,${a})`);ctx.fillStyle=g;ctx.fillRect(0,0,W,H);}
+
+/* ---------- 01 THE POINT ---------- */
+function makePoint(){
+  const D=7.2, hook='What stops a thumb?';
+  let P=[];
+  function sample(){
+    const c=document.createElement('canvas');c.width=W;c.height=H;const g=c.getContext('2d');
+    g.fillStyle='#fff';g.textAlign='center';g.textBaseline='middle';g.font='300px Anton, Impact, sans-serif';g.fillText('300+',W/2,H*.44);
+    const d=g.getImageData(0,0,W,H).data,pts=[];
+    for(let y=0;y<H;y+=7)for(let x=0;x<W;x+=7)if(d[(y*W+x)*4+3]>128)pts.push([x,y]);
+    const r=rng(3);for(let i=pts.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[pts[i],pts[j]]=[pts[j],pts[i]];}
+    const N=Math.min(pts.length,1300),cx=W/2,cy=H*.44;P=[];
+    for(let k=0;k<N;k++){const ring=Math.floor(k*3/N),start=Math.floor(ring*N/3),cnt=Math.floor((ring+1)*N/3)-start;
+      const rr=[70,125,180][ring],a=(k-start)/cnt*Math.PI*2+ring*.3;
+      const ang=r()*Math.PI*2,rad=Math.sqrt(r())*150;
+      P.push({d:[cx+Math.cos(ang)*rad,cy+Math.sin(ang)*rad],ring:[rr,a],txt:pts[k%pts.length],del:(pts[k%pts.length][0]/W)*.35,sz:1.6+r()*1.6});}
+  }
+  sample(); if(document.fonts&&document.fonts.ready)document.fonts.ready.then(sample);
+  return {D,draw(ctx,t){
+    ctx.fillStyle='#06070B';ctx.fillRect(0,0,W,H);
+    const cx=W/2,cy=H*.44;
+    ctx.font='600 38px "Inter Tight", Arial, sans-serif';ctx.textBaseline='middle';
+    // typing and deleting
+    let n=0; if(t<2.5)n=Math.floor(seg(t,.35,2.2)*hook.length+.001); else n=Math.ceil((1-seg(t,2.5,2.85))*hook.length);
+    const txt=hook.slice(0,n), tw=ctx.measureText(txt).width, gap=n?18:0;
+    const dotX=cx+(tw+gap)/2, lx=cx-(tw+gap)/2;
+    const lastType=.35+(n/hook.length)*1.85, flash=(t<2.4&&n>0)?Math.max(0,1-(t-lastType)*14):0;
+    if(t<2.95){
+      ctx.fillStyle='#ECE9E2';ctx.textAlign='left';ctx.fillText(txt,lx,cy+2);
+      ctx.beginPath();ctx.arc(dotX,cy,9+flash*3,0,Math.PI*2);ctx.fill();
+    }
+    // grow into a disc
+    if(t>=2.95&&t<3.35){const r=lerp(9,150,expoOut(seg(t,2.95,3.3)));ctx.fillStyle='#ECE9E2';ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.fill();}
+    // particles
+    if(t>=3.35){
+      const burst=expoOut(seg(t,3.35,3.95)), spin=(t-3.35)*.25, out=quadIn(seg(t,6.6,7.1));
+      for(const p of P){
+        const rx=cx+Math.cos(p.ring[1]+spin)*p.ring[0], ry=cy+Math.sin(p.ring[1]+spin)*p.ring[0];
+        let x=lerp(p.d[0],rx,burst), y=lerp(p.d[1],ry,burst);
+        const m=cubicIO(seg(t,4.55+p.del,5.45+p.del));
+        x=lerp(x,p.txt[0],m); y=lerp(y,p.txt[1],m);
+        x=lerp(x,cx,out); y=lerp(y,cy,out);
+        ctx.fillStyle=mix([236,233,226],[255,181,71],m);
+        const s=p.sz*(1-out*.6);ctx.fillRect(x-s/2,y-s/2,s,s);
+      }
+      const la=seg(t,5.6,6.0)*(1-seg(t,6.45,6.7));
+      if(la>0){ctx.globalAlpha=la;ctx.fillStyle='#ECE9E2';ctx.textAlign='center';ctx.font='italic 44px "Instrument Serif", Georgia, serif';
+        ctx.fillText('cold calls. one lesson.',cx,cy+210+(1-quadOut(la))*16);ctx.globalAlpha=1;}
+      if(out>.85){ctx.fillStyle='#ECE9E2';ctx.beginPath();ctx.arc(cx,cy,9*seg(out,.85,1),0,Math.PI*2);ctx.fill();}
+    }
+    addGrain(ctx,.07);vignette(ctx,.55);
+  }};
+}
+
+/* ---------- 02 DECODE ---------- */
+function makeDecode(){
+  const D=6.2, lines=['NOBODY','TEACHES','THIS.'], G='ABCDEFGHJKLMNPQRSTUVWXYZ0123456789#%&*+=/<>';
+  return {D,draw(ctx,t){
+    ctx.fillStyle='#05060A';ctx.fillRect(0,0,W,H);
+    // moving light
+    const bx=W*(.35+.25*Math.sin(t*.7)), by=H*(.38+.08*Math.cos(t*.5));
+    let g=ctx.createRadialGradient(bx,by,10,bx,by,520);g.addColorStop(0,'rgba(64,72,190,.55)');g.addColorStop(1,'rgba(5,6,10,0)');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+    g=ctx.createRadialGradient(W*.8,H*.85,10,W*.8,H*.85,420);g.addColorStop(0,'rgba(255,150,60,.22)');g.addColorStop(1,'rgba(5,6,10,0)');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+    // chapter label
+    const lab='> chapter_01', ln=Math.floor(seg(t,.15,.7)*lab.length);
+    ctx.font='500 22px "JetBrains Mono", monospace';ctx.textAlign='left';ctx.textBaseline='alphabetic';ctx.fillStyle='rgba(236,233,226,.6)';
+    ctx.fillText(lab.slice(0,ln)+((Math.floor(t*2.5)%2&&t<4.6)?'_':''),52,250);
+    ctx.font='900 118px "Inter Tight", Arial, sans-serif';
+    const lh=118;
+    lines.forEach((L,i)=>{
+      const st=.6+i*.55, y0=380+i*lh;
+      const ex=quadIn(seg(t,4.6+i*.08,5.1+i*.08));
+      ctx.save();ctx.beginPath();ctx.rect(0,y0-lh+14,W,lh);ctx.clip();
+      let x=52; const yy=y0-ex*lh;
+      for(let j=0;j<L.length;j++){
+        const show=st+j*.02, lock=st+.25+j*.045;
+        let ch=L[j], col=(i===2)?AMBER:'#ECE9E2', a=1;
+        if(t<show){x+=ctx.measureText(ch).width;continue;}
+        if(t<lock&&ch!=='.'){const r=rng(Math.floor(t/.045)*31+j*7+i*101);ch=G[Math.floor(r()*G.length)];col='rgba(236,233,226,.55)';}
+        ctx.fillStyle=col;ctx.globalAlpha=a;ctx.fillText(ch,x,yy);
+        x+=ctx.measureText(L[j]).width;
+      }
+      ctx.restore();
+    });
+    // underline sweep under the accent word
+    const u=expoOut(seg(t,2.4,2.9))*(1-quadIn(seg(t,4.6,4.9)));
+    if(u>0){ctx.fillStyle=AMBER;ctx.fillRect(54,380+2*lh+18,u*300,6);}
+    addGrain(ctx,.08);vignette(ctx,.5);
+  }};
+}
+
+/* ---------- 03 GRAVITY ---------- */
+function makeGravity(){
+  const D=7.4, words=['DISCIPLINE','WITHOUT','DIRECTION','IS JUST A','BETTER','9-TO-5.'], off=[-24,38,-8,30,-34,4];
+  const r=rng(11), rot0=words.map(()=> (r()*2-1)*.22), rotF=words.map((_,i)=>[ -.03,.035,-.02,.03,-.04,.0][i]);
+  const fs=[96,96,96,82,96,150], ground=H-150;
+  let targets=[]; {let y=ground;for(let i=0;i<words.length;i++){targets.push(y);y-=fs[i]*.98;}}
+  return {D,draw(ctx,t){
+    ctx.fillStyle='#0A0A0E';ctx.fillRect(0,0,W,H);
+    // floor line
+    ctx.fillStyle='rgba(236,233,226,.12)';ctx.fillRect(40,ground+8,W-80,2);
+    ctx.font='500 20px "JetBrains Mono", monospace';ctx.fillStyle='rgba(236,233,226,.5)';ctx.textAlign='left';ctx.textBaseline='alphabetic';ctx.fillText('BELIEF / 01',44,110);
+    // final hit shake
+    const last=.3+(words.length-1)*.48+.42, sh=t>last?Math.max(0,1-(t-last)/.18):0;
+    ctx.save();if(sh>0)ctx.translate((Math.sin(t*90)*8)*sh,(Math.cos(t*70)*6)*sh);
+    words.forEach((w,i)=>{
+      const si=.3+i*.48, fd=.42; if(t<si)return;
+      const exitS=6.3+(words.length-1-i)*.05, ex=quadIn(seg(t,exitS,exitS+.45));
+      const p=(t-si)/fd; let y, sq=1, rot;
+      if(p<1){y=lerp(-80,targets[i],p*p);rot=rot0[i]*(1-p*.4);}
+      else{const tb=t-si-fd;y=targets[i]-Math.abs(Math.sin(tb*22))*Math.exp(-tb*14)*14;sq=1-.15*Math.exp(-tb*11)*Math.cos(tb*24);rot=lerp(rot0[i]*.6,rotF[i],spring(tb*2.2,5,8));}
+      y-=ex*1100;
+      ctx.save();ctx.translate(W/2+off[i],y);ctx.rotate(rot);ctx.scale(1+(1-sq)*.5,sq);
+      ctx.font=`${fs[i]}px Anton, Impact, sans-serif`;ctx.textAlign='center';ctx.textBaseline='alphabetic';
+      ctx.fillStyle=i===words.length-1?AMBER:'#ECE9E2';ctx.fillText(w,0,0);ctx.restore();
+    });
+    ctx.restore();
+    addGrain(ctx,.07);vignette(ctx,.45);
+  }};
+}
+
+/* ---------- 04 ODOMETER + UNIT GRID ---------- */
+function makeOdo(){
+  const D=6.8, INK='#15151A', ACC='#D9480F', PAPER='#ECE6DA', cols=20, rows=15;
+  return {D,draw(ctx,t){
+    const out=quadIn(seg(t,6.15,6.6));
+    ctx.fillStyle=PAPER;ctx.fillRect(0,0,W,H);
+    ctx.save();ctx.globalAlpha=1-out;ctx.translate(W/2,H/2);ctx.scale(1-out*.04,1-out*.04);ctx.translate(-W/2,-H/2);
+    ctx.font='500 20px "JetBrains Mono", monospace';ctx.fillStyle='rgba(21,21,26,.55)';ctx.textAlign='left';ctx.textBaseline='alphabetic';
+    ctx.globalAlpha=(1-out)*quadOut(seg(t,.1,.35));ctx.fillText('COLD CALLS MADE',48,150);ctx.globalAlpha=1-out;
+    // odometer
+    const c=300*expoOut(seg(t,.3,2.0)), dh=200, baseY=360;
+    ctx.font='200px Anton, Impact, sans-serif';ctx.textBaseline='alphabetic';
+    const dw=ctx.measureText('0').width+6; let x=44;
+    for(let p=2;p>=0;p--){
+      const pv=Math.pow(10,p), whole=Math.floor(c/pv)%10;
+      let frac; if(p===0)frac=c-Math.floor(c); else{const f=(c%pv)/pv;frac=f>.9?(f-.9)/.1:0;}
+      if(c>=299.5)frac=0;
+      ctx.save();ctx.beginPath();ctx.rect(x-4,baseY-dh+20,dw+8,dh+10);ctx.clip();ctx.fillStyle=INK;
+      const sp=t>.3&&t<1.6?(1-seg(t,.3,1.6)):0;
+      for(let gh=0;gh<(sp>.2?3:1);gh++){ctx.globalAlpha=(1-out)*(gh?0.18:1);
+        ctx.fillText(String(whole),x,baseY-frac*dh+gh*10*sp);ctx.fillText(String((whole+1)%10),x,baseY+(1-frac)*dh+gh*10*sp);}
+      ctx.restore();x+=dw;
+    }
+    const pl=backOut(seg(t,1.95,2.3));
+    if(pl>0){ctx.save();ctx.globalAlpha=(1-out)*clamp(pl);ctx.fillStyle=ACC;ctx.translate(x+40,baseY-70);ctx.scale(pl,pl);ctx.textAlign='center';ctx.fillText('+',0,70);ctx.restore();}
+    // unit grid
+    const gx=48, gy=470, cell=(W-96)/cols, rr=cell*.32;
+    const wave=seg(t,4.75,5.6);
+    for(let rI=0;rI<rows;rI++)for(let cI=0;cI<cols;cI++){
+      const i=rI*cols+cI, d=Math.pow(cI+rI,0.8)*.055, s=spring(seg(t,2.15+d,2.95+d)*1.6,6,10);
+      if(s<=0)continue;
+      const wv=Math.max(0,1-Math.abs(wave*44-(cI+rI))/4);
+      ctx.fillStyle=wv>0?mix([21,21,26],[217,72,15],wv):INK;
+      ctx.beginPath();ctx.arc(gx+cI*cell+cell/2,gy+rI*cell+cell/2,rr*Math.max(0,s)*(1+wv*.35),0,Math.PI*2);ctx.fill();
+    }
+    const ca=seg(t,4.3,4.75);
+    if(ca>0){ctx.globalAlpha=(1-out)*ca;ctx.fillStyle=INK;ctx.font='italic 50px "Instrument Serif", Georgia, serif';ctx.textAlign='left';
+      ctx.fillText('Each dot is one call.',48,gy+rows*cell+80+(1-quadOut(ca))*18);}
+    ctx.restore();
+    addGrain(ctx,.05);
+  }};
+}
+
+/* ---------- 05 GLASS ---------- */
+function makeGlass(gl,glc){
+  const D=6.4; let ok=false, prog, uT, uR;
+  if(gl){
+    const vs='attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
+    const fs=`precision highp float;uniform float t;uniform vec2 r;
+    float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+    float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}
+    float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<5;i++){v+=a*n(p);p*=2.02;a*=.5;}return v;}
+    void main(){vec2 uv=gl_FragCoord.xy/r;vec2 p=uv*vec2(1.,1.78)*2.2;
+      vec2 q=vec2(fbm(p+t*.08),fbm(p+vec2(5.2,1.3)-t*.06));
+      float f=fbm(p+2.4*q+t*.05);
+      vec3 c=mix(vec3(.02,.02,.06),vec3(.16,.14,.55),smoothstep(.2,.8,f));
+      c=mix(c,vec3(.45,.25,.85),smoothstep(.55,.95,f)*.6);
+      float s=uv.x*.8+uv.y*.6-mod(t*.22,2.)+.3; float streak=exp(-pow(s*6.,2.));
+      c+=vec3(1.,.62,.22)*streak*smoothstep(.35,.9,f)*.9;
+      c*=1.-.35*length(uv-vec2(.5,.45));
+      gl_FragColor=vec4(c,1.);}`;
+    function sh(type,src){const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);return gl.getShaderParameter(s,gl.COMPILE_STATUS)?s:null;}
+    const v=sh(gl.VERTEX_SHADER,vs),f=sh(gl.FRAGMENT_SHADER,fs);
+    if(v&&f){prog=gl.createProgram();gl.attachShader(prog,v);gl.attachShader(prog,f);gl.linkProgram(prog);
+      if(gl.getProgramParameter(prog,gl.LINK_STATUS)){gl.useProgram(prog);const b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);
+        gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);const loc=gl.getAttribLocation(prog,'p');
+        gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);uT=gl.getUniformLocation(prog,'t');uR=gl.getUniformLocation(prog,'r');ok=true;}}
+  }
+  const canFilter=(()=>{try{const c=document.createElement('canvas').getContext('2d');c.filter='blur(2px)';return c.filter==='blur(2px)';}catch(e){return false;}})();
+  const words=[{w:'Captions',f:'italic 92px "Instrument Serif", Georgia, serif',c:'#F4F1EA',line:0},
+               {w:"that don't look",f:'600 38px "Inter Tight", Arial, sans-serif',c:'rgba(244,241,234,.8)',line:1},
+               {w:'LIKE A',f:'900 64px "Inter Tight", Arial, sans-serif',c:'#F4F1EA',line:2},
+               {w:'TEMPLATE.',f:'900 64px "Inter Tight", Arial, sans-serif',c:AMBER,line:3}];
+  const ly=[0,62,136,206];
+  function rr(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
+  return {D,draw(ctx,t){
+    if(ok){gl.viewport(0,0,W,H);gl.uniform1f(uT,t+3.);gl.uniform2f(uR,W,H);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);}
+    ctx.clearRect(0,0,W,H);
+    if(!ok){const g=ctx.createLinearGradient(0,0,W,H);g.addColorStop(0,'#0b0a24');g.addColorStop(1,'#3a2a8a');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);}
+    const pin=spring(seg(t,.15,.95)*1.6,6,8), out=quadIn(seg(t,5.6,6.1));
+    const px=44,pw=W-88,ph=360,py=H*.5-ph/2+ (1-pin)*120 + out*40;
+    const a=clamp(seg(t,.15,.45))*(1-out);
+    if(a>0){
+      ctx.save();ctx.globalAlpha=a;rr(ctx,px,py,pw,ph,34);ctx.clip();
+      if(ok&&canFilter){ctx.filter='blur(18px) saturate(1.3)';ctx.drawImage(glc,-20,-20,W+40,H+40);ctx.filter='none';}
+      ctx.fillStyle='rgba(255,255,255,.09)';ctx.fillRect(px,py,pw,ph);
+      const hl=ctx.createLinearGradient(px,py,px,py+ph);hl.addColorStop(0,'rgba(255,255,255,.16)');hl.addColorStop(.4,'rgba(255,255,255,0)');ctx.fillStyle=hl;ctx.fillRect(px,py,pw,ph);
+      ctx.restore();
+      ctx.save();ctx.globalAlpha=a*.9;rr(ctx,px+.5,py+.5,pw-1,ph-1,34);ctx.strokeStyle='rgba(255,255,255,.28)';ctx.lineWidth=1.5;ctx.stroke();ctx.restore();
+      // words
+      words.forEach((wd,i)=>{
+        const st=.75+i*.32, p=seg(t,st,st+.35); if(p<=0)return;
+        ctx.save();ctx.globalAlpha=a*quadOut(p);
+        if(canFilter)ctx.filter=`blur(${(1-p)*14}px)`;
+        ctx.font=wd.f;ctx.fillStyle=wd.c;ctx.textBaseline='alphabetic';ctx.textAlign='left';
+        const x=px+36, maxW=pw-72, mw=ctx.measureText(wd.w).width;
+        const fit=mw>maxW?maxW/mw:1;
+        ctx.translate(x,py+92+ly[wd.line]+(1-spring(p*1.6,7,9))*14);ctx.scale(fit,fit);
+        ctx.fillText(wd.w,0,0);
+        ctx.restore();
+      });
+    }
+    ctx.font='500 20px "JetBrains Mono", monospace';ctx.fillStyle='rgba(244,241,234,.55)';ctx.textAlign='left';ctx.fillText('CAPTION SYSTEM / V2',44,110);
+    addGrain(ctx,.06);
+  }};
+}
+
+// mount
+const pieces=[];
+document.querySelectorAll('.screen').forEach(el=>{
+  const kind=el.dataset.p; let p, ctx;
+  if(kind==='glass'){const glc=el.querySelector('.gl'),ov=el.querySelector('.ov');
+    let gl=null;try{gl=glc.getContext('webgl',{preserveDrawingBuffer:true,antialias:false});}catch(e){}
+    p=makeGlass(gl,glc);ctx=ov.getContext('2d');}
+  else{ctx=el.querySelector('canvas').getContext('2d');p={point:makePoint,decode:makeDecode,gravity:makeGravity,odometer:makeOdo}[kind]();}
+  const o={el,p,ctx,t:0,vis:true};pieces.push(o);
+  el.addEventListener('click',()=>{o.t=0;});
+});
+if('IntersectionObserver'in window){const io=new IntersectionObserver(es=>es.forEach(e=>{const o=pieces.find(x=>x.el===e.target);if(o)o.vis=e.isIntersecting;}));pieces.forEach(o=>io.observe(o.el));}
+let speed=1, paused=false, last=performance.now();
+const rest={point:5.9,decode:3.6,gravity:5.6,odometer:5.0,glass:3.4};
+if(reduce){pieces.forEach(o=>{o.t=rest[o.el.dataset.p];o.p.draw(o.ctx,o.t);});}
+function loop(now){
+  const dt=Math.min(.05,(now-last)/1000);last=now;
+  if(!reduce&&!paused)pieces.forEach(o=>{if(!o.vis)return;o.t=(o.t+dt*speed)%o.p.D;o.p.draw(o.ctx,o.t);});
+  requestAnimationFrame(loop);
+}
+pieces.forEach(o=>{o.t=rest[o.el.dataset.p]*.0;o.p.draw(o.ctx,rest[o.el.dataset.p]);});
+requestAnimationFrame(loop);
+const bs=document.getElementById('slow'),bp=document.getElementById('pause');
+bs.addEventListener('click',()=>{speed=speed===1?.25:1;bs.setAttribute('aria-pressed',speed!==1);});
+bp.addEventListener('click',()=>{paused=!paused;bp.setAttribute('aria-pressed',paused);bp.textContent=paused?'Play all':'Pause all';});
+})();
+</script>
