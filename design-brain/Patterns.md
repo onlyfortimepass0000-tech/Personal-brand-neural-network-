@@ -11,3 +11,4 @@ tags: [design-brain, cross]
 7. **Human texture beats polish in 2026.** [[Grain and Analog Texture]], natural delivery and restraint ([[Over-editing]]) all point the same way.
 8. **Big-studio craft is restraint plus one moment.** OpenAI, Anthropic and Studio Dumbar each spend motion on one orchestrated moment and keep the rest still: [[Construction Before Result]], [[Decode Type]], [[Transition Grammar by Tone]], [[One Sound Per Event]].
 9. **Measured, not assumed.** First watched reel (Kallaway, 929K): median 1.32 s between visual changes, hook twice as dense as the body. See watched/2026-11-27 Kallaway AI Agent Audit.
+10. **Turn the idea into objects.** Biggest shorts watched (Dhruv 23M, Hormozi 9.5M) make the abstract countable: price stacked as cut-out objects, a foundation built from bricks. See [[Unit Chart]], [[Key Visual]], watched/2026-11-27 Batch 01.

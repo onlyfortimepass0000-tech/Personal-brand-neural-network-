@@ -15,3 +15,9 @@ Keep it lean: no full-page dumps, short notes, one preview file.
 - Aryan's Chrome (Claude in Chrome) plays them. In the page: play muted at 2x, use requestVideoFrameCallback to sample every frame into a 24x42 canvas, log mean luminance diffs over 22 as visual changes, and draw a thumbnail every 2.5 s into a fixed overlay canvas, then zoom-screenshot the sheet. Remove the overlay and close the tab after. Seeking while paused is unreliable on YouTube; play through instead.
 - vidIQ watch (10 credits a reel) is the backup for Instagram and TikTok.
 - Save each breakdown under watched/ with measured numbers and links to nodes.
+
+## The never-ending loop (Aryan, Nov 27)
+- Creator list: Kallaway, Alex Hormozi, every creator in the neural network repo (Caleb Ralston, Sam Gaudet, Aayush Swamy), Dhruv Rathee, plus any editor found online whose work is outstanding. Add new names to watched/Creators.md.
+- Formats: reels and shorts, posts, carousels, images, thumbnails, websites. Instagram needs Aryan signed in to Instagram in his Chrome.
+- Each daily run: watch at least 2 new pieces (aim 4) with the watcher, log numbers and a contact-sheet read under watched/, link findings into nodes, update Patterns and Problems, then build the drop.
+- Never spend vidIQ or other credits without asking Aryan first.
