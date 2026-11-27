@@ -12,3 +12,5 @@ tags: [design-brain, cross]
 8. **Big-studio craft is restraint plus one moment.** OpenAI, Anthropic and Studio Dumbar each spend motion on one orchestrated moment and keep the rest still: [[Construction Before Result]], [[Decode Type]], [[Transition Grammar by Tone]], [[One Sound Per Event]].
 9. **Measured, not assumed.** First watched reel (Kallaway, 929K): median 1.32 s between visual changes, hook twice as dense as the body. See watched/2026-11-27 Kallaway AI Agent Audit.
 10. **Turn the idea into objects.** Biggest shorts watched (Dhruv 23M, Hormozi 9.5M) make the abstract countable: price stacked as cut-out objects, a foundation built from bricks. See [[Unit Chart]], [[Key Visual]], watched/2026-11-27 Batch 01.
+11. **Pick a speed: ~50 changes a minute (B-roll explainer) or ~17 (authority talking head).** Measured on Instagram: Kallaway 50-53/min at 4.7-5.4M plays, Hormozi 17-18/min at 3.7-4.9M. See watched/2026-11-27 Instagram Batch 02.
+12. **Graphics that build in place replace cuts.** Caleb (7.5/min) and Sam (0 cuts) keep one shot and stack diagrams, cards and screenshots over it.

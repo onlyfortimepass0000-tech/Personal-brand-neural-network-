@@ -21,3 +21,8 @@ Keep it lean: no full-page dumps, short notes, one preview file.
 - Formats: reels and shorts, posts, carousels, images, thumbnails, websites. Instagram needs Aryan signed in to Instagram in his Chrome.
 - Each daily run: watch at least 2 new pieces (aim 4) with the watcher, log numbers and a contact-sheet read under watched/, link findings into nodes, update Patterns and Problems, then build the drop.
 - Never spend vidIQ or other credits without asking Aryan first.
+
+## Instagram access (Nov 27)
+- Use ScrapeCreators through Composio: SCRAPECREATORS_LIST_INSTAGRAM_USER_POSTS (1 credit per page of 12 posts) gives reels, carousels, plays, likes, video and slide image URLs, no login.
+- Measure reels in the Composio workbench (pip install imageio-ffmpeg; one reel per cell, about 12 s each), build contact sheets, upload, then view them in the cloud browser.
+- Credit rule: Aryan suggested Composio for this on Nov 27. Keep each daily run to a few credits and log what was spent.
