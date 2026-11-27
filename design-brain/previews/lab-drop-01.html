@@ -341,14 +341,14 @@ function makeGlass(gl,glc){
                {w:"that don't look",f:'600 38px "Inter Tight", Arial, sans-serif',c:'rgba(244,241,234,.8)',line:1},
                {w:'LIKE A',f:'900 64px "Inter Tight", Arial, sans-serif',c:'#F4F1EA',line:2},
                {w:'TEMPLATE.',f:'900 64px "Inter Tight", Arial, sans-serif',c:AMBER,line:3}];
-  const ly=[0,62,138,206];
+  const ly=[0,62,136,206];
   function rr(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
   return {D,draw(ctx,t){
     if(ok){gl.viewport(0,0,W,H);gl.uniform1f(uT,t+3.);gl.uniform2f(uR,W,H);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);}
     ctx.clearRect(0,0,W,H);
     if(!ok){const g=ctx.createLinearGradient(0,0,W,H);g.addColorStop(0,'#0b0a24');g.addColorStop(1,'#3a2a8a');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);}
     const pin=spring(seg(t,.15,.95)*1.6,6,8), out=quadIn(seg(t,5.6,6.1));
-    const px=44,pw=W-88,ph=330,py=H*.5-ph/2+ (1-pin)*120 + out*40;
+    const px=44,pw=W-88,ph=360,py=H*.5-ph/2+ (1-pin)*120 + out*40;
     const a=clamp(seg(t,.15,.45))*(1-out);
     if(a>0){
       ctx.save();ctx.globalAlpha=a;rr(ctx,px,py,pw,ph,34);ctx.clip();
@@ -363,8 +363,10 @@ function makeGlass(gl,glc){
         ctx.save();ctx.globalAlpha=a*quadOut(p);
         if(canFilter)ctx.filter=`blur(${(1-p)*14}px)`;
         ctx.font=wd.f;ctx.fillStyle=wd.c;ctx.textBaseline='alphabetic';ctx.textAlign='left';
-        let x=px+36; if(i===3){ctx.font=words[2].f;x+=ctx.measureText('LIKE A ').width;ctx.font=wd.f;}
-        ctx.fillText(wd.w,x,py+92+ly[wd.line]+(1-spring(p*1.6,7,9))*14);
+        const x=px+36, maxW=pw-72, mw=ctx.measureText(wd.w).width;
+        const fit=mw>maxW?maxW/mw:1;
+        ctx.translate(x,py+92+ly[wd.line]+(1-spring(p*1.6,7,9))*14);ctx.scale(fit,fit);
+        ctx.fillText(wd.w,0,0);
         ctx.restore();
       });
     }
