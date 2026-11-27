@@ -10,6 +10,16 @@ At least 4 motion-graphics or editing moments, each taken from a real reel or sh
 - Every drop uses at least 3 different creators, at most 1 move per creator, and no creator that was in the previous drop. Keep a running list in watched/Creators.md and add new names every run.
 - Find new creators every run: search for heavily edited explainer, business, tech, finance, science and storytelling creators (Instagram, YouTube Shorts, X, Reddit editing communities, editors' own showreels) with 1M+ view pieces. Kallaway, Hormozi and Dhruv Rathee are already covered; go wide beyond them.
 - Never repeat a moment already in watched/ or a previous rebuild page.
+
+## Starter pool (names to check, not yet verified: confirm the handle, a 1M+ piece and heavy editing before using)
+- Business: Iman Gadzhi, Ali Abdaal, Dan Koe, Codie Sanchez, Ankur Warikoo, Ishan Sharma
+- Tech: Marques Brownlee, Varun Mayya, Johnny Harris
+- Science and explainers: Veritasium, Kurzgesagt, Vox
+- Finance: Graham Stephan, Magnates Media
+- Fitness: Jeff Nippard, Chris Heria
+- Cars: Doug DeMuro, Mat Armstrong
+- Entertainment: MrBeast, Ryan Trahan, Abhi and Niyu
+- Already covered: Kallaway, Alex Hormozi, Dhruv Rathee (skip until the pool has been worked through)
 - Instagram: SCRAPECREATORS_LIST_INSTAGRAM_USER_POSTS (1 credit per page, 12 posts). Pick reels with the most plays. Cap stays 4 credits a day.
 
 ## How a moment is taken apart
