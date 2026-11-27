@@ -30,3 +30,9 @@ Keep it lean: no full-page dumps, short notes, one preview file.
 ## Own-reel feedback (Windsor, free)
 - Each run: pull reels 48 h+ old from Windsor (connector instagram) and add a row to Own Reels Scoreboard.md with skip rate, avg watch time and techniques used.
 - Every 8-10 new reels: re-rank techniques by hook score and hold, and say in the drop which ones are winning for Aryan's audience.
+
+## Fallbacks when credits or APIs fail (no credits needed)
+1. Swipe folder: Aryan screen-records or saves reels into a Google Drive folder named "Design Brain Swipe". The run downloads them through the Drive connector and measures them locally with ffmpeg (installed on the run's machine). Works for any platform.
+2. Cloud browser on open galleries: Vimeo Staff Picks (opens with no login, checked Nov 27), Behance, Dribbble, Awwwards, Pinterest. Screenshot frames and pages for motion, type and layout ideas.
+3. Aryan's Chrome: the YouTube watcher (play-through sampling) whenever his laptop is on.
+Order when ScrapeCreators is under 100: Apify free tier, then 1, 2, 3. Say in the drop which source was used.
