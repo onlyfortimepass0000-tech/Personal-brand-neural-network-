@@ -9,3 +9,9 @@ tags: [design-brain]
 5. Build the day's drop at launch-film grade, never basic (Aryan rejected a plain mock on Nov 27): 2-4 polished 9:16 canvas or WebGL motion pieces, each a pure function of time so it can render in Remotion, using Aryan's own lines and real numbers (never invented stats), no fake people. Under each: where the move was stolen from, why it stops a thumb, how to build it with exact timings. Add 2-3 real references to study. Republish to the same artifact link: https://claude.ai/artifact/RKNTVK4SDnjiVYLwb5iARU
 6. Append today's entry to [[Daily Log]].
 Keep it lean: no full-page dumps, short notes, one preview file.
+
+## How to watch reels (works as of Nov 27, 2026)
+- Cloud computer downloads and the cloud browser cannot play YouTube, Instagram or TikTok video here.
+- Aryan's Chrome (Claude in Chrome) plays them. In the page: play muted at 2x, use requestVideoFrameCallback to sample every frame into a 24x42 canvas, log mean luminance diffs over 22 as visual changes, and draw a thumbnail every 2.5 s into a fixed overlay canvas, then zoom-screenshot the sheet. Remove the overlay and close the tab after. Seeking while paused is unreliable on YouTube; play through instead.
+- vidIQ watch (10 credits a reel) is the backup for Instagram and TikTok.
+- Save each breakdown under watched/ with measured numbers and links to nodes.

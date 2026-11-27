@@ -10,3 +10,4 @@ tags: [design-brain, cross]
 6. **Depth is the premium cue.** [[Depth Layers]], [[Text Behind Subject]], [[Masking]] and [[Particles and 3D]] all fake a 3D world in a flat phone frame.
 7. **Human texture beats polish in 2026.** [[Grain and Analog Texture]], natural delivery and restraint ([[Over-editing]]) all point the same way.
 8. **Big-studio craft is restraint plus one moment.** OpenAI, Anthropic and Studio Dumbar each spend motion on one orchestrated moment and keep the rest still: [[Construction Before Result]], [[Decode Type]], [[Transition Grammar by Tone]], [[One Sound Per Event]].
+9. **Measured, not assumed.** First watched reel (Kallaway, 929K): median 1.32 s between visual changes, hook twice as dense as the body. See watched/2026-11-27 Kallaway AI Agent Audit.
