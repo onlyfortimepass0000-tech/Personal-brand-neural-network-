@@ -14,3 +14,6 @@ tags: [design-brain]
 - yousiful/reel-editing-toolkit, kajisho5/remotion-ffmpeg-skill, Shahen777/reel-factory: code-based reel pipelines for Claude Code
 - craftingui.com: OpenAI "Refreshed" shot-by-shot · remocn.dev: Claude Opus 5 launch film director's notes · impractical.ai: Claude Code launch video notes
 - memorabl.es: best motion design 2026 · Studio Dumbar: Instagram motion identity system (European Design Awards) · The One Club: OpenAI brand film
+- topcarousels.com/blog/viral-instagram-carousel-templates (7,394 scored carousels, Oct 2026)
+- tweenery.com/blog/viral-carousel-structure (slide roles, Mosseri re-serve note, Nov 2026)
+- gradiently.design/guide/instagram-carousel-design (type size floor), storyflow.so carousel design system
