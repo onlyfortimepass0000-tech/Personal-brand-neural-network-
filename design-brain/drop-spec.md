@@ -6,7 +6,10 @@ Aryan's words (Nov 28, 00:44 IST): "I want to see edits and motion graphics and 
 At least 4 motion-graphics or editing moments, each taken from a real reel or short by a top creator, traced frame by frame and rebuilt as a working 9:16 animation. No tips from posts, no articles, no generic "trends". Every piece must point to a real reel and a timestamp.
 
 ## Where moments come from
-- Creators with heavy, original motion graphics first: Kallaway, Alex Hormozi, Dhruv Rathee, plus any explainer editor the run finds whose reels have 1M+ views. Rotate creators and never repeat a moment already in watched/ or a previous rebuild page.
+- Aryan (Nov 28, 01:32 IST): "just don't stick with one creator there are a shit tone of them".
+- Every drop uses at least 3 different creators, at most 1 move per creator, and no creator that was in the previous drop. Keep a running list in watched/Creators.md and add new names every run.
+- Find new creators every run: search for heavily edited explainer, business, tech, finance, science and storytelling creators (Instagram, YouTube Shorts, X, Reddit editing communities, editors' own showreels) with 1M+ view pieces. Kallaway, Hormozi and Dhruv Rathee are already covered; go wide beyond them.
+- Never repeat a moment already in watched/ or a previous rebuild page.
 - Instagram: SCRAPECREATORS_LIST_INSTAGRAM_USER_POSTS (1 credit per page, 12 posts). Pick reels with the most plays. Cap stays 4 credits a day.
 
 ## How a moment is taken apart
