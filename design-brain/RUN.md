@@ -26,3 +26,7 @@ Keep it lean: no full-page dumps, short notes, one preview file.
 - Use ScrapeCreators through Composio: SCRAPECREATORS_LIST_INSTAGRAM_USER_POSTS (1 credit per page of 12 posts) gives reels, carousels, plays, likes, video and slide image URLs, no login.
 - Measure reels in the Composio workbench (pip install imageio-ffmpeg; one reel per cell, about 12 s each), build contact sheets, upload, then view them in the cloud browser.
 - Credit rule: Aryan suggested Composio for this on Nov 27. Keep each daily run to a few credits and log what was spent.
+
+## Own-reel feedback (Windsor, free)
+- Each run: pull reels 48 h+ old from Windsor (connector instagram) and add a row to Own Reels Scoreboard.md with skip rate, avg watch time and techniques used.
+- Every 8-10 new reels: re-rank techniques by hook score and hold, and say in the drop which ones are winning for Aryan's audience.
