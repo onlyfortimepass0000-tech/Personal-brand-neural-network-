@@ -4,6 +4,10 @@ Newest first. One entry per day, one bullet per change. Every session that touch
 
 Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or source.
 
+## 2026-11-28
+
+- NOTE design-brain: drop format changed to traced rebuilds (design-brain/drop-spec.md); first page design-brain/previews/rebuilds-01.html, 8 motion moves traced frame by frame from Kallaway, Dhruv Rathee and Hormozi reels. Source chat 2026-11-28.
+
 ## 2026-11-27
 
 - NOTE added design-brain/: a separate Obsidian-style visual design brain for reel edits (00 Core, 8 balls, 48 sub-balls, Patterns, Problems, Sources, RUN, daily previews). Kept outside data/network.json because the network is storytelling-only. Source chat 2026-11-27.
