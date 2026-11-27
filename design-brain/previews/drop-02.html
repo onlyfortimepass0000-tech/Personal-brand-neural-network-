@@ -1,0 +1,354 @@
+<title>Design Brain Drop 02</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a projection-room contact sheet. Each find is a strip: thesis left, live 9:16 piece right. Single dark look by choice. */
+:root{
+  --ink:#0a0b0f; --panel:#12141b; --line:#232634; --fg:#ecebe6; --dim:#8d8f9c;
+  --signal:#FFC83D; --cyan:#5fd4e8; --rose:#ff6b6b;
+  --display:"Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+  --body:"Inter Tight", "Helvetica Neue", Arial, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--ink);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:1120px;margin:0 auto}
+header.top{padding-block:48px 28px;display:grid;gap:18px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,8vw,92px);line-height:.92;margin:0;letter-spacing:-.02em;text-wrap:balance}
+h1 em{font-style:normal;color:var(--signal)}
+.lede{max-width:62ch;color:var(--dim);margin:0}
+.lede b{color:var(--fg);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;font-family:var(--mono);font-size:12px;color:var(--dim)}
+.legend span b{color:var(--fg)}
+section.find{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,340px);gap:36px;align-items:center;padding-block:56px;border-bottom:1px solid var(--line)}
+.find .n{font-family:var(--mono);font-size:12px;color:var(--signal);letter-spacing:.12em}
+.find h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,4.4vw,48px);line-height:1;margin:10px 0 14px;letter-spacing:-.015em;text-wrap:balance}
+.find p{margin:0 0 12px;max-width:60ch}
+.src{font-family:var(--mono);font-size:12px;color:var(--dim);margin-top:14px}
+.src a{color:var(--cyan)}
+.rules{display:grid;gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.rules li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px;font-size:14px;border-top:1px dashed var(--line);padding-top:8px}
+.rules li b{font-family:var(--mono);font-weight:600;font-size:12px;color:var(--signal);letter-spacing:.04em}
+.use{margin-top:16px;padding:14px 16px;border-left:3px solid var(--signal);background:var(--panel);font-size:14.5px}
+.use b{color:var(--signal)}
+.stage{position:relative;width:100%;max-width:340px;aspect-ratio:9/16;justify-self:center;border-radius:28px;overflow:hidden;background:#000;box-shadow:0 0 0 1px var(--line),0 30px 80px -30px #000}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.stage .tc{position:absolute;left:12px;bottom:10px;font-family:var(--mono);font-size:11px;color:#ffffff99;font-variant-numeric:tabular-nums;pointer-events:none}
+.duo{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.code{font-family:var(--mono);font-size:12px;line-height:1.7;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;overflow-x:auto;white-space:pre;margin-top:14px}
+.code .cue{display:block;padding:0 6px;margin:0 -6px;border-radius:4px;transition:background .15s,color .15s;color:var(--dim)}
+.code .cue.on{background:#FFC83D22;color:var(--fg)}
+.code .k{color:var(--cyan)}
+.element{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:36px;align-items:center;padding-block:56px}
+.foot{padding-top:36px;color:var(--dim);font-size:14px;display:grid;gap:6px}
+.foot a{color:var(--cyan)}
+button.replay{font-family:var(--mono);font-size:12px;background:none;color:var(--fg);border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer;margin-top:12px}
+button.replay:focus-visible,a:focus-visible{outline:2px solid var(--signal);outline-offset:2px}
+@media (max-width:760px){
+  section.find,.element{grid-template-columns:minmax(0,1fr)}
+  .element .stage{order:2}
+  .rules li{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">Design brain · drop 02 · 28 Nov 2026</div>
+  <h1>Four new moves,<br>each one <em>running</em>.</h1>
+  <p class="lede">Tonight's finds come from X, Reddit and the motion-tool world. Every piece on the right is built from the find itself, as a pure function of time, so it can go straight into Remotion. <b>Your last reel lost 81% of viewers in 3 seconds.</b> Find 04 is the direct fix for that.</p>
+  <div class="legend"><span>Sources: <b>X ×2 · Reddit ×2 · Unicorn Studio</b></span><span>Credits spent: <b>0</b></span><span>Links into: <b>11 existing nodes</b></span></div>
+</header>
+
+<section class="find" id="f1">
+  <div>
+    <div class="n">01 · X · @emilwidlund, 27 Oct</div>
+    <h2>The storyboard is a code file</h2>
+    <p>A designer makes 90-second launch films with no After Effects at all. One TypeScript file lists every scene as data. GSAP animates plain page elements with the brand's own easing. A headless browser steps through it frame by frame and pipes the frames to ffmpeg at 60 fps.</p>
+    <p>He directs Claude Code with taste notes like "this feels like someone clicking a button" or "no whooshes". A 1:30 film took about two hours and 60 prompts, and renders in six minutes.</p>
+    <div class="code" id="code1"><span class="cue" data-i="0"><span class="k">0.0</span>  slam   "STOP"          spring(18, .62)</span><span class="cue" data-i="1"><span class="k">0.9</span>  slam   "EDITING"       spring(18, .62)</span><span class="cue" data-i="2"><span class="k">1.8</span>  cards  3 · stagger 70ms  ease brand</span><span class="cue" data-i="3"><span class="k">3.4</span>  count  0 → 81%       ease out-expo</span><span class="cue" data-i="4"><span class="k">4.8</span>  wipe   accent         120ms</span><span class="cue" data-i="5"><span class="k">5.4</span>  hold   "LIKE THIS"     900ms</span></div>
+    <div class="use"><b>For you:</b> your reels become a storyboard file in your repo. You write the cues, Claude renders them, and a change is one line, not a re-edit.</div>
+    <div class="src">Source: <a href="https://randomaccessmemory.cc/t/emil-emilwidlund-on-x" target="_blank" rel="noopener">thread summary</a> · links into Easing and Springs, Opacity Short Transform Long</div>
+  </div>
+  <div class="stage"><canvas id="c1"></canvas><div class="tc" id="t1"></div></div>
+</section>
+
+<section class="find" id="f2">
+  <div>
+    <div class="n">02 · X · @theoardley on "You Built It", 1 Nov</div>
+    <h2>Cut the world open like a cake</h2>
+    <p>A brand-new TikTok page's first video got 13.1M views. Its 48 TikToks have 58.6M views since 11 October. The format is a block of ground sliced open like a cake, with a house on top. A calm, fast narrator builds an everyday thing one problem at a time, with one caption word on screen at a time.</p>
+    <p>It's the object-metaphor pattern taken to a cross-section. The viewer stays to see inside.</p>
+    <div class="use"><b>For you:</b> cut open a local shop. Leads come in at the top, leak out through the cracks, and the reel shows where the money drains. That's the Atomz pitch as a picture.</div>
+    <div class="src">Source: <a href="https://nitter.gq/theoxmotion/article/2116684286837330374" target="_blank" rel="noopener">@theoardley's breakdown</a> · links into Key Visual, Unit Chart, Pattern 10</div>
+  </div>
+  <div class="stage"><canvas id="c2"></canvas><div class="tc" id="t2"></div></div>
+</section>
+
+<section class="find" id="f3">
+  <div>
+    <div class="n">03 · Reddit · r/MotionDesign, 1 Nov · 403 points in 4 days</div>
+    <h2>Type that stays readable while it turns</h2>
+    <p>Word flowers: every petal is a line of text and the flower spins in 3D. Within two hours a commenter rebuilt it and shared the rules that keep every word legible:</p>
+    <ul class="rules">
+      <li><b>OWN THE RUN</b><span>Each petal owns a fixed run of words. As it turns edge-on it drops words from its tip rather than reshuffling.</span></li>
+      <li><b>FLIP LEFT</b><span>Text pointing left is set from the other end, so nothing ever reads backwards.</span></li>
+      <li><b>HIDE WHOLE</b><span>A word behind another petal hides completely, never half-cut.</span></li>
+    </ul>
+    <div class="use"><b>For you:</b> any 3D or rotating title. Never paint words onto a turning surface as a texture.</div>
+    <div class="src">Source: <a href="https://framecall.com/blog/font-launch-video" target="_blank" rel="noopener">FrameCall write-up</a> · links into Physics Type, Decode Type, Caption System</div>
+  </div>
+  <div class="stage"><canvas id="c3"></canvas><div class="tc" id="t3"></div></div>
+</section>
+
+<section class="find" id="f4">
+  <div>
+    <div class="n">04 · Reddit · r/VideoEditing + Sycamore retention study, Oct</div>
+    <h2>Pause grammar</h2>
+    <p>Editors agree on one line: "a pause before a line is doing work, a pause after one is usually dead." The rules that follow from it:</p>
+    <ul class="rules">
+      <li><b>0.15–0.25 s</b><span>Gap between two sentences. Anything longer goes.</span></li>
+      <li><b>0.3–0.6 s</b><span>Keep this pause right before a number, reveal or joke.</span></li>
+      <li><b>115–120%</b><span>Punch in on every second or third cut, never every cut.</span></li>
+      <li><b>J-CUT</b><span>Start the next line's audio a few frames early, so a removed pause isn't also a visual jump.</span></li>
+      <li><b>180–200 wpm</b><span>A tight talking head. At 130 wpm, a third of the clip is silence.</span></li>
+    </ul>
+    <p style="margin-top:12px">Jenny Hoyos cut one second from a Short and retention went from about 83% to 88%.</p>
+    <div class="use"><b>For you:</b> your 81% skip comes from the first 3 seconds. Start on your first word, keep the pause only before the punch, and punch in on line two.</div>
+    <div class="src">Source: <a href="https://www.sycamore.to/blog/video/jump-cuts-pacing-and-dead-air-how-to-edit-for-retention" target="_blank" rel="noopener">Sycamore, quoting r/VideoEditing</a> · links into Dead Air Removal, Hide the Cut, Punch-in and Snapback</div>
+  </div>
+  <div class="stage"><canvas id="c4"></canvas><div class="tc" id="t4"></div></div>
+</section>
+
+<section class="element" id="el">
+  <div class="stage"><canvas id="c5"></canvas><div class="tc" id="t5"></div></div>
+  <div>
+    <div class="n eyebrow" style="color:var(--signal)">Element of the day · Unicorn Studio</div>
+    <h2 style="font-family:var(--display);font-size:clamp(28px,4.4vw,44px);line-height:1;margin:10px 0 14px">A backdrop that listens</h2>
+    <p>Unicorn Studio scenes expose variables you can drive live, and its own example wires tilt to a microphone level. Its effect layers include Chroma Drift, Glass Scale (0.8 s) and Film Grain.</p>
+    <p>Behind a talking head, that gives a background that breathes with your voice: chroma shifts on emphasis, and the glass card swells on the power word. The viewer feels the beat without a single cut, which is how Caleb and Sam hold one shot.</p>
+    <div class="src">Source: <a href="https://www.unicorn.studio/" target="_blank" rel="noopener">unicorn.studio</a> · links into Liquid Glass and Shader Light, Sound-Visual Sync, Pattern 12</div>
+  </div>
+</section>
+
+<div class="foot">
+  <div>Brain map for tonight, with how these connect to everything already in the brain: <a href="https://claude.ai/artifact/EiDUF4xTigkikVu1rQicfL" target="_blank" rel="noopener">open the brain map</a>.</div>
+  <div>Every piece loops. Times bottom-left are seconds into the loop.</div>
+</div>
+</div>
+
+<script>
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const SIG='#FFC83D', CY='#5fd4e8', RO='#ff6b6b', FG='#ecebe6';
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const eo=t=>1-Math.pow(1-clamp(t),3);
+const eoExpo=t=>t>=1?1:1-Math.pow(2,-10*clamp(t));
+const spring=(t,k=18,z=.62)=>{t=Math.max(0,t);return 1-Math.exp(-z*k*t)*Math.cos(k*Math.sqrt(1-z*z)*t)};
+function setup(id){const c=document.getElementById(id);const g=c.getContext('2d');
+  function fit(){const r=c.getBoundingClientRect();const d=Math.min(2,devicePixelRatio||1);c.width=Math.round(r.width*d);c.height=Math.round(r.height*d);}
+  fit();addEventListener('resize',fit);return {c,g,get W(){return c.width},get H(){return c.height}};}
+const pieces=[];
+function piece(id,len,draw,tcId){const s=setup(id);pieces.push({s,len,draw,tc:document.getElementById(tcId)});}
+function loop(now){for(const p of pieces){const t=RM?p.len*0.62:(now/1000)%p.len;p.draw(p.s.g,p.s.W,p.s.H,t);if(p.tc)p.tc.textContent=t.toFixed(1)+' / '+p.len.toFixed(1)+'s';}
+  if(!RM)requestAnimationFrame(loop);}
+function font(px,w=800,fam='"Bricolage Grotesque", Arial Black, sans-serif'){return `${w} ${px}px ${fam}`;}
+
+/* ---------- 01 storyboard ---------- */
+const cues=[0,.9,1.8,3.4,4.8,5.4];
+const cueEls=[...document.querySelectorAll('#code1 .cue')];
+piece('c1',7.2,(g,W,H,t)=>{
+  const u=W/100;
+  g.fillStyle='#07080c';g.fillRect(0,0,W,H);
+  // grid
+  g.strokeStyle='#ffffff0d';g.lineWidth=1;for(let x=0;x<W;x+=W/9){g.beginPath();g.moveTo(x,0);g.lineTo(x,H);g.stroke();}
+  let cur=0;cues.forEach((c,i)=>{if(t>=c)cur=i});cueEls.forEach((e,i)=>e.classList.toggle('on',i===cur));
+  g.textAlign='center';g.textBaseline='middle';
+  // slams
+  const s1=spring(t-0), s2=spring(t-.9);
+  if(t<1.8){
+    g.save();g.translate(W/2,H*.38);const k=1+ (1-s1)*1.6;g.scale(k,k);g.fillStyle=FG;g.font=font(22*u);g.fillText('STOP',0,0);g.restore();
+    if(t>.9){g.save();g.translate(W/2,H*.52);const k2=1+(1-s2)*1.6;g.scale(k2,k2);g.fillStyle=SIG;g.font=font(16*u);g.fillText('EDITING',0,0);g.restore();}
+  }
+  // cards
+  if(t>=1.8&&t<4.8){
+    for(let i=0;i<3;i++){const p=spring(t-1.8-i*.07,16,.7);const y=H*(.3+i*.15)+(1-p)*H*.25;g.globalAlpha=clamp(p*1.4);
+      g.fillStyle='#151823';rr(g,W*.12,y,W*.76,H*.11,u*3);g.fill();g.strokeStyle='#2a2e3d';g.stroke();
+      g.fillStyle=i===1?SIG:'#3a3f52';rr(g,W*.17,y+H*.03,W*.1,H*.05,u*1.5);g.fill();
+      g.fillStyle='#cfd0d6';g.font=font(4.2*u,600,'"Inter Tight", Arial, sans-serif');g.textAlign='left';
+      g.fillText(['Scene as data','Brand easing','Frame-stepped render'][i],W*.32,y+H*.055);g.textAlign='center';}
+    g.globalAlpha=1;
+    if(t>=3.4){const v=Math.round(81*eoExpo((t-3.4)/1.2));g.fillStyle=RO;g.font=font(14*u);g.fillText(v+'%',W/2,H*.8);
+      g.fillStyle='#ffffff88';g.font=font(3.6*u,500,'"JetBrains Mono", monospace');g.fillText('SKIPPED IN 3 S',W/2,H*.86);}
+  }
+  // wipe + hold
+  if(t>=4.8){const w=eo((t-4.8)/.12);g.fillStyle=SIG;g.fillRect(0,0,W*w,H);
+    if(t>=5.4){g.fillStyle='#07080c';const s=spring(t-5.4);g.save();g.translate(W/2,H/2);g.scale(.8+.2*s,.8+.2*s);g.font=font(13*u);g.fillText('LIKE',0,-H*.05);g.fillText('THIS',0,H*.05);g.restore();}}
+},'t1');
+function rr(g,x,y,w,h,r){g.beginPath();g.moveTo(x+r,y);g.arcTo(x+w,y,x+w,y+h,r);g.arcTo(x+w,y+h,x,y+h,r);g.arcTo(x,y+h,x,y,r);g.arcTo(x,y,x+w,y,r);g.closePath();}
+
+/* ---------- 02 cut-open block ---------- */
+const words2=[['WHAT',0],['IF',.45],['YOUR',.8],['SHOP',1.15],['WAS',1.6],['CUT',1.95],['OPEN?',2.3],['LEADS',4.0],['LEAK',5.2],['HERE.',5.8]];
+piece('c2',8,(g,W,H,t)=>{
+  const u=W/100;
+  const sky=g.createLinearGradient(0,0,0,H);sky.addColorStop(0,'#0f1a2a');sky.addColorStop(1,'#07080c');g.fillStyle=sky;g.fillRect(0,0,W,H);
+  const cx=W/2, cy=H*.56, s=W*.36; // iso block
+  const iso=(x,y,z)=>[cx+(x-y)*s*.87, cy+(x+y)*s*.5 - z*s];
+  const open=eo((t-2.6)/1.2); // front half slides away
+  const layers=[{h:.10,c:'#3d7a3a'},{h:.28,c:'#6b4a2e'},{h:.32,c:'#4a3424'},{h:.30,c:'#2c2018'}];
+  // back half (full depth 0..0.5 of y)
+  drawBlock(g,iso,0,1,0,.5,layers,u,false);
+  // interior cut face at y=.5 with pipes
+  if(open>0){
+    // section face
+    let z=0;const tot=1;
+    const zs=[];let acc=0;for(const L of layers){zs.push([acc,acc+L.h]);acc+=L.h}
+    layers.slice().reverse().forEach((L,i)=>{});
+    for(let i=0;i<layers.length;i++){const z0=1-zs[i][1], z1=1-zs[i][0];
+      poly(g,[iso(0,.5,z0),iso(1,.5,z0),iso(1,.5,z1),iso(0,.5,z1)],shade(layers[i].c,.82));}
+    // pipe: leads in from top, leaks
+    g.lineWidth=u*1.6;g.lineCap='round';
+    const p=(x,z)=>iso(x,.5,z);
+    const flow=(t*0.6)%1;
+    g.strokeStyle=CY;g.beginPath();let a=p(.3,.95);g.moveTo(...a);let b=p(.3,.45);g.lineTo(...b);let c=p(.75,.45);g.lineTo(...c);let d=p(.75,.15);g.lineTo(...d);g.stroke();
+    // leak drops
+    if(t>4.8){for(let k=0;k<5;k++){const f=((t*0.9+k/5)%1);const q=p(.52,.45-f*.35);g.fillStyle=RO;g.globalAlpha=1-f;g.beginPath();g.arc(q[0]+Math.sin(k)*u*2,q[1],u*1.1,0,7);g.fill();}g.globalAlpha=1;
+      const q=p(.52,.45);g.strokeStyle=RO;g.lineWidth=u*.6;g.beginPath();g.arc(q[0],q[1],u*2.6+Math.sin(t*8)*u*.4,0,7);g.stroke();}
+    // coins/leads moving in pipe
+    for(let k=0;k<3;k++){const f=(flow+k/3)%1;let pt;if(f<.5)pt=p(.3,.95-f/.5*.5);else pt=p(.3+(f-.5)/.5*.45,.45);g.fillStyle=SIG;g.beginPath();g.arc(pt[0],pt[1],u*1.2,0,7);g.fill();}
+  }
+  // front half slides toward viewer
+  const dx=open*.55, dy=open*.55;
+  g.save();g.globalAlpha=1-open*.85;drawBlock(g,(x,y,z)=>iso(x+dx,y+dy,z),0,1,.5,1,layers,u,true);g.restore();
+  // house on back top
+  house(g,iso,u);
+  // caption, one word at a time
+  let w='';for(const [wd,st] of words2){if(t>=st)w=wd;}
+  const last=words2.filter(x=>t>=x[1]).pop();const age=last?t-last[1]:0;
+  g.textAlign='center';g.textBaseline='middle';const k=1+ (1-spring(age,22,.6))*.5;
+  g.save();g.translate(W/2,H*.18);g.scale(k,k);g.font=font(12*u);g.fillStyle=w==='LEAK'?RO:(w==='LEADS'?SIG:FG);g.fillText(w,0,0);g.restore();
+},'t2');
+function poly(g,pts,fill){g.beginPath();g.moveTo(...pts[0]);for(const p of pts.slice(1))g.lineTo(...p);g.closePath();g.fillStyle=fill;g.fill();}
+function shade(hex,f){const n=parseInt(hex.slice(1),16);const r=(n>>16)*f,gg=((n>>8)&255)*f,b=(n&255)*f;return `rgb(${r|0},${gg|0},${b|0})`;}
+function drawBlock(g,iso,x0,x1,y0,y1,layers,u,front){
+  let acc=0;const zs=layers.map(L=>{const a=[1-acc-L.h,1-acc];acc+=L.h;return a;});
+  // right face (x=x1) and front face (y=y1)
+  for(let i=0;i<layers.length;i++){const [z0,z1]=zs[i];
+    poly(g,[iso(x1,y0,z0),iso(x1,y1,z0),iso(x1,y1,z1),iso(x1,y0,z1)],shade(layers[i].c,.7));
+    poly(g,[iso(x0,y1,z0),iso(x1,y1,z0),iso(x1,y1,z1),iso(x0,y1,z1)],shade(layers[i].c,1));}
+  poly(g,[iso(x0,y0,1),iso(x1,y0,1),iso(x1,y1,1),iso(x0,y1,1)],'#4f9a4a');
+}
+function house(g,iso,u){const b=[[.35,.15],[.65,.15],[.65,.4],[.35,.4]];const h=.28;
+  poly(g,[iso(.65,.15,1),iso(.65,.4,1),iso(.65,.4,1+h),iso(.65,.15,1+h)],'#c9c3b5');
+  poly(g,[iso(.35,.4,1),iso(.65,.4,1),iso(.65,.4,1+h),iso(.35,.4,1+h)],'#e7e1d3');
+  poly(g,[iso(.35,.15,1+h),iso(.65,.15,1+h),iso(.65,.275,1+h+.16),iso(.35,.275,1+h+.16)],'#a5452f');
+  poly(g,[iso(.35,.275,1+h+.16),iso(.65,.275,1+h+.16),iso(.65,.4,1+h),iso(.35,.4,1+h)],'#c4553a');
+  poly(g,[iso(.45,.4,1),iso(.53,.4,1),iso(.53,.4,1+.15),iso(.45,.4,1+.15)],'#FFC83D');}
+
+/* ---------- 03 word flower ---------- */
+const petalText=['STOP THE SCROLL','HOOK IN 3 SECONDS','ONE IDEA PER BEAT','CUT ON THE WORD','LAND THE NUMBER','END ON THE PAYOFF'];
+piece('c3',10,(g,W,H,t)=>{
+  const u=W/100;g.fillStyle='#08070c';g.fillRect(0,0,W,H);
+  const cx=W/2,cy=H*.48,R=W*.44;
+  const spin=t/10*Math.PI*2; // rotation in plane
+  const yaw=Math.sin(t/10*Math.PI*2)*1.15; // 3D turn about vertical axis
+  const cy3=Math.cos(yaw);
+  // collect petals with depth
+  const items=petalText.map((txt,i)=>{const a=spin+i*Math.PI*2/6;const dx=Math.cos(a),dy=Math.sin(a);
+    const depth=Math.sin(a)*Math.sin(yaw); // pseudo depth
+    return {txt,a,dx,dy,depth,i};}).sort((p,q)=>p.depth-q.depth);
+  g.textBaseline='middle';
+  for(const p of items){
+    const sx=p.dx*cy3, sy=p.dy; // projected direction
+    const len=Math.hypot(sx,sy); if(len<.05)continue;
+    const ang=Math.atan2(sy,sx);
+    const words=p.txt.split(' ');
+    const foreshorten=len; // edge-on => small
+    const visibleWords=Math.max(0,Math.min(words.length,Math.round(words.length*clamp((foreshorten-.25)/.6))));
+    const pointsLeft=Math.cos(ang)<0;
+    g.save();g.translate(cx,cy);g.rotate(pointsLeft?ang+Math.PI:ang);
+    // petal shape
+    g.globalAlpha=.16+.12*clamp(p.depth+.5);g.fillStyle=p.i%2?SIG:CY;
+    g.beginPath();const L=R*len;
+    if(pointsLeft){g.ellipse(-L*.55,0,L*.5,u*5.2,0,0,7);}else{g.ellipse(L*.55,0,L*.5,u*5.2,0,0,7);}
+    g.fill();g.globalAlpha=1;
+    // words: own the run, drop from the tip, flip when pointing left
+    const shown=words.slice(0,visibleWords);
+    g.font=font(4.6*u,700);g.fillStyle=p.i%2?SIG:FG;
+    if(!pointsLeft){g.textAlign='left';g.fillText(shown.join(' '),R*.12*len+u*2,0);}
+    else{g.textAlign='right';g.fillText(shown.join(' '),-(R*.12*len+u*2),0);}
+    g.restore();
+  }
+  g.fillStyle=SIG;g.beginPath();g.arc(cx,cy,u*4,0,7);g.fill();
+  g.fillStyle='#ffffff77';g.font=font(3.2*u,500,'"JetBrains Mono", monospace');g.textAlign='center';
+  g.fillText('NO WORD EVER READS BACKWARDS',W/2,H*.9);
+},'t3');
+
+/* ---------- 04 pause grammar ---------- */
+// sentence plan: [text, start(raw), end(raw), pauseAfter kind]
+const lines=[['Your content',0,.9,'dead'],["isn't the problem.",1.6,2.6,'dead'],['Your',3.4,3.7,'work'],['POSITIONING',4.3,5.2,'end']];
+piece('c4',9,(g,W,H,t)=>{
+  const u=W/100;g.fillStyle='#0a0b10';g.fillRect(0,0,W,H);
+  const phase=t<4.5?0:1; // 0 = raw, 1 = tightened
+  const lt=t%4.5;
+  // tight timeline: dead gaps -> .2s, work pause kept .45s
+  const tight=[];let cur=0;for(const [tx,a,b,k] of lines){const d=b-a;tight.push([tx,cur,cur+d,k]);cur+=d+(k==='dead'?.2:k==='work'?.45:0);}
+  const plan=phase?tight:lines;
+  // frame: talking head placeholder with punch-in on alternate cuts
+  let idx=-1;plan.forEach((l,i)=>{if(lt>=l[1])idx=i});
+  const speaking=plan.some(l=>lt>=l[1]&&lt<=l[2]);
+  const punch=phase&&idx%2===1?1.18:1;
+  g.save();g.translate(W/2,H*.5);g.scale(punch,punch);
+  const grad=g.createRadialGradient(0,-H*.05,0,0,-H*.05,W*.7);grad.addColorStop(0,'#2a2f40');grad.addColorStop(1,'#0e1016');g.fillStyle=grad;g.fillRect(-W/2,-H/2,W,H);
+  g.fillStyle='#3a4156';g.beginPath();g.ellipse(0,-H*.08,W*.17,W*.21,0,0,7);g.fill(); // head
+  g.beginPath();g.ellipse(0,H*.22,W*.36,H*.17,0,Math.PI,0);g.fill(); // shoulders
+  g.restore();
+  // caption
+  g.textAlign='center';g.textBaseline='middle';
+  if(idx>=0&&lt<=plan[idx][2]+.15){const tx=plan[idx][0];const big=tx==='POSITIONING';g.font=font((big?11:7.5)*u);g.fillStyle=big?SIG:FG;
+    const a=lt-plan[idx][1];const k=big?1+(1-spring(a,20,.55))*.4:1;g.save();g.translate(W/2,H*.68);g.scale(k,k);g.fillText(tx,0,0);g.restore();}
+  else if(!speaking&&lt>0){g.fillStyle=phase?CY:RO;g.font=font(3.6*u,600,'"JetBrains Mono", monospace');g.fillText(phase?(idx>=0&&plan[idx][3]==='work'?'0.45 S · PAUSE THAT WORKS':''):'DEAD AIR',W/2,H*.68);}
+  // header label
+  g.fillStyle=phase?CY:RO;g.font=font(3.6*u,600,'"JetBrains Mono", monospace');g.fillText(phase?'TIGHTENED · J-CUT · PUNCH 118%':'RAW TAKE',W/2,H*.07);
+  // waveform strip
+  const y0=H*.82,h=H*.07,x0=W*.07,x1=W*.93,total=5.2;
+  g.fillStyle='#ffffff10';g.fillRect(x0,y0-h,x1-x0,h*2);
+  for(let i=0;i<160;i++){const tt=i/160*total;const on=plan.some(l=>tt>=l[1]&&tt<=l[2]);const amp=on?(.35+.65*Math.abs(Math.sin(i*1.7)*Math.sin(i*.31))):.04;
+    const x=x0+(x1-x0)*i/160;g.fillStyle=tt<=lt?(on?FG:(phase?CY:RO)):'#ffffff33';g.fillRect(x,y0-amp*h,(x1-x0)/160*.6,amp*h*2);}
+  const px=x0+(x1-x0)*clamp(lt/total);g.fillStyle=SIG;g.fillRect(px,y0-h*1.3,u*.5,h*2.6);
+  // stats
+  const used=plan[plan.length-1][2];g.fillStyle='#ffffffaa';g.font=font(3.2*u,500,'"JetBrains Mono", monospace');
+  g.fillText(phase?`${used.toFixed(1)} S · DEAD AIR −${Math.round((1-used/5.2)*100)}%`:'5.2 S · 3 GAPS OVER 0.5 S',W/2,H*.93);
+},'t4');
+
+/* ---------- 05 listening backdrop ---------- */
+piece('c5',8,(g,W,H,t)=>{
+  const u=W/100;
+  // fake speech level envelope with a power word at 3.2s and 6.4s
+  const lvl=clamp(.35+.3*Math.sin(t*9)*Math.sin(t*3.1)+ (Math.exp(-Math.pow((t-3.2)*3,2))+Math.exp(-Math.pow((t-6.4)*3,2)))*.8);
+  g.fillStyle='#06070b';g.fillRect(0,0,W,H);
+  g.globalCompositeOperation='lighter';
+  const blobs=[[.3,.3,CY],[.7,.45,SIG],[.45,.7,'#7a5cff']];
+  blobs.forEach(([bx,by,col],i)=>{const off=lvl*u*3*(i-1);
+    for(const [dx,cc] of [[-off,'#ff3b3b'],[0,col],[off,'#3b6bff']]){
+      const x=W*(bx+.08*Math.sin(t*.7+i*2))+dx,y=H*(by+.05*Math.cos(t*.6+i));const r=W*(.32+.08*lvl);
+      const gr=g.createRadialGradient(x,y,0,x,y,r);gr.addColorStop(0,cc+'55');gr.addColorStop(1,cc+'00');g.fillStyle=gr;g.fillRect(0,0,W,H);}});
+  g.globalCompositeOperation='source-over';
+  // grain
+  for(let i=0;i<220;i++){g.fillStyle=`rgba(255,255,255,${Math.random()*.05})`;g.fillRect(Math.random()*W,Math.random()*H,1.5,1.5);}
+  // glass card swelling on power word
+  const sw=1+.08*clamp(lvl-.5,0,.5)*2;
+  g.save();g.translate(W/2,H*.62);g.scale(sw,sw);
+  rr(g,-W*.36,-H*.07,W*.72,H*.14,u*4);g.fillStyle='rgba(255,255,255,.08)';g.fill();g.strokeStyle='rgba(255,255,255,.35)';g.lineWidth=u*.3;g.stroke();
+  g.textAlign='center';g.textBaseline='middle';g.font=font(8*u);
+  const power=(t>2.9&&t<3.8)||(t>6.1&&t<7);g.fillStyle=power?SIG:FG;g.fillText(power?(t<5?'LEAKING':'FIXED'):'your money is',0,0);
+  g.restore();
+  // level meter
+  g.fillStyle='#ffffff66';g.font=font(3*u,500,'"JetBrains Mono", monospace');g.textAlign='left';g.fillText('VOICE LEVEL',W*.08,H*.9);
+  g.fillStyle=SIG;g.fillRect(W*.08,H*.92,W*.84*lvl,u*.8);
+},'t5');
+
+requestAnimationFrame(loop);
+</script>

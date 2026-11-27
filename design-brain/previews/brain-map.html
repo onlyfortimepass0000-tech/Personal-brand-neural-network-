@@ -1,0 +1,232 @@
+<title>Design Brain Map</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: the brain as a star chart. Map and live combo up top, then the recipes born from new x old. Single dark look by choice. */
+:root{
+  --ink:#08090d; --panel:#11131a; --line:#232634; --fg:#ecebe6; --dim:#8d8f9c;
+  --signal:#FFC83D; --cyan:#5fd4e8; --rose:#ff6b6b; --violet:#9b86ff;
+  --display:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;
+  --body:"Inter Tight","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--ink);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:1180px;margin:0 auto}
+header{padding-block:44px 22px;display:grid;gap:14px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(38px,7.4vw,84px);line-height:.92;margin:0;letter-spacing:-.02em;text-wrap:balance}
+h1 em{font-style:normal;color:var(--signal)}
+.lede{max-width:64ch;color:var(--dim);margin:0}
+.lede b{color:var(--fg);font-weight:600}
+.top{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px;align-items:start}
+.mapbox{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:10px;position:relative}
+svg{width:100%;height:auto;display:block}
+.node-label{font-family:var(--mono);font-size:13px;fill:var(--dim)}
+.ball-label{font-family:var(--display);font-weight:800;font-size:17px;fill:var(--fg)}
+.new-label{font-family:var(--display);font-weight:800;font-size:18px;fill:var(--signal)}
+.newnode{cursor:pointer}
+.newnode:focus-visible circle{stroke:var(--fg);stroke-width:3}
+.keys{display:flex;flex-wrap:wrap;gap:8px 16px;font-family:var(--mono);font-size:12px;color:var(--dim);padding:8px 6px 4px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px 18px 16px;display:grid;gap:10px}
+.card h2{font-family:var(--display);font-weight:800;font-size:28px;line-height:1;margin:0;color:var(--signal)}
+.card .from{font-family:var(--mono);font-size:12px;color:var(--dim)}
+.card ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+.card li{font-size:14.5px;border-top:1px dashed var(--line);padding-top:6px}
+.card li b{color:var(--cyan);font-weight:600}
+.hint{font-family:var(--mono);font-size:12px;color:var(--dim)}
+.combo-hero{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:28px;align-items:center;margin-top:44px;padding-top:36px;border-top:1px solid var(--line)}
+.stage{position:relative;width:100%;max-width:300px;aspect-ratio:9/16;border-radius:26px;overflow:hidden;background:#000;box-shadow:0 0 0 1px var(--line),0 30px 80px -30px #000;justify-self:center}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%}
+.stage .tc{position:absolute;left:12px;bottom:10px;font-family:var(--mono);font-size:11px;color:#ffffff99;font-variant-numeric:tabular-nums}
+h3{font-family:var(--display);font-weight:800;font-size:clamp(26px,4vw,42px);line-height:1;margin:6px 0 12px;letter-spacing:-.01em}
+.formula{font-family:var(--mono);font-size:13px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:12px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:3px 10px;background:#ffffff06}
+.chip.new{border-color:#FFC83D66;color:var(--signal)}
+.plus{color:var(--dim)}
+.beat{display:grid;grid-template-columns:70px minmax(0,1fr);gap:10px;font-size:14.5px;border-top:1px dashed var(--line);padding-top:6px;margin-top:6px}
+.beat b{font-family:var(--mono);color:var(--signal);font-weight:600;font-size:12px}
+.recipes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:40px}
+.recipe{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:8px;align-content:start}
+.recipe h4{font-family:var(--display);font-weight:800;font-size:22px;line-height:1.05;margin:0}
+.recipe p{margin:0;font-size:14.5px;color:#cfd0d6}
+.recipe .why{font-size:13px;color:var(--dim)}
+.foot{margin-top:36px;color:var(--dim);font-size:14px}
+@media (max-width:900px){.top,.combo-hero{grid-template-columns:minmax(0,1fr)}.recipes{grid-template-columns:minmax(0,1fr)}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Design brain · map · 28 Nov 2026</div>
+  <h1>5 new nodes, wired into the <em>57</em> already there.</h1>
+  <p class="lede">The 8 balls and every sub-ball already in your brain are on the chart. Tonight's finds glow yellow. Tap one to see what it connects to. Below the map are the <b>four new reel formats</b> that only exist because the new met the old, and the first one is running live.</p>
+</header>
+
+<div class="top">
+  <div class="mapbox">
+    <svg id="map" viewBox="0 0 1000 1000" role="img" aria-label="Network map of the design brain"></svg>
+    <div class="keys"><span><span class="dot" style="background:#ecebe6"></span>Core and 8 balls</span><span><span class="dot" style="background:#5d6378"></span>Existing sub-balls</span><span><span class="dot" style="background:#FFC83D"></span>New tonight</span></div>
+  </div>
+  <div class="card" id="card" aria-live="polite"></div>
+</div>
+
+<section class="combo-hero">
+  <div class="stage"><canvas id="cx"></canvas><div class="tc" id="tx"></div></div>
+  <div>
+    <div class="eyebrow" style="color:var(--signal)">Combo 01 · running</div>
+    <h3>The X-ray reel</h3>
+    <div class="formula"><span class="chip new">Cross-section world</span><span class="plus">+</span><span class="chip">Split and Half Screen</span><span class="plus">+</span><span class="chip new">Pause grammar</span><span class="plus">+</span><span class="chip">Silence as Emphasis</span><span class="plus">+</span><span class="chip">Power Word Highlight</span></div>
+    <p>Kallaway's split screen with the top half doing the selling. Up top, a local shop is sliced open like the 13.1M-view backyard. Below, you talk. One kept pause of 0.45 s freezes the picture and drops the sound, then the leak appears and the power word lands. That's Pattern 10 (make it an object) and Pattern 11 (commit to a speed) in one frame.</p>
+    <div class="beat"><b>0.0 s</b><span>Start on the first word: "Your shop leaks money." The slice is already moving.</span></div>
+    <div class="beat"><b>1.8 s</b><span>The block opens. Gold leads run down the pipe, under a split-screen seam.</span></div>
+    <div class="beat"><b>3.6 s</b><span>A 0.45 s freeze with no sound. That's the only pause the grammar allows.</span></div>
+    <div class="beat"><b>4.1 s</b><span>The leak bursts red and "LEAK" slams on the seam, then a 118% punch-in on you.</span></div>
+  </div>
+</section>
+
+<div class="recipes">
+  <div class="recipe">
+    <div class="eyebrow">Combo 02</div>
+    <h4>The self-tuning edit file</h4>
+    <div class="formula" style="margin:0"><span class="chip new">Storyboard as code</span><span class="plus">+</span><span class="chip">Own Reels Scoreboard</span><span class="plus">+</span><span class="chip">Pacing Tiers</span></div>
+    <p>Your reel is a cue file with a speed variable set to ~17 or ~50 changes a minute. Windsor's skip rate comes back after 48 h, and the next reel's file flips whichever variable lost.</p>
+    <div class="why">Why it's new: the edit stops being taste and becomes a test you run every post.</div>
+  </div>
+  <div class="recipe">
+    <div class="eyebrow">Combo 03</div>
+    <h4>The breathing one-shot</h4>
+    <div class="formula" style="margin:0"><span class="chip new">Listening backdrop</span><span class="plus">+</span><span class="chip new">Pause grammar</span><span class="plus">+</span><span class="chip">Liquid Glass</span></div>
+    <p>Hormozi's locked shot without the stage. You never cut. The glass backdrop swells on every kept pause and power word, so the frame keeps changing while you hold.</p>
+    <div class="why">Why it's new: you get Caleb's calm and Kallaway's movement without B-roll.</div>
+  </div>
+  <div class="recipe">
+    <div class="eyebrow">Combo 04</div>
+    <h4>Petal hook, cheat-sheet payoff</h4>
+    <div class="formula" style="margin:0"><span class="chip new">Legible 3D type</span><span class="plus">+</span><span class="chip">Carousel rules</span><span class="plus">+</span><span class="chip">Seamless Loop</span></div>
+    <p>A reel opens on a spinning flower of 6 rules that stay readable. It freezes flat into slide 1 of a cheat-sheet carousel, the format that hit 2× most often (40%).</p>
+    <div class="why">Why it's new: one asset does two jobs, a moving reel hook and a saveable post.</div>
+  </div>
+</div>
+
+<div class="foot">Tonight's 5 nodes, their sources and the full notes are in your vault under design-brain, in the notes dated 2026-11-28.</div>
+</div>
+
+<script>
+const balls=[
+ ['01 Hook Visuals',['Hook Alignment','Result First Structure','Title Text Hook','Visual Hook Types']],
+ ['02 Typography',['Caption Fatigue','Caption System','Decode Type','Physics Type','Power Word Highlight','Text Behind Subject','Weight Contrast','Word Pop Animation']],
+ ['03 Motion',['Construction Before Result','Easing and Springs','Hide the Cut','Masking','Match Cut','Opacity Short Transform Long','Punch-in and Snapback','Speed Ramp','Transition Grammar by Tone']],
+ ['04 Pacing',['Dead Air Removal','Open Loops','Pacing Tiers','Seamless Loop','Visual Switching']],
+ ['05 Colour and Light',['Accent Colour Rule','Contrast and Saliency','Grade Order','Grain and Analog Texture','Liquid Glass and Shader Light','Phone Footage Fixes']],
+ ['06 Composition',['Composition Rules','Depth Layers','Lighting Setup','Safe Zones','Split and Half Screen']],
+ ['07 Graphics and Data',['Callouts and Arrows','Key Visual','Numbers That Land','Particles and 3D','Screen Recordings','Unit Chart']],
+ ['08 Sound Sync',['Beat Grid','Mix Levels','One Sound Per Event','SFX on Motion','Silence as Emphasis']]
+];
+const NEW=[
+ {id:'Storyboard as code',src:'X · @emilwidlund',links:['Easing and Springs','Opacity Short Transform Long','Beat Grid','Seamless Loop','Pacing Tiers'],
+  how:{'Easing and Springs':'One brand easing lives in the file, so every move matches.','Opacity Short Transform Long':'The rule becomes a default in code, not a habit to remember.','Beat Grid':'Cues sit on beat times, so cuts land on the music.','Seamless Loop':'A pure function of time loops by construction.','Pacing Tiers':'Speed becomes one variable you can test.'}},
+ {id:'Cross-section world',src:'X · @theoardley on You Built It',links:['Key Visual','Unit Chart','Construction Before Result','Particles and 3D','Open Loops'],
+  how:{'Key Visual':'The cut-open block is the reel’s single image.','Unit Chart':'Coins in the pipe are units you can count.','Construction Before Result':'Each layer builds before the reveal.','Particles and 3D':'Isometric 3D at low cost, no Blender.','Open Loops':'"What’s inside?" keeps them to the end.'}},
+ {id:'Legible 3D type',src:'Reddit · r/MotionDesign',links:['Physics Type','Decode Type','Caption System','Depth Layers','Text Behind Subject'],
+  how:{'Physics Type':'Spin and springs with a legibility rule.','Decode Type':'Words drop and return by run, like a decode.','Caption System':'Rule for any rotating title.','Depth Layers':'Hide words whole behind front petals.','Text Behind Subject':'Same occlusion rule as text behind you.'}},
+ {id:'Pause grammar',src:'Reddit · r/VideoEditing',links:['Dead Air Removal','Hide the Cut','Punch-in and Snapback','Silence as Emphasis','Pacing Tiers'],
+  how:{'Dead Air Removal':'Exact numbers: 0.15–0.25 s gaps.','Hide the Cut':'J-cut so removed pauses aren’t visual jumps.','Punch-in and Snapback':'118% on every second or third cut.','Silence as Emphasis':'The one kept pause, 0.3–0.6 s, before the reveal.','Pacing Tiers':'180–200 wpm marks a tight talking head.'}},
+ {id:'Listening backdrop',src:'Unicorn Studio',links:['Liquid Glass and Shader Light','Beat Grid','Grain and Analog Texture','Power Word Highlight','Visual Switching'],
+  how:{'Liquid Glass and Shader Light':'The glass card is now driven by your voice.','Beat Grid':'Voice level replaces the beat for talking heads.','Grain and Analog Texture':'Grain layer on top, as in Unicorn’s stack.','Power Word Highlight':'Chroma and swell fire on the power word.','Visual Switching':'Change in the frame without a cut.'}}
+];
+const svg=document.getElementById('map');const NS='http://www.w3.org/2000/svg';
+const C=500,pos={};
+const el=(t,a,p=svg)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e;};
+const gEdges=el('g',{}),gOld=el('g',{}),gNewEdges=el('g',{}),gNodes=el('g',{});
+pos['00 Core']=[C,C];
+balls.forEach(([b,kids],i)=>{const a=-Math.PI/2+i*Math.PI*2/8;const bx=C+Math.cos(a)*215,by=C+Math.sin(a)*215;pos[b]=[bx,by];
+  el('line',{x1:C,y1:C,x2:bx,y2:by,stroke:'#3a3f52','stroke-width':2},gEdges);
+  kids.forEach((k,j)=>{const spread=0.62;const ka=a+(j-(kids.length-1)/2)*(spread/Math.max(1,kids.length-1))*1.0;const r=330+(j%2)*36;
+    const kx=C+Math.cos(ka)*r,ky=C+Math.sin(ka)*r;pos[k]=[kx,ky];
+    el('line',{x1:bx,y1:by,x2:kx,y2:ky,stroke:'#262a38','stroke-width':1.2},gEdges);
+    const d=el('circle',{cx:kx,cy:ky,r:6,fill:'#5d6378'},gOld);const tt=el('title',{},d);tt.textContent=k;});
+});
+// new nodes on outer ring, near the centroid angle of their links
+NEW.forEach((n,i)=>{let sx=0,sy=0;n.links.forEach(l=>{sx+=pos[l][0]-C;sy+=pos[l][1]-C});let a=Math.atan2(sy,sx);
+  const used=NEW.slice(0,i).map(m=>m.a);used.forEach(u=>{if(Math.abs(Math.atan2(Math.sin(a-u),Math.cos(a-u)))<.5)a+=.55;});n.a=a;
+  pos[n.id]=[C+Math.cos(a)*450,C+Math.sin(a)*450];});
+function drawNewEdges(active){gNewEdges.innerHTML='';
+  NEW.forEach(n=>n.links.forEach(l=>{const on=!active||active===n.id;const [x1,y1]=pos[n.id],[x2,y2]=pos[l];
+    el('line',{x1,y1,x2,y2,stroke:on?'#FFC83D':'#FFC83D22','stroke-width':on?2.2:1,'stroke-dasharray':'6 5'},gNewEdges);
+    if(on&&active)el('circle',{cx:x2,cy:y2,r:9,fill:'none',stroke:'#5fd4e8','stroke-width':2},gNewEdges);}));}
+// core + balls
+el('circle',{cx:C,cy:C,r:34,fill:'#ecebe6'},gNodes);
+const ct=el('text',{x:C,y:C+5,'text-anchor':'middle',class:'ball-label',fill:'#08090d',style:'fill:#08090d;font-size:15px'},gNodes);ct.textContent='CORE';
+balls.forEach(([b])=>{const [x,y]=pos[b];el('circle',{cx:x,cy:y,r:16,fill:'#ecebe6'},gNodes);
+  const t=el('text',{x,y:y-24,'text-anchor':'middle',class:'ball-label'},gNodes);t.textContent=b;});
+NEW.forEach(n=>{const [x,y]=pos[n.id];const g=el('g',{class:'newnode',tabindex:0,role:'button','aria-label':n.id},gNodes);
+  el('circle',{cx:x,cy:y,r:26,fill:'#FFC83D22'},g);el('circle',{cx:x,cy:y,r:14,fill:'#FFC83D'},g);
+  const right=x>C;const t=el('text',{x:x+(right?-22:22),y:y+(y>C?42:-26),'text-anchor':right?'end':'start',class:'new-label'},g);t.textContent=n.id;
+  const pick=()=>select(n.id);g.addEventListener('click',pick);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick();}});});
+const card=document.getElementById('card');
+function select(id){const n=NEW.find(m=>m.id===id);drawNewEdges(id);
+  card.innerHTML=`<div class="eyebrow">New node · ${n.src}</div><h2>${n.id}</h2><div class="from">Connects to ${n.links.length} existing nodes</div><ul>${n.links.map(l=>`<li><b>${l}.</b> ${n.how[l]}</li>`).join('')}</ul><div class="hint">Tap another yellow node to switch.</div>`;}
+select('Pause grammar');
+
+/* ---------- combo 01 live ---------- */
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const c=document.getElementById('cx'),g=c.getContext('2d'),tc=document.getElementById('tx');
+function fit(){const r=c.getBoundingClientRect(),d=Math.min(2,devicePixelRatio||1);c.width=Math.round(r.width*d);c.height=Math.round(r.height*d);}fit();addEventListener('resize',fit);
+const SIG='#FFC83D',CY='#5fd4e8',RO='#ff6b6b',FG='#ecebe6';
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));const eo=t=>1-Math.pow(1-clamp(t),3);
+const spring=(t,k=20,z=.55)=>{t=Math.max(0,t);return 1-Math.exp(-z*k*t)*Math.cos(k*Math.sqrt(1-z*z)*t)};
+function poly(pts,f){g.beginPath();g.moveTo(...pts[0]);for(const p of pts.slice(1))g.lineTo(...p);g.closePath();g.fillStyle=f;g.fill();}
+function sh(hex,f){const n=parseInt(hex.slice(1),16);return `rgb(${((n>>16)*f)|0},${(((n>>8)&255)*f)|0},${((n&255)*f)|0})`;}
+const LEN=6.5;
+function frame(now){
+  const W=c.width,H=c.height,u=W/100;const t=RM?4.4:(now/1000)%LEN;
+  const freeze=t>=3.6&&t<4.05; const tt=freeze?3.6:t; // the kept pause freezes time
+  g.fillStyle='#07080c';g.fillRect(0,0,W,H);
+  // TOP HALF: cut-open shop
+  g.save();g.beginPath();g.rect(0,0,W,H/2);g.clip();
+  const sky=g.createLinearGradient(0,0,0,H/2);sky.addColorStop(0,'#13213a');sky.addColorStop(1,'#0a0d14');g.fillStyle=sky;g.fillRect(0,0,W,H/2);
+  const cx=W/2,cy=H*.29,s=W*.27;const iso=(x,y,z)=>[cx+(x-y)*s*.87,cy+(x+y)*s*.5-z*s];
+  const L=[{h:.12,c:'#3d7a3a'},{h:.3,c:'#6b4a2e'},{h:.3,c:'#4a3424'},{h:.28,c:'#2c2018'}];
+  const zs=[];let acc=0;for(const l of L){zs.push([1-acc-l.h,1-acc]);acc+=l.h;}
+  const open=eo((tt-1.8)/1);
+  const block=(dx,dy,y0,y1,alpha)=>{g.globalAlpha=alpha;const I=(x,y,z)=>iso(x+dx,y+dy,z);
+    for(let i=0;i<L.length;i++){const [z0,z1]=zs[i];poly([I(1,y0,z0),I(1,y1,z0),I(1,y1,z1),I(1,y0,z1)],sh(L[i].c,.7));poly([I(0,y1,z0),I(1,y1,z0),I(1,y1,z1),I(0,y1,z1)],sh(L[i].c,1));}
+    poly([I(0,y0,1),I(1,y0,1),I(1,y1,1),I(0,y1,1)],'#4f9a4a');g.globalAlpha=1;};
+  block(0,0,0,.5,1);
+  for(let i=0;i<L.length;i++){const [z0,z1]=zs[i];poly([iso(0,.5,z0),iso(1,.5,z0),iso(1,.5,z1),iso(0,.5,z1)],sh(L[i].c,.8));}
+  // shop on top
+  const h=.3;poly([iso(.62,.12,1),iso(.62,.42,1),iso(.62,.42,1+h),iso(.62,.12,1+h)],'#c9c3b5');poly([iso(.3,.42,1),iso(.62,.42,1),iso(.62,.42,1+h),iso(.3,.42,1+h)],'#e7e1d3');
+  poly([iso(.3,.12,1+h),iso(.62,.12,1+h),iso(.62,.42,1+h),iso(.3,.42,1+h)],'#d8d1c1');poly([iso(.36,.42,1+.08),iso(.56,.42,1+.08),iso(.56,.42,1+.24),iso(.36,.42,1+.24)],SIG);
+  const P=(x,z)=>iso(x,.5,z);
+  if(open>0){g.lineWidth=u*1.4;g.lineCap='round';g.strokeStyle=CY;g.beginPath();g.moveTo(...P(.25,.97));g.lineTo(...P(.25,.5));g.lineTo(...P(.78,.5));g.lineTo(...P(.78,.18));g.stroke();
+    const fl=(tt*.6)%1;for(let k=0;k<4;k++){const f=(fl+k/4)%1;const pt=f<.5?P(.25,.97-f/.5*.47):P(.25+(f-.5)/.5*.53,.5);g.fillStyle=SIG;g.beginPath();g.arc(pt[0],pt[1],u*1.1,0,7);g.fill();}
+    if(t>=4.05){const q=P(.5,.5);const b=spring(t-4.05,14,.5);g.strokeStyle=RO;g.lineWidth=u*.7;g.beginPath();g.arc(q[0],q[1],u*(1+b*3.4),0,7);g.stroke();
+      for(let k=0;k<6;k++){const f=((t*1.1+k/6)%1);const qq=P(.5,.5-f*.35);g.globalAlpha=1-f;g.fillStyle=RO;g.beginPath();g.arc(qq[0]+Math.sin(k*2)*u*2,qq[1],u*1,0,7);g.fill();}g.globalAlpha=1;}}
+  block(open*.6,open*.6,.5,1,1-open*.9);
+  g.restore();
+  // BOTTOM HALF: you, with punch-in after the slam
+  const punch=t>=4.05?1+.18*eo((t-4.05)/.12):1;
+  g.save();g.beginPath();g.rect(0,H/2,W,H/2);g.clip();g.translate(W/2,H*.78);g.scale(punch,punch);
+  const gr=g.createRadialGradient(0,-H*.05,0,0,-H*.05,W*.7);gr.addColorStop(0,'#2b3043');gr.addColorStop(1,'#0e1016');g.fillStyle=gr;g.fillRect(-W,-H/2,W*2,H);
+  g.fillStyle='#3d455c';g.beginPath();g.ellipse(0,-H*.07,W*.14,W*.17,0,0,7);g.fill();g.beginPath();g.ellipse(0,H*.16,W*.33,H*.12,0,Math.PI,0);g.fill();
+  g.restore();
+  // seam + caption on the seam
+  g.fillStyle='#000';g.fillRect(0,H/2-u*.4,W,u*.8);
+  g.textAlign='center';g.textBaseline='middle';
+  let word='',big=false,age=0;
+  const caps=[['YOUR SHOP',0],['LEAKS',.7],['MONEY.',1.2],['HERE’S',2.2],['WHERE',2.7]];
+  for(const [w,s] of caps)if(tt>=s){word=w;age=tt-s;}
+  if(t>=4.05){word='LEAK';big=true;age=t-4.05;}
+  if(freeze){word='';}
+  if(word){const k=big?1+(1-spring(age,22,.5))*.7:1;g.save();g.translate(W/2,H/2);g.scale(k,k);g.font=`800 ${(big?15:8)*u}px "Bricolage Grotesque", Arial Black, sans-serif`;
+    g.lineWidth=u*1.6;g.strokeStyle='#000';g.strokeText(word,0,0);g.fillStyle=big?RO:FG;g.fillText(word,0,0);g.restore();}
+  if(freeze){g.fillStyle='#ffffffaa';g.font=`600 ${3.4*u}px "JetBrains Mono", monospace`;g.fillText('0.45 S · FREEZE · NO SOUND',W/2,H/2+u*5);}
+  tc.textContent=t.toFixed(1)+' / '+LEN.toFixed(1)+'s';
+  if(!RM)requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>

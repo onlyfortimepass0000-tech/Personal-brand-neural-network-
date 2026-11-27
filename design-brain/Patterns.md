@@ -14,3 +14,5 @@ tags: [design-brain, cross]
 10. **Turn the idea into objects.** Biggest shorts watched (Dhruv 23M, Hormozi 9.5M) make the abstract countable: price stacked as cut-out objects, a foundation built from bricks. See [[Unit Chart]], [[Key Visual]], watched/2026-11-27 Batch 01.
 11. **Pick a speed: ~50 changes a minute (B-roll explainer) or ~17 (authority talking head).** Measured on Instagram: Kallaway 50-53/min at 4.7-5.4M plays, Hormozi 17-18/min at 3.7-4.9M. See watched/2026-11-27 Instagram Batch 02.
 12. **Graphics that build in place replace cuts.** Caleb (7.5/min) and Sam (0 cuts) keep one shot and stack diagrams, cards and screenshots over it.
+13. **The one kept pause.** Cut every pause after a line; keep exactly one, 0.3-0.6 s, before the reveal, and freeze the frame on it. See [[Pause Grammar]], [[Silence as Emphasis]], combo X-ray reel on the brain map.
+14. **Show the inside.** Cross-sections (a block cut open) beat surfaces: the viewer stays to see what's in it. See [[Cross-Section World]], [[Key Visual]].

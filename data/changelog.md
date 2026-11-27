@@ -106,3 +106,4 @@ Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or 
 - MIX seed-belief-flip "The belief flip" (strong): contrarian belief + HEIT hook + head fake + proof on screen. Linked to p1d, p4a, p7g, p8i.
 - NOTE Framework balls came from the playbook and four creators' research notes: Kallaway, Caleb Ralston, Sam Gaudet, Aayush Swamy. Each of the 10 principles has at least one ball from all four creators (see `node scripts/health.mjs`).
 - NOTE Rule set by Aryan on 2026-10-16: every new fact, edit or deletion in this project is written into the network, so it compounds into a competitive edge.
+- 2026-11-28 NOTE: design-brain drop 02 (5 new nodes, brain map).
