@@ -4,6 +4,10 @@ Newest first. One entry per day, one bullet per change. Every session that touch
 
 Bullet format: `ADD | EDIT | DELETE | RELINK | MIX | NOTE` + id + what + why or source.
 
+## 2026-11-27
+
+- NOTE added design-brain/: a separate Obsidian-style visual design brain for reel edits (00 Core, 8 balls, 48 sub-balls, Patterns, Problems, Sources, RUN, daily previews). Kept outside data/network.json because the network is storytelling-only. Source chat 2026-11-27.
+
 ## 2026-11-15
 
 - NOTE source saved: sources/research/reel_calebralston_DfSnhm8T6gQ.md (Caleb Ralston reel teardown, transcript, metrics, storytelling read). No visual or retention data was available.

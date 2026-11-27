@@ -1,0 +1,165 @@
+<title>Reel Design Drop</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;800;900&family=Manrope:wght@400;600&display=swap">
+<style>
+/* Layout: phone preview on the left, four "how to do it" notes on the right; stacks on phones */
+:root{
+  --bg:#F3F1EC; --fg:#16161A; --muted:#5E5B66; --line:#DAD6CE; --card:#FFFFFF;
+  --accent:#C98A00; --hot:#FFC83D; --screen:#0E0E12; --ink:#F5F2EA;
+  --display:"Anton","Impact",sans-serif; --cap:"Montserrat","Arial Black",sans-serif; --body:"Manrope",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121216;--fg:#EDEAE3;--muted:#A19DA8;--line:#2B2A31;--card:#1A1A20;--accent:#FFC83D;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121216;--fg:#EDEAE3;--muted:#A19DA8;--line:#2B2A31;--card:#1A1A20;--accent:#FFC83D;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:1040px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header .eyebrow{font:600 12px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,6vw,54px);line-height:1;margin:.2em 0 .25em;letter-spacing:.01em;text-wrap:balance}
+header p{max-width:62ch;color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:36px;margin-top:28px;align-items:start}
+@media (max-width:760px){.grid{grid-template-columns:minmax(0,1fr)}}
+.phonecol{display:flex;flex-direction:column;gap:12px;align-items:center}
+.phone{position:relative;width:100%;max-width:300px;aspect-ratio:9/16;border-radius:30px;background:var(--screen);overflow:hidden;box-shadow:0 0 0 8px #1f1f24,0 20px 40px rgba(0,0,0,.25)}
+.scene{position:absolute;inset:0;transform-origin:50% 38%;will-change:transform}
+.wall{position:absolute;inset:0;background:radial-gradient(120% 70% at 70% 20%,#3a2a1c 0%,#1a1513 45%,#0e0e12 100%)}
+.lamp{position:absolute;right:14%;top:14%;width:34px;height:34px;border-radius:50%;background:radial-gradient(circle,#ffcf8a 0%,rgba(255,170,80,.35) 40%,transparent 70%);filter:blur(1px)}
+.head{position:absolute;left:50%;top:22%;width:30%;aspect-ratio:1/1.18;transform:translateX(-50%);border-radius:48% 48% 44% 44%;background:radial-gradient(70% 70% at 35% 35%,#c99372,#8a5a40 70%,#5a3a2a)}
+.glasses{position:absolute;left:50%;top:31%;width:24%;height:3.2%;transform:translateX(-50%);border:2px solid #111;border-radius:6px;box-shadow:inset 0 0 0 1px #333}
+.body{position:absolute;left:50%;top:44%;width:70%;height:60%;transform:translateX(-50%);border-radius:45% 45% 0 0;background:linear-gradient(#26262c,#1a1a1f)}
+.grain{position:absolute;inset:-50%;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");animation:gr .4s steps(3) infinite;pointer-events:none}
+@keyframes gr{0%{transform:translate(0,0)}33%{transform:translate(-4%,3%)}66%{transform:translate(3%,-2%)}}
+.title{position:absolute;left:8%;right:8%;top:16%;display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.title span{font-family:var(--display);font-size:clamp(18px,7.6cqw,26px);line-height:1.05;color:#0E0E12;background:var(--ink);padding:4px 8px;transform:translateX(-120%);opacity:0}
+.title span.hl{background:var(--hot)}
+.phone{container-type:inline-size}
+.cap{position:absolute;left:6%;right:12%;top:64%;text-align:center;font-family:var(--cap);font-weight:900;text-transform:uppercase;font-size:9cqw;line-height:1.05;color:#fff;paint-order:stroke;-webkit-text-stroke:1.6cqw #000;letter-spacing:.01em}
+.cap .w{display:inline-block;margin:0 .12em;transform:scale(.6);opacity:0}
+.cap .w.p{color:var(--hot)}
+.stat{position:absolute;left:10%;right:20%;top:40%;background:rgba(14,14,18,.86);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:10px 14px;color:#fff;font-family:var(--cap);transform:translateY(20px) scale(.9);opacity:0}
+.stat b{display:block;font-family:var(--display);font-weight:400;font-size:15cqw;line-height:1;color:var(--hot);font-variant-numeric:tabular-nums}
+.stat small{font-weight:500;font-size:4.2cqw;opacity:.85}
+.zones{position:absolute;inset:0;pointer-events:none}
+.zones div{position:absolute;background:repeating-linear-gradient(45deg,rgba(255,60,60,.28) 0 6px,rgba(255,60,60,.1) 6px 12px)}
+.zt{left:0;right:0;top:0;height:12%}.zb{left:0;right:0;bottom:0;height:23%}.zr{right:0;top:12%;bottom:23%;width:14%}
+.tag{position:absolute;top:8px;left:50%;transform:translateX(-50%);font:600 10px var(--body);letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.controls{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+button{font:600 13px var(--body);color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer}
+button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.timeline{width:100%;max-width:300px;height:4px;background:var(--line);border-radius:2px;overflow:hidden}
+.timeline i{display:block;height:100%;width:0;background:var(--accent)}
+.notes{display:flex;flex-direction:column;gap:14px;min-width:0}
+.note{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.note h2{font:800 16px var(--cap);margin:0 0 4px;display:flex;gap:10px;align-items:baseline}
+.note h2 em{font-style:normal;font:600 11px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.note p{margin:4px 0;color:var(--muted);max-width:65ch}
+.note .how{color:var(--fg)}
+.note code{font-size:12.5px;background:var(--bg);border:1px solid var(--line);border-radius:5px;padding:1px 5px}
+.foot{margin-top:28px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
+@media (prefers-reduced-motion:reduce){.grain{animation:none}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Design drop · Fri 27 Nov 2026 · Day 1</div>
+  <h1>Four moves that stop the scroll</h1>
+  <p>Today's preview stacks the four strongest findings from the first brain build into one 6-second reel. The phone plays them in the order a viewer meets them. Each note says how to do it in your own edit.</p>
+</header>
+
+<div class="grid">
+  <div class="phonecol">
+    <div class="phone" id="phone" aria-label="Animated 9:16 reel preview">
+      <div class="scene" id="scene">
+        <div class="wall"></div><div class="lamp"></div>
+        <div class="body"></div><div class="head"></div><div class="glasses"></div>
+      </div>
+      <div class="title" id="title"><span>I MADE 300</span><span class="hl">COLD CALLS.</span></div>
+      <div class="stat" id="stat"><b id="num">0</b><small>cold calls made</small></div>
+      <div class="cap" id="cap"></div>
+      <div class="grain"></div>
+      <div class="zones" id="zones" hidden><div class="zt"></div><div class="zb"></div><div class="zr"></div><span class="tag">red = app UI covers this</span></div>
+    </div>
+    <div class="timeline"><i id="bar"></i></div>
+    <div class="controls">
+      <button id="pause" aria-pressed="false">Pause</button>
+      <button id="slow" aria-pressed="false">Slow-mo</button>
+      <button id="safe" aria-pressed="false">Safe zones</button>
+    </div>
+  </div>
+
+  <div class="notes">
+    <article class="note">
+      <h2>Title text hook <em>Hook visuals</em></h2>
+      <p>Big text on a solid block in the first 3 seconds, separate from captions. Kallaway says viewers read it 10 times out of 10, and it has to match what you say and what you show.</p>
+      <p class="how">In your edit: Anton, off-white block with the charged word on yellow, top band about 280 to 450 px down a 1080×1920 frame. Slide in over 8 frames with ease-out.</p>
+    </article>
+    <article class="note">
+      <h2>Punch-in snapback <em>Motion</em></h2>
+      <p>On the key word, scale the face clip up fast, then snap the next clip back to normal framing. It makes cuts look deliberate without adding layers.</p>
+      <p class="how">In your edit: scale 100 to 115% over 3 frames on the word, hard cut to the next clip at 100%. Remotion: <code>interpolate(frame,[f,f+3],[1,1.15])</code>.</p>
+    </article>
+    <article class="note">
+      <h2>Power-word captions <em>Typography</em></h2>
+      <p>Three words a page, heavy caps, thick black stroke, and one word in the accent. Two highlighted words in one line turn into noise.</p>
+      <p class="how">In your edit: Montserrat 900 at about 80 px, 6 to 9 px stroke, each word pops from 60% with a spring (damping 12, mass 0.6) on its own Whisper timestamp.</p>
+    </article>
+    <article class="note">
+      <h2>Number that lands <em>Graphics + sound</em></h2>
+      <p>A count-up stat card turns a claim into proof. Only show numbers you actually say, and put a soft impact sound on the frame it stops.</p>
+      <p class="how">In your edit: count over about 0.8 s with ease-out, card on a dark translucent panel, yellow digits. Impact peak around −7 dBFS, once per reel.</p>
+    </article>
+  </div>
+</div>
+
+<p class="foot">Brain so far: 8 balls, 40 sub-balls, 7 patterns, 5 open problems. Tomorrow's run adds 2 to 4 new findings and links them in.</p>
+</div>
+
+<script>
+(function(){
+  const D=6000; // loop length in ms
+  const pages=[["I","MADE","300"],["COLD","CALLS","AND"],["LEARNED","ONE","THING"]];
+  const power=[[2],[0],[1]];
+  const cap=document.getElementById('cap'), scene=document.getElementById('scene');
+  const spans=[...document.querySelectorAll('#title span')], stat=document.getElementById('stat'), num=document.getElementById('num'), bar=document.getElementById('bar');
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let t0=performance.now(), paused=false, slow=false, pausedAt=0, last=-1, offset=0;
+  const easeOut=x=>1-Math.pow(1-x,3);
+  const spring=x=>{if(x<=0)return 0; if(x>=1)return 1; return 1-Math.exp(-6*x)*Math.cos(9*x);};
+  const clamp=(x)=>Math.max(0,Math.min(1,x));
+  const pageStart=[1500,2600,3700];
+  function renderPage(i){
+    cap.innerHTML='';
+    if(i<0)return;
+    pages[i].forEach((w,k)=>{const s=document.createElement('span');s.className='w'+(power[i].includes(k)?' p':'');s.textContent=w;cap.appendChild(s);});
+  }
+  function frame(now){
+    let el = paused ? pausedAt : (now - t0) * (slow?0.35:1) + offset;
+    if(!paused){ offset=el; t0=now; }
+    const t = el % D;
+    bar.style.width=(t/D*100)+'%';
+    // title text: slide in 0-400ms, hold, out at 2400
+    spans.forEach((s,i)=>{const p=easeOut(clamp((t-120-i*120)/300)); const out=clamp((t-2300)/250);
+      s.style.transform=`translateX(${(-120+120*p)-(out*140)}%)`; s.style.opacity=String(p*(1-out));});
+    // captions
+    let pi=-1; pageStart.forEach((ps,i)=>{if(t>=ps)pi=i;}); if(t>5200)pi=-1;
+    if(pi!==last){renderPage(pi); last=pi;}
+    if(pi>=0){[...cap.children].forEach((w,k)=>{const st=pageStart[pi]+k*170; const p=reduce?1:spring(clamp((t-st)/260));
+      w.style.transform=`scale(${0.6+0.4*p})`; w.style.opacity=String(clamp((t-st)/80));});}
+    // punch-in snapback on "300" and on "ONE"
+    let sc=1; const z1=pageStart[0]+2*170, z2=pageStart[2]+1*170;
+    if(t>=z1 && t<pageStart[1]) sc=1+0.15*easeOut(clamp((t-z1)/100));
+    if(t>=z2 && t<5200) sc=1+0.15*easeOut(clamp((t-z2)/100));
+    scene.style.transform=`scale(${reduce?1:sc})`;
+    // stat card 2600-3700, count to 300
+    const sIn=clamp((t-2650)/250), sOut=clamp((t-3650)/200);
+    stat.style.opacity=String(sIn*(1-sOut)); stat.style.transform=`translateY(${20-20*easeOut(sIn)}px) scale(${0.9+0.1*easeOut(sIn)})`;
+    num.textContent=Math.round(300*easeOut(clamp((t-2700)/800)));
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+  const bp=document.getElementById('pause'), bs=document.getElementById('slow'), bz=document.getElementById('safe'), zones=document.getElementById('zones');
+  bp.addEventListener('click',()=>{paused=!paused; if(paused){pausedAt=offset;} else {t0=performance.now(); offset=pausedAt;} bp.setAttribute('aria-pressed',paused); bp.textContent=paused?'Play':'Pause';});
+  bs.addEventListener('click',()=>{slow=!slow; bs.setAttribute('aria-pressed',slow);});
+  bz.addEventListener('click',()=>{zones.hidden=!zones.hidden; bz.setAttribute('aria-pressed',!zones.hidden);});
+})();
+</script>
