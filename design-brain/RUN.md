@@ -36,3 +36,8 @@ Keep it lean: no full-page dumps, short notes, one preview file.
 2. Cloud browser on open galleries: Vimeo Staff Picks (opens with no login, checked Nov 27), Behance, Dribbble, Awwwards, Pinterest. Screenshot frames and pages for motion, type and layout ideas.
 3. Aryan's Chrome: the YouTube watcher (play-through sampling) whenever his laptop is on.
 Order when ScrapeCreators is under 100: Apify free tier, then 1, 2, 3. Say in the drop which source was used.
+
+## Aryan's element sources (Nov 27)
+- 21st.dev (UI components and effects) and Unicorn Studio (WebGL motion scenes). Visit both every run in the cloud browser, pick 1-2 elements worth stealing for reels or carousels, and note how they'd translate to a 9:16 frame.
+## Schedule
+- Aryan asked for the daily run at 1 PM IST (Nov 27), replacing the planned 10 AM. Budget: up to 4 ScrapeCreators credits a day, then the fallback order above.
