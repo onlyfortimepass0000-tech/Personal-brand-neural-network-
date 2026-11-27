@@ -1,7 +1,7 @@
 ---
 tags: [design-brain]
 ---
-# RUN: the daily 10 AM design run
+# RUN: the daily 12:47 PM design run
 1. Read [[00 Core]], [[Problems]] and the last 3 entries of [[Daily Log]].
 2. Research the web for 2-4 new findings (minimum 2, aim for 4): one aimed at the oldest open item in [[Problems]], the rest from fresh creator edits, motion trends or code tools. Skip anything already in a node.
 3. File each finding as a new sub-ball note under its ball, or as a new rule in an existing node, with at least 2 [[links]] to other nodes and a source line in [[Sources]].
@@ -40,4 +40,4 @@ Order when ScrapeCreators is under 100: Apify free tier, then 1, 2, 3. Say in th
 ## Aryan's element sources (Nov 27)
 - 21st.dev (UI components and effects) and Unicorn Studio (WebGL motion scenes). Visit both every run in the cloud browser, pick 1-2 elements worth stealing for reels or carousels, and note how they'd translate to a 9:16 frame.
 ## Schedule
-- Aryan asked for the daily run at 1 PM IST (Nov 27), replacing the planned 10 AM. Budget: up to 4 ScrapeCreators credits a day, then the fallback order above.
+- Aryan asked for the daily run at 1 PM IST (Nov 27), replacing the planned 12:47 PM. Budget: up to 4 ScrapeCreators credits a day, then the fallback order above.
